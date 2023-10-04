@@ -1,0 +1,204 @@
+<template>
+    <div class="container-fluid d-flex justify-content-end align-items-center footer" :class="{'justify-content-between': this.mainJSON.task2.isShow}">
+        <div v-if="this.mainJSON.task2.isShow">
+            <MyButton class="ml-3 transparent-buttons"
+                      data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Чат"
+                      @click="openChat"
+            >
+                <img src="../assets/tak2-chat-icon.svg">
+            </MyButton>
+        </div>
+        <MyButton style="background: #F3AE4E; border-color: #F3AE4E; width: 200px" @click="showModal">Завершить</MyButton>
+    </div>
+
+    <MyModal v-model:show="modalVisible" v-model:buttons="modalButtons"
+             @update="checkAnswer"
+    >
+        {{this.modalMessage}}
+    </MyModal>
+
+</template>
+
+<script>
+    import {mapGetters, mapMutations} from "vuex";
+
+    export default {
+        name: "PageFooter",
+        computed: {
+            ...mapGetters(['mainJSON']),
+        },
+        data() {
+            return {
+                modalVisible: false,
+                modalButtons: [],
+                modalMessage: '',
+                listOfNotDoneTasks: [],
+                change: 0
+            }
+        },
+        methods: {
+            ...mapMutations(["push_mainJSON"]),
+            openChat(){
+                if(this.mainJSON.task2.isShow){
+                    this.mainJSON.task2.chatShow = !this.mainJSON.task2.chatShow
+                }
+            },
+            showModal(){
+                this.modalVisible = true
+                if (this.mainJSON.forms.isShow === true){
+                    this.modalButtons = [
+                        {value: "Завершить", status: 'end'}
+                    ]
+                    this.modalMessage = 'Молодец! Ты выполнил все задания! Нажми кнопку "Завершить" чтобы выйти из программы.'
+                }
+                else {
+                    this.modalButtons = [
+                        {value: "Да", status: true},
+                        {value: "Нет", status: false}
+                    ]
+                    this.modalMessage = 'Ты действительно хочешь завершить задание перейти к следующему?'
+                }
+
+            },
+            checkAnswer(status){
+                this.modalVisible = false
+
+                if(status){
+                    this.change = 0
+                    if(this.mainJSON.task1.isShow && this.change === 0){
+                        this.mainJSON.task1["isShow"] = false
+                        this.nextTask('taskNightInTheMuseum')
+                    }
+                    if(this.mainJSON.task2.isShow  && this.change === 0){
+                        this.addAnswersTaskChatWalk()
+                        this.mainJSON.task2["isShow"] = false
+                        this.nextTask('taskChatWalk')
+                    }
+                    if(this.mainJSON.task3.isShow  && this.change === 0){
+                        this.mainJSON.task3["isShow"] = false
+                        this.nextTask('taskVolunteers')
+                    }
+                }
+
+                if (status === 'end'){
+                    this.mainJSON.task3["isShow"] = false
+                    this.mainJSON.task2["isShow"] = false
+                    this.mainJSON.task1["isShow"] = false
+                    this.mainJSON.forms["isShow"] = false
+                    this.mainJSON['feedbackShow'] = true
+                    /*this.mainJSON['loginShow'] = true
+                    this.mainJSON['mainPageShow'] = false
+                    this.mainJSON['allDone'] = true*/
+
+                    let exceptionIndicators = ['ULLL_LLA8_2', 'ULHL_HLA1_2', 'ULHL_HLA1_4', 'ULHL_HLA1_6', 'ULDT_DTA1_4', 'ULDT_DTA1_5', 'ULDT_DTA1_6']
+                    let changeExceptionIndicator = 0
+
+                    exceptionIndicators.forEach(exceptionIndicator => {
+                        if(this.mainJSON.forms.results[exceptionIndicator] !== undefined){
+                            if (this.mainJSON.forms.results[exceptionIndicator] === 1 && changeExceptionIndicator === 0){
+                                changeExceptionIndicator++
+                                this.mainJSON.forms.results[exceptionIndicator] = 4
+                            }
+                            if (this.mainJSON.forms.results[exceptionIndicator] === 2 && changeExceptionIndicator === 0){
+                                changeExceptionIndicator++
+                                this.mainJSON.forms.results[exceptionIndicator] = 3
+                            }
+                            if (this.mainJSON.forms.results[exceptionIndicator] === 3 && changeExceptionIndicator === 0){
+                                changeExceptionIndicator++
+                                this.mainJSON.forms.results[exceptionIndicator] = 2
+                            }
+                            if (this.mainJSON.forms.results[exceptionIndicator] === 4 && changeExceptionIndicator === 0){
+                                changeExceptionIndicator++
+                                this.mainJSON.forms.results[exceptionIndicator] = 1
+                            }
+                            changeExceptionIndicator = 0
+                        }
+                    })
+
+                    let d = new Date()
+                    this.mainJSON.results.dataTimeEnd =  this.mainJSON.results.dataTimeLastUpdate = [
+                        d.getFullYear(),
+                        ('0' + (d.getMonth() + 1)).slice(-2),
+                        ('0' + d.getDate()).slice(-2)
+                    ].join('-') + ' ' + [
+                        ('0' + (d.getHours())).slice(-2),
+                        ('0' + (d.getMinutes())).slice(-2),
+                        ('0' + d.getSeconds()).slice(-2)
+                    ].join(':');
+
+                    this.push_mainJSON({
+                        push: this.mainJSON
+                    })
+
+                    localStorage.clear()
+
+                }
+            },
+            nextTask(taskName){
+                this.mainJSON.listOfTasks.forEach( el => {
+                    if(el.name === taskName){
+                        el.done = true
+                        let t = new Date()
+                        this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results['dataTimeEnd' + taskName] =
+                            [
+                                t.getFullYear(),
+                                ('0' + (t.getMonth() + 1)).slice(-2),
+                                ('0' + t.getDate()).slice(-2)
+                            ].join('-') + ' ' + [
+                                ('0' + (t.getHours())).slice(-2),
+                                ('0' + (t.getMinutes())).slice(-2),
+                                ('0' + t.getSeconds()).slice(-2)
+                            ].join(':');
+                        this.push_mainJSON({
+                            push: this.mainJSON
+                        })
+                    }
+                    if(el.done === false){
+                        this.listOfNotDoneTasks.push(el.name)
+                    }
+                })
+                if (this.listOfNotDoneTasks.length === 0){
+                    this.endTask()
+                }
+                else {
+                    let randomElement = this.listOfNotDoneTasks[Math.floor(Math.random()*this.listOfNotDoneTasks.length)]
+                    this.mainJSON[randomElement].isShow = true
+                    this.mainJSON["instructionShow"] = true
+                    this.mainJSON["mainPageShow"] = false
+                    this.change++
+                    this.listOfNotDoneTasks = []
+                }
+            },
+            endTask(){
+                let t = new Date()
+                this.mainJSON.results.dataTimeLastUpdate =
+                    [
+                        t.getFullYear(),
+                        ('0' + (t.getMonth() + 1)).slice(-2),
+                        ('0' + t.getDate()).slice(-2)
+                    ].join('-') + ' ' + [
+                        ('0' + (t.getHours())).slice(-2),
+                        ('0' + (t.getMinutes())).slice(-2),
+                        ('0' + t.getSeconds()).slice(-2)
+                    ].join(':');
+                this.mainJSON.forms['isShow'] = true
+                this.mainJSON["instructionShow"] = true
+                this.mainJSON["mainPageShow"] = false
+            },
+            addAnswersTaskChatWalk(){
+
+            }
+        }
+    }
+</script>
+
+<style scoped>
+    .footer {
+        height: 70px;
+        background: #344A5F;
+        backdrop-filter: blur(8.15485px);
+        position: fixed;
+        bottom: 0;
+        z-index: 99;
+    }
+</style>
