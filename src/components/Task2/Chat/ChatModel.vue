@@ -6,12 +6,12 @@
             :dragSelector="dragSelector"
             :active="handlers"
             :fit-parent="fit"
-            :width="mainJSON.task2.width"
-            :height="mainJSON.task2.height"
+            :width="mainJSON.taskChatFestival.width"
+            :height="mainJSON.taskChatFestival.height"
             :minWidth="minW"
             :minHeight="minH"
-            :left="mainJSON.task2.left"
-            :top="mainJSON.task2.top"
+            :left="mainJSON.taskChatFestival.left"
+            :top="mainJSON.taskChatFestival.top"
     >
         <div class="d-flex justify-content-between align-items-center handle" style="padding: 0 10px">
             <div class="d-flex align-items-center">

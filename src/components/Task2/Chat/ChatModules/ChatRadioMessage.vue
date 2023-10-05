@@ -1,13 +1,16 @@
 <template>
 
-    <div v-if="(currentScreenConst.id === 5 && this.mainJSON.task2.results.ULHLDT1_Log_HLS5_1 !== 2) ||
-                ((currentScreenConst.id === 9 && this.mainJSON.task2.results.ULHLDT1_Log_HLK4_1 !== '1,3') &&
-                (currentScreenConst.id === 9 && this.mainJSON.task2.results.ULHLDT1_Log_HLK4_1 !== '3,1')) ||
-                (currentScreenConst.id === 11 && this.mainJSON.task2.results.ULHLDT1_Log_HLK3_1 !== 2) ">
+    <div v-if="(currentScreenConst.id === 5 && this.mainJSON.taskChatFestival.results.ULHLDT1_Log_HLS5_1 !== 2) ||
+                ((currentScreenConst.id === 9 && this.mainJSON.taskChatFestival.results.ULHLDT1_Log_HLK4_1 !== '1,3') &&
+                (currentScreenConst.id === 9 && this.mainJSON.taskChatFestival.results.ULHLDT1_Log_HLK4_1 !== '3,1')) ||
+                (currentScreenConst.id === 11 && this.mainJSON.taskChatFestival.results.ULHLDT1_Log_HLK3_1 !== 2) ">
         <div class="d-flex chat-message-body" v-for="message_dop in currentScreenConst.message_dop" :key="message_dop.text">
-<!--            <img src="../../../../assets/TaskChatWalkZhenya.png" alt="Аватар Женя" style="margin-right: 20px; width: 50px; height: 50px" v-if="message_dop.name === 'Женя'">-->
-<!--            <img src="../../../../assets/TaskChatWalkDima.png" alt="Аватар Дима" style="margin-right: 20px; width: 50px; height: 50px" v-if="message_dop.name === 'Дима'">-->
-<!--            <img src="../../../../assets/TaskChatWalkMasha.png" alt="Аватар Маша" style="margin-right: 20px; width: 50px; height: 50px" v-if="message_dop.name === 'Маша'">-->
+            <img src="../../../../assets/TaskChatFestivalNastya.png" alt="Аватар Настя" style="margin-right: 20px; width: 50px; height: 50px; border-radius: 50%"
+                 v-if="message_dop.name === 'Настя'">
+            <img src="../../../../assets/TaskChatFestivalDasha.png" alt="Аватар Даша" style="margin-right: 20px; width: 50px; height: 50px; border-radius: 50%"
+                 v-if="message_dop.name === 'Даша'">
+            <img src="../../../../assets/TaskChatFestivalSerega.png" alt="Аватар Серёжа" style="margin-right: 20px; width: 50px; height: 50px; border-radius: 50%"
+                 v-if="message_dop.name === 'Серёжа'">
             <div>
                 <p class="text-bold">
                     {{message_dop.name}}
@@ -29,9 +32,12 @@
     </div>
 
     <div class="d-flex chat-message-body" v-for="message in currentScreenConst.message" :key="message.text">
-<!--        <img src="../../../../assets/TaskChatWalkZhenya.png" alt="Аватар Женя" style="margin-right: 20px; width: 50px; height: 50px" v-if="message.name === 'Женя'">-->
-<!--        <img src="../../../../assets/TaskChatWalkDima.png" alt="Аватар Дима" style="margin-right: 20px; width: 50px; height: 50px" v-if="message.name === 'Дима'">-->
-<!--        <img src="../../../../assets/TaskChatWalkMasha.png" alt="Аватар Маша" style="margin-right: 20px; width: 50px; height: 50px" v-if="message.name === 'Маша'">-->
+        <img src="../../../../assets/TaskChatFestivalNastya.png" alt="Аватар Настя" style="margin-right: 20px; width: 50px; height: 50px; border-radius: 50%"
+             v-if="message.name === 'Настя'">
+        <img src="../../../../assets/TaskChatFestivalDasha.png" alt="Аватар Даша" style="margin-right: 20px; width: 50px; height: 50px; border-radius: 50%"
+             v-if="message.name === 'Даша'">
+        <img src="../../../../assets/TaskChatFestivalSerega.png" alt="Аватар Серёжа" style="margin-right: 20px; width: 50px; height: 50px; border-radius: 50%"
+             v-if="message.name === 'Серёжа'">
         <div>
             <p class="text-bold">
                 {{message.name}}
@@ -51,14 +57,14 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-end" v-if="this.mainJSON.task2[currentScreenConst.resultIndicator] !== 'NA'">
-        <div v-if="typeof this.mainJSON.task2[currentScreenConst.resultIndicator] === 'string'">
+    <div class="d-flex justify-content-end" v-if="this.mainJSON.taskChatFestival[currentScreenConst.resultIndicator] !== 'NA'">
+        <div v-if="typeof this.mainJSON.taskChatFestival[currentScreenConst.resultIndicator] === 'string'">
             <p class="chat-message-answer chat-message">
-                {{this.mainJSON.task2[currentScreenConst.resultIndicator]}}
+                {{this.mainJSON.taskChatFestival[currentScreenConst.resultIndicator]}}
             </p>
         </div>
         <div v-else>
-            <p class="chat-message-answer chat-message" v-for="el in this.mainJSON.task2[currentScreenConst.resultIndicator]" :key="el">
+            <p class="chat-message-answer chat-message" v-for="el in this.mainJSON.taskChatFestival[currentScreenConst.resultIndicator]" :key="el">
                 {{el.value}}
             </p>
         </div>

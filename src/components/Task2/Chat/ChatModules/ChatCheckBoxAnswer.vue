@@ -8,11 +8,11 @@
         <div class="form-check" v-for="option in screenConst.answers"
              :key="option.id">
             <input class="form-check-input" type="checkbox" :id=option.id
-                   :value=option v-model="this.mainJSON.task2.checkBox1Selected"
+                   :value=option v-model="this.mainJSON.taskChatFestival.checkBox1Selected"
             />
             <label :for=option.id>{{option.value}}</label>
         </div>
-        <MyButton @click="save" style="border-color: #74a2ce" v-if="this.mainJSON.task2.checkBox1Selected.length !== 0">Готово</MyButton>
+        <MyButton @click="save" style="border-color: #74a2ce" v-if="this.mainJSON.taskChatFestival.checkBox1Selected.length !== 0">Готово</MyButton>
         <MyButton disabled style="border-color: #74a2ce" v-else>Готово</MyButton>
     </div>
 </template>
@@ -32,16 +32,16 @@
             ...mapMutations(["push_mainJSON"]),
             save() {
                 let answersID = []
-                this.mainJSON.task2.checkBox1Selected.forEach(el => {
+                this.mainJSON.taskChatFestival.checkBox1Selected.forEach(el => {
                     answersID.push(el.id)
                 })
-                this.mainJSON.task2[this.screenConst.resultIndicator] = this.mainJSON.task2.checkBox1Selected
-                this.mainJSON.task2.results[this.screenConst.resultIndicator] = answersID.join()
-                this.mainJSON.task2.checkBox1Selected = []
+                this.mainJSON.taskChatFestival[this.screenConst.resultIndicator] = this.mainJSON.taskChatFestival.checkBox1Selected
+                this.mainJSON.taskChatFestival.results[this.screenConst.resultIndicator] = answersID.join()
+                this.mainJSON.taskChatFestival.checkBox1Selected = []
 
-                this.mainJSON.task2.shownScreenID++
-                this.mainJSON.task2.screens.forEach(el => {
-                    if (el.id === this.mainJSON.task2.shownScreenID) {
+                this.mainJSON.taskChatFestival.shownScreenID++
+                this.mainJSON.taskChatFestival.screens.forEach(el => {
+                    if (el.id === this.mainJSON.taskChatFestival.shownScreenID) {
                         el.isShow = true
                     }
                 })

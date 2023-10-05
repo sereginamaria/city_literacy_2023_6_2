@@ -3,7 +3,7 @@
         <!--Левая часть-->
         <div style="border-right: 1px solid #A7B0C6; width: 20%; padding: 20px">
             <div class="d-flex align-items-center">
-                <img src="../../../assets/TaskChatWalkChat.png" alt="Аватар чат" style="margin-right: 20px">
+                <img src="../../../assets/TaskChatFestivalChat.png" alt="Аватар чат" style="margin-right: 20px">
                 <div>
                     <p class="text-bold">
                         Чат
@@ -14,26 +14,25 @@
 
         <!--Правая часть -->
         <div class="d-flex flex-column" style="width: 80%">
-            Задание с чатом
-<!--            <div  class="body-message" style="padding: 10px;border-bottom: 1px solid #A7B0C6; height: 60%" >-->
-<!--                <div id="main" style="overflow-y: scroll; padding-right: 10px; height: 100%">-->
-<!--                    <div v-for="screen in mainJSON.task2.screens" :key="screen.id">-->
-<!--                        <ChatRadioMessage v-if="screen.isShow" :currentScreenConst="this.constTask2.screens[screen.id]" :currentScreen="currentScreen"/>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div  class="body-message" style="padding: 10px;border-bottom: 1px solid #A7B0C6; height: 60%" >
+                <div id="main" style="overflow-y: scroll; padding-right: 10px; height: 100%">
+                    <div v-for="screen in mainJSON.taskChatFestival.screens" :key="screen.id">
+                        <ChatRadioMessage v-if="screen.isShow" :currentScreenConst="this.constTaskChatFestival.screens[screen.id]" :currentScreen="currentScreen"/>
+                    </div>
+                </div>
+            </div>
 
-<!--            &lt;!&ndash; Варианты ответов &ndash;&gt;-->
-<!--            <div id="main3" class="body-answers" style="padding: 10px; height: max-content; max-height: 40%" >-->
-<!--                <div style="height: 100%; overflow-y: scroll; padding-right: 10px;">-->
-<!--                    <ChatRadioAnswer v-if="currentScreen.isShow && currentScreen.type === 'radio'" :screenConst="screenConst"/>-->
-<!--                    <ChatCheckBoxAnswer v-if="currentScreen.isShow && currentScreen.type === 'checkBox'" :screenConst="screenConst" />-->
+            <!-- Варианты ответов -->
+            <div id="main3" class="body-answers" style="padding: 10px; height: max-content; max-height: 40%" >
+                <div style="height: 100%; overflow-y: scroll; padding-right: 10px;">
+                    <ChatRadioAnswer v-if="currentScreen.isShow && currentScreen.type === 'radio'" :screenConst="screenConst"/>
+                    <ChatCheckBoxAnswer v-if="currentScreen.isShow && currentScreen.type === 'checkBox'" :screenConst="screenConst" />
 
-<!--                    <div class="message-answer" v-if="currentScreen.isShow && currentScreen.type === 'end'">-->
-<!--                        <MyButton @click="endTask">Завершить</MyButton>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+                    <div class="message-answer" v-if="currentScreen.isShow && currentScreen.type === 'end'">
+                        <MyButton @click="endTask">Завершить</MyButton>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -46,15 +45,15 @@
 
 <script>
     import {mapGetters, mapMutations} from "vuex";
-/*    import ChatRadioAnswer from "@/components/Task2/Chat/ChatModules/ChatRadioAnswer";
+    import ChatRadioAnswer from "@/components/Task2/Chat/ChatModules/ChatRadioAnswer";
     import ChatRadioMessage from "@/components/Task2/Chat/ChatModules/ChatRadioMessage";
-    import ChatCheckBoxAnswer from "@/components/Task2/Chat/ChatModules/ChatCheckBoxAnswer";*/
+    import ChatCheckBoxAnswer from "@/components/Task2/Chat/ChatModules/ChatCheckBoxAnswer";
     export default {
         name: "ChatBody",
         components: {
-/*            ChatCheckBoxAnswer,
+            ChatCheckBoxAnswer,
             ChatRadioMessage,
-            ChatRadioAnswer,*/
+            ChatRadioAnswer,
         },
         data() {
             return {
@@ -65,15 +64,15 @@
             }
         },
         computed: {
-            ...mapGetters(['mainJSON', 'constTask2']),
+            ...mapGetters(['mainJSON', 'constTaskChatFestival']),
             screenID(){
-                return this.mainJSON.task2.shownScreenID
+                return this.mainJSON.taskChatFestival.shownScreenID
             },
             currentScreen(){
-                return this.mainJSON.task2.screens[this.screenID]
+                return this.mainJSON.taskChatFestival.screens[this.screenID]
             },
             screenConst(){
-                return this.constTask2.screens[this.screenID]
+                return this.constTaskChatFestival.screens[this.screenID]
             },
         },
         updated(){
@@ -88,180 +87,12 @@
         methods: {
             ...mapMutations(["push_mainJSON"]),
             endTask(){
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLS1_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_HLS1_1 === 3){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLS1_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLS1_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLS4_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_HLS4_1 === 1){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLS4_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLS4_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_DTS2_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_DTS2_1 === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_DTS2_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_DTS2_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLS5_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_HLS5_1 === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLS5_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLS5_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLK1_1 !== "NA"){
-                    let ULHLDT1_Log_HLK1_1 = this.mainJSON.task2.results.ULHLDT1_Log_HLK1_1.split(',')
-                    let ULHLDT1_Log_HLK1_1_answer = 0
-                    ULHLDT1_Log_HLK1_1.forEach(el => {
-                        if (el === '1'){
-                            ULHLDT1_Log_HLK1_1_answer++
-                        }
-                        if (el === '4'){
-                            ULHLDT1_Log_HLK1_1_answer++
-                        }
-                    })
-                    if(ULHLDT1_Log_HLK1_1.length === 2 && ULHLDT1_Log_HLK1_1_answer === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLK1_1 = 2
-                    }
-                    else if (ULHLDT1_Log_HLK1_1.length === 1 && ULHLDT1_Log_HLK1_1_answer === 1) {
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLK1_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLK1_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLK2_1 !== "NA"){
-                    let ULHLDT1_Log_HLK2_1 = this.mainJSON.task2.results.ULHLDT1_Log_HLK2_1.split(',')
-                    let ULHLDT1_Log_HLK2_1_answer = 0
-                    ULHLDT1_Log_HLK2_1.forEach(el => {
-                        if (el === '4'){
-                            ULHLDT1_Log_HLK2_1_answer++
-                        }
-                        if (el === '3'){
-                            ULHLDT1_Log_HLK2_1_answer++
-                        }
-                    })
-                    if(ULHLDT1_Log_HLK2_1.length === 2 && ULHLDT1_Log_HLK2_1_answer === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLK2_1 = 2
-                    }
-                    else if (ULHLDT1_Log_HLK2_1.length === 1 && ULHLDT1_Log_HLK2_1_answer === 1) {
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLK2_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLK2_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_DTS1_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_DTS1_1 === 3){
-                        this.mainJSON.task2.results.ULHLDT1_Score_DTS1_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_DTS1_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLK4_1 !== "NA"){
-                    let ULHLDT1_Log_HLK4_1 = this.mainJSON.task2.results.ULHLDT1_Log_HLK4_1.split(',')
-                    let ULHLDT1_Log_HLK4_1_answer = 0
-                    ULHLDT1_Log_HLK4_1.forEach(el => {
-                        if (el === '1'){
-                            ULHLDT1_Log_HLK4_1_answer++
-                        }
-                        if (el === '3'){
-                            ULHLDT1_Log_HLK4_1_answer++
-                        }
-                    })
-                    if(ULHLDT1_Log_HLK4_1.length === 2 && ULHLDT1_Log_HLK4_1_answer === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLK4_1 = 2
-                    }
-                    else if (ULHLDT1_Log_HLK4_1.length === 1 && ULHLDT1_Log_HLK4_1_answer === 1) {
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLK4_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLK4_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_DTK1_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_DTK1_1 === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_DTK1_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_DTK1_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLK3_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_HLK3_1 === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLK3_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLK3_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLS4_2 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_HLS4_2 === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLS4_2 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLS4_2 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLS2_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_HLS2_1 === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLS2_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLS2_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLK2_2 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_HLK2_2 === 1){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLK2_2 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLK2_2 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_DTS1_2!== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_DTS1_2 === 3){
-                        this.mainJSON.task2.results.ULHLDT1_Score_DTS1_2 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_DTS1_2 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_DTS3_2 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_DTS3_2 === 4){
-                        this.mainJSON.task2.results.ULHLDT1_Score_DTS3_2 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_DTS3_2 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_HLS3_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_HLS3_1 === 3){
-                        this.mainJSON.task2.results.ULHLDT1_Score_HLS3_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_HLS3_1 = 0
-                }
-
-
-
-                //новые модули
-                if (this.mainJSON.task2.results.ULHLDT1_Log_DTS3_1 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_DTS3_1 === 2){
-                        this.mainJSON.task2.results.ULHLDT1_Score_DTS3_1 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_DTS3_1 = 0
-                }
-
-                if (this.mainJSON.task2.results.ULHLDT1_Log_DTS2_2 !== "NA"){
-                    if(this.mainJSON.task2.results.ULHLDT1_Log_DTS2_2 === 3){
-                        this.mainJSON.task2.results.ULHLDT1_Score_DTS2_2 = 1
-                    }
-                    else this.mainJSON.task2.results.ULHLDT1_Score_DTS2_2 = 0
-                }
-
 
                 this.mainJSON.listOfTasks.forEach( el => {
-                    if(el.name === 'taskChatWalk'){
+                    if(el.name === 'taskChatFestival'){
                         el.done = true
                         let t = new Date()
-                        this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results.dataTimeEndtaskChatWalk =
+                        this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results.dataTimeEndtaskChatFestival =
                             [
                                 t.getFullYear(),
                                 ('0' + (t.getMonth() + 1)).slice(-2),
@@ -294,7 +125,7 @@
                     this.mainJSON.forms['isShow'] = true
                     this.mainJSON["instructionShow"] = true
                     this.mainJSON["mainPageShow"] = false
-                    this.mainJSON.task2["isShow"] = false
+                    this.mainJSON.taskChatFestival["isShow"] = false
                 }
                 else {
                     let randomElement = this.listOfNotDoneTasks[Math.floor(Math.random()*this.listOfNotDoneTasks.length)]
@@ -302,7 +133,7 @@
                     this.mainJSON["instructionShow"] = true
                     this.mainJSON["mainPageShow"] = false
                     this.listOfNotDoneTasks = []
-                    this.mainJSON.task2["isShow"] = false
+                    this.mainJSON.taskChatFestival["isShow"] = false
                 }
                 let t = new Date()
                 this.mainJSON.results.dataTimeLastUpdate =

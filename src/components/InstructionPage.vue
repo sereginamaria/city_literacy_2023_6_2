@@ -1,13 +1,18 @@
 <template>
-    <div class="instruction-body" :class="{backgroundTaskNightInTheMuseum: mainJSON.task1.isShow, backgroundTaskChatWalk: mainJSON.task2.isShow ||
+    <div class="instruction-body" :class="{backgroundTaskNightInTheMuseum: mainJSON.task1.isShow, backgroundTaskChatFestival: mainJSON.taskChatFestival.isShow ||
     mainJSON.forms.isShow, backgroundTaskVolunteers: mainJSON.task3.isShow}">
         <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
             <div class="instruction-card">
                 <div>
                     <p v-if="mainJSON.task1.isShow">{{constTask1.instruction}}</p>
-                    <p v-if="mainJSON.task2.isShow">{{constTask2.instruction}}</p>
+                    <p v-if="mainJSON.taskChatFestival.isShow">{{constTaskChatFestival.instruction}}</p>
                     <p v-if="mainJSON.task3.isShow">{{constTask3.instruction}}</p>
                     <p v-if="mainJSON.forms.isShow">{{constForm.instruction}}</p>
+                </div>
+                <div class="mt-3">
+                    <p>
+                        Обрати внимание: при выполнении каждого задания после нажатия кнопки «Готово» ты уже не сможешь изменить ответ.
+                    </p>
                 </div>
                 <div class="d-flex justify-content-end" v-if="!mainJSON.forms.isShow">
                     <p style="font-style: italic; width: 700px; text-align: right;">
@@ -28,7 +33,7 @@
     export default {
         name: "InstructionPage",
         computed: {
-            ...mapGetters(['mainJSON', 'constTask1', 'constTask2', 'constTask3', 'constForm']),
+            ...mapGetters(['mainJSON', 'constTask1', 'constTaskChatFestival', 'constTask3', 'constForm']),
         },
         methods: {
             ...mapMutations(["push_mainJSON"]),
@@ -52,8 +57,8 @@
     .backgroundTaskNightInTheMuseum {
         background: url("../assets/Background.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;
     }
-    .backgroundTaskChatWalk {
-        background: url("../assets/TaskChatBackground.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;
+    .backgroundTaskChatFestival {
+        background: url("../assets/TaskChatFestivalBackground.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;
     }
     .backgroundTaskVolunteers {
         background: url("../assets/TaskVolunteersBackground.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;

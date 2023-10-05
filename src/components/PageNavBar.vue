@@ -1,6 +1,6 @@
 <template>
-    <div class="container-fluid d-flex justify-content-end nav-bar" :class="{'justify-content-between': this.mainJSON.task2.isShow}">
-        <div v-if="this.mainJSON.task2.isShow">
+    <div class="container-fluid d-flex justify-content-end nav-bar" :class="{'justify-content-between': this.mainJSON.taskChatFestival.isShow}">
+        <div v-if="this.mainJSON.taskChatFestival.isShow">
             <div class="d-flex align-items-center h-100">
                 <MyButton data-bs-toggle="collapse" data-bs-target="#collapse-instruction" aria-expanded="false"
                           aria-controls="collapse-instruction" style="background: transparent; border-color: white">
@@ -10,7 +10,7 @@
             <div id="collapse-instruction" class="collapse">
                 <div class="card card-body" style="z-index: 9">
                     <div>
-                        <p>{{constTask2.instruction}}</p>
+                        <p>{{constTaskChatFestival.instruction}}</p>
                     </div>
                     <div class="d-flex justify-content-end">
                         <p style="font-style: italic; width: 700px; text-align: right;">
@@ -52,7 +52,7 @@
             }
         },
         computed: {
-            ...mapGetters(['mainJSON', 'constTask2']),
+            ...mapGetters(['mainJSON', 'constTaskChatFestival']),
         },
         methods: {
             ...mapMutations(["push_mainJSON"]),
@@ -108,7 +108,7 @@
                 this.modalVisible = false
                 if(status){
                     this.mainJSON.task3["isShow"] = false
-                    this.mainJSON.task2["isShow"] = false
+                    this.mainJSON.taskChatFestival["isShow"] = false
                     this.mainJSON.task1["isShow"] = false
                     this.mainJSON.forms["isShow"] = false
                     this.mainJSON['loginShow'] = true

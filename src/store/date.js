@@ -24,7 +24,7 @@ const date = {
     },
     "listOfTasks": [
         {'name': 'task1', 'done': false},
-        {'name': 'task2', 'done': false},
+        {'name': 'taskChatFestival', 'done': false},
         {'name': 'task3', 'done': false}
     ],
     "task1": {
@@ -34,12 +34,175 @@ const date = {
         "shownScreenID": 2,
         "screens": [],
     },
-    "task2": {
+    "taskChatFestival": {
         "isShow": false,
         "results": {
+            //0
+            "ULHLDT1_Log_HLS1_1": "NA",
+            "ULHLDT1_Score_HLS1_1": "NA",
+            //1
+            "ULHLDT1_Log_HLS4_1": "NA",
+            "ULHLDT1_Score_HLS4_1": "NA",
+            //2
+            "ULHLDT1_Log_DTS2_1": "NA",
+            "ULHLDT1_Score_DTS2_1": "NA",
+            //3 новый модуль
+            "ULHLDT1_Log_DTS3_1": "NA",
+            "ULHLDT1_Score_DTS3_1": "NA",
+            //3
+            "ULHLDT1_Log_HLS5_1": "NA",
+            "ULHLDT1_Score_HLS5_1": "NA",
+            //4
+            "ULHLDT1_Log_HLK1_1": "NA",
+            "ULHLDT1_Score_HLK1_1": "NA",
+            //5
+            "ULHLDT1_Log_HLK2_1": "NA",
+            "ULHLDT1_Score_HLK2_1": "NA",
+            //6
+            "ULHLDT1_Log_DTS1_1": "NA",
+            "ULHLDT1_Score_DTS1_1": "NA",
+            //7
+            "ULHLDT1_Log_HLK4_1": "NA",
+            "ULHLDT1_Score_HLK4_1": "NA",
+            //8
+            "ULHLDT1_Log_DTK1_1": "NA",
+            "ULHLDT1_Score_DTK1_1": "NA",
+            //9
+            "ULHLDT1_Log_HLK3_1": "NA",
+            "ULHLDT1_Score_HLK3_1": "NA",
+            //10
+            "ULHLDT1_Log_HLS4_2": "NA",
+            "ULHLDT1_Score_HLS4_2": "NA",
+            //11
+            "ULHLDT1_Log_HLS2_1": "NA",
+            "ULHLDT1_Score_HLS2_1": "NA",
+            //12
+            "ULHLDT1_Log_HLK2_2": "NA",
+            "ULHLDT1_Score_HLK2_2": "NA",
+            //13 новый модуль
+            "ULHLDT1_Log_DTS2_2": "NA",
+            "ULHLDT1_Score_DTS2_2": "NA",
+            //13
+            "ULHLDT1_Log_DTS1_2": "NA",
+            "ULHLDT1_Score_DTS1_2": "NA",
+            //14
+            "ULHLDT1_Log_DTS3_2": "NA",
+            "ULHLDT1_Score_DTS3_2": "NA",
+            //15
+            "ULHLDT1_Log_HLS3_1": "NA",
+            "ULHLDT1_Score_HLS3_1": "NA",
         },
+        "ULHLDT1_Log_HLS1_1": "NA",
+        //1
+        "ULHLDT1_Log_HLS4_1": "NA",
+        //2
+        "ULHLDT1_Log_DTS2_1": "NA",
+        //3
+        "ULHLDT1_Log_HLS5_1": "NA",
+        //4
+        "ULHLDT1_Log_HLK1_1": "NA",
+        //5
+        "ULHLDT1_Log_HLK2_1": "NA",
+        //6
+        "ULHLDT1_Log_DTS1_1": "NA",
+        //7
+        "ULHLDT1_Log_HLK4_1": "NA",
+        //8
+        "ULHLDT1_Log_DTK1_1": "NA",
+        //9
+        "ULHLDT1_Log_HLK3_1": "NA",
+        //10
+        "ULHLDT1_Log_HLS4_2": "NA",
+        //11
+        "ULHLDT1_Log_HLS2_1": "NA",
+        //12
+        "ULHLDT1_Log_HLK2_2": "NA",
+        //13
+        "ULHLDT1_Log_DTS1_2": "NA",
+        //14
+        "ULHLDT1_Log_DTS3_2": "NA",
+        //15
+        "ULHLDT1_Log_HLS3_1": "NA",
         "shownScreenID": 0,
-        "screens": [],
+        "screens": [
+            {
+                "id": 0, "type": "radio", "isShow": true, "haveImg": true,
+                "description": ""
+            },
+            {
+                "id": 1, "type": "radio", "isShow": false, "haveImg": true,
+                "description": ""
+            },
+            {
+                "id": 2, "type": "radio", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 3, "type": "radio", "isShow": false, "haveImg": true,
+                "description": ""
+            },
+            {
+                "id": 4, "type": "radio", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 5, "type": "radio", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 6, "type": "radio", "isShow": false, "haveImg": true,
+                "description": ""
+            },
+            {
+                "id": 7, "type": "checkBox", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 8, "type": "checkBox", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 9, "type": "radio", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 10, "type": "radio", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 11, "type": "radio", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 12, "type": "radio", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 13, "type": "radio", "isShow": false, "haveImg": true,
+                "description": ""
+            },
+            {
+                "id": 14, "type": "checkBox", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 15, "type": "radio", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 16, "type": "radio", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+            {
+                "id": 17, "type": "radio", "isShow": false, "haveImg": true,
+                "description": ""
+            },
+            {
+                "id": 18, "type": "end", "isShow": false, "haveImg": false,
+                "description": ""
+            },
+
+        ],
         "chatShow": true,
         "checkBox1Selected": [],
         "height": '98%',

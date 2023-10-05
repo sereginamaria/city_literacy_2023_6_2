@@ -76,7 +76,7 @@ export default {
             ].join(':');
 
             this.mainJSON.task3["isShow"] = false
-            this.mainJSON.task2["isShow"] = false
+            this.mainJSON.taskChatFestival["isShow"] = false
             this.mainJSON.task1["isShow"] = false
 
             this.mainJSON['loginShow'] = true
@@ -163,67 +163,67 @@ export default {
         }
 
 
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLS1_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS1_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLS4_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS4_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_DTS2_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS2_1 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_DTS3_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS3_1 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLS5_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS5_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLK1_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK1_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLK1_1 === 2){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK1_1 === 2){
             this.healthyLifestyle+=2
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLK2_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK2_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLK2_1 === 2){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK2_1 === 2){
             this.healthyLifestyle+=2
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_DTS1_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS1_1 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLK4_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK4_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLK4_1 === 2){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK4_1 === 2){
             this.healthyLifestyle+=2
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_DTK1_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTK1_1 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLK3_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK3_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLS4_2 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS4_2 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLS2_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS2_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLK2_2 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK2_2 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_DTS2_2 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS2_2 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_DTS1_2 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS1_2 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_DTS3_2 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS3_2 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.task2.results.ULHLDT1_Score_HLS3_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS3_1 === 1){
             this.healthyLifestyle++
         }
 

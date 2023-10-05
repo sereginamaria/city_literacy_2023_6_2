@@ -6,10 +6,10 @@
         </div>
 
         <div class="message-answer" v-for="element in screenConst.answers"
-             :key="element.id" @click="save(element)" :class="{isShown: element.id === this.mainJSON.task2.results[this.screenConst.resultIndicator]}">
+             :key="element.id" @click="save(element)" :class="{isShown: element.id === this.mainJSON.taskChatFestival.results[this.screenConst.resultIndicator]}">
             {{element.value}}
         </div>
-        <MyButton @click="nextTask" style="border-color: #74a2ce" v-if="this.mainJSON.task2.results[this.screenConst.resultIndicator] !== 'NA'">Готово</MyButton>
+        <MyButton @click="nextTask" style="border-color: #74a2ce" v-if="this.mainJSON.taskChatFestival.results[this.screenConst.resultIndicator] !== 'NA'">Готово</MyButton>
         <MyButton disabled style="border-color: #74a2ce" v-else>Готово</MyButton>
     </div>
 
@@ -44,7 +44,7 @@
         methods: {
             ...mapMutations(["push_mainJSON"]),
             save(el) {
-                this.mainJSON.task2.results[this.screenConst.resultIndicator] = el.id
+                this.mainJSON.taskChatFestival.results[this.screenConst.resultIndicator] = el.id
                 this.el = el
                 this.id = this.screenConst.id
             },
@@ -61,10 +61,10 @@
                     this.showModal()
                 }
                 else {
-                    this.mainJSON.task2[this.screenConst.resultIndicator] = this.el.value
-                    this.mainJSON.task2.shownScreenID++
-                    this.mainJSON.task2.screens.forEach(el => {
-                        if (el.id === this.mainJSON.task2.shownScreenID) {
+                    this.mainJSON.taskChatFestival[this.screenConst.resultIndicator] = this.el.value
+                    this.mainJSON.taskChatFestival.shownScreenID++
+                    this.mainJSON.taskChatFestival.screens.forEach(el => {
+                        if (el.id === this.mainJSON.taskChatFestival.shownScreenID) {
                             el.isShow = true
                         }
                     })

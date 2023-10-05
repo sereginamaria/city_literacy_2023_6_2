@@ -129,7 +129,7 @@ export default {
                 ].join(':');
 
             this.mainJSON.task3["isShow"] = false
-            this.mainJSON.task2["isShow"] = false
+            this.mainJSON.taskChatFestival["isShow"] = false
             this.mainJSON.task1["isShow"] = false
             this.mainJSON.forms["isShow"] = false
             this.mainJSON['feedbackShow'] = true

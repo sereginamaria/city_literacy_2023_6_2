@@ -16,7 +16,7 @@
                 </div>
                 <div class="m-3">
                     <p>Чат прогулка</p>
-                    <div v-for="result in this.resultsTaskChatWalk" :key="result">
+                    <div v-for="result in this.resultsTaskChatFestival" :key="result">
                         {{result.key}}: {{result.value}}
                     </div>
                 </div>
@@ -51,7 +51,7 @@
         data() {
             return {
                 resultsTaskNightInTheMuseum: [],
-                resultsTaskChatWalk: [],
+                resultsTaskChatFestival: [],
                 resultsTaskVolunteers: [],
                 resultsTime: [],
                 resultsForms: []
@@ -79,7 +79,7 @@
               ].join(':');
 
               this.mainJSON.task3["isShow"] = false
-              this.mainJSON.task2["isShow"] = false
+              this.mainJSON.taskChatFestival["isShow"] = false
               this.mainJSON.task1["isShow"] = false
 
               this.mainJSON['loginShow'] = true
@@ -98,8 +98,8 @@
                     value: `${value}`
                 })
             }
-            for (const [key, value] of Object.entries(this.mainJSON.task2.results)) {
-                this.resultsTaskChatWalk.push({
+            for (const [key, value] of Object.entries(this.mainJSON.taskChatFestival.results)) {
+                this.resultsTaskChatFestival.push({
                     key: `${key}`,
                     value: `${value}`
                 })

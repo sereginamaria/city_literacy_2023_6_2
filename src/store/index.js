@@ -3,7 +3,7 @@ import axios from "axios";
 
 import date from "./date"
 import constTask1 from "./constTask1"
-import constTask2 from "@/store/constTask2";
+import constTaskChatFestival from "@/store/constTaskChatFestival";
 import constTask3 from "@/store/constTask3";
 import constForm from "@/store/constForm";
 
@@ -12,7 +12,7 @@ export default new Vuex.Store({
     state: {
         mainJSON: {},
         constTask1: {},
-        constTask2: {},
+        constTaskChatFestival: {},
         constTask3: {},
         constForm: {},
         loginResponse: {}
@@ -22,7 +22,7 @@ export default new Vuex.Store({
             if (!localStorage.login && !localStorage.hash) {
                 commit('first_set_mainJSON', date.date)
                 commit('set_constTask1', constTask1.constTask1)
-                commit('set_constTask2', constTask2.constTask2)
+                commit('set_constTaskChatFestival', constTaskChatFestival.constTaskChatFestival)
                 commit('set_constTask3', constTask3.constTask3)
                 commit('set_constForm', constForm.constForm)
             }
@@ -35,7 +35,7 @@ export default new Vuex.Store({
                         if (response.data.status === "ok") {
                             commit('set_mainJSON', JSON.parse(response.data.json))
                             commit('set_constTask1', constTask1.constTask1)
-                            commit('set_constTask2', constTask2.constTask2)
+                            commit('set_constTaskChatFestival', constTaskChatFestival.constTaskChatFestival)
                             commit('set_constTask3', constTask3.constTask3)
                             commit('set_constForm', constForm.constForm)
                         }
@@ -44,7 +44,7 @@ export default new Vuex.Store({
                             window.location.reload();
                             commit('set_mainJSON', date.date)
                             commit('set_constTask1', constTask1.constTask1)
-                            commit('set_constTask2', constTask2.constTask2)
+                            commit('set_constTaskChatFestival', constTaskChatFestival.constTaskChatFestival)
                             commit('set_constTask3', constTask3.constTask3)
                             commit('set_constForm', constForm.constForm)
                         }
@@ -67,8 +67,8 @@ export default new Vuex.Store({
         set_constTask1: (state, el) => {
             state.constTask1 = el
         },
-        set_constTask2: (state, el) => {
-            state.constTask2 = el
+        set_constTaskChatFestival: (state, el) => {
+            state.constTaskChatFestival = el
         },
         set_constTask3: (state, el) => {
             state.constTask3 = el
@@ -151,8 +151,8 @@ export default new Vuex.Store({
         constTask1(state){
             return state.constTask1;
         },
-        constTask2(state){
-            return state.constTask2;
+        constTaskChatFestival(state){
+            return state.constTaskChatFestival;
         },
         constTask3(state){
             return state.constTask3;

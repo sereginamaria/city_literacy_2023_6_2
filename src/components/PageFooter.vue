@@ -1,6 +1,6 @@
 <template>
-    <div class="container-fluid d-flex justify-content-end align-items-center footer" :class="{'justify-content-between': this.mainJSON.task2.isShow}">
-        <div v-if="this.mainJSON.task2.isShow">
+    <div class="container-fluid d-flex justify-content-end align-items-center footer" :class="{'justify-content-between': this.mainJSON.taskChatFestival.isShow}">
+        <div v-if="this.mainJSON.taskChatFestival.isShow">
             <MyButton class="ml-3 transparent-buttons"
                       data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Чат"
                       @click="openChat"
@@ -39,8 +39,8 @@
         methods: {
             ...mapMutations(["push_mainJSON"]),
             openChat(){
-                if(this.mainJSON.task2.isShow){
-                    this.mainJSON.task2.chatShow = !this.mainJSON.task2.chatShow
+                if(this.mainJSON.taskChatFestival.isShow){
+                    this.mainJSON.taskChatFestival.chatShow = !this.mainJSON.taskChatFestival.chatShow
                 }
             },
             showModal(){
@@ -67,22 +67,22 @@
                     this.change = 0
                     if(this.mainJSON.task1.isShow && this.change === 0){
                         this.mainJSON.task1["isShow"] = false
-                        this.nextTask('taskNightInTheMuseum')
+                        this.nextTask('task1')
                     }
-                    if(this.mainJSON.task2.isShow  && this.change === 0){
-                        this.addAnswersTaskChatWalk()
-                        this.mainJSON.task2["isShow"] = false
-                        this.nextTask('taskChatWalk')
+                    if(this.mainJSON.taskChatFestival.isShow  && this.change === 0){
+                        this.addAnswersTaskChatFestival()
+                        this.mainJSON.taskChatFestival["isShow"] = false
+                        this.nextTask('taskChatFestival')
                     }
                     if(this.mainJSON.task3.isShow  && this.change === 0){
                         this.mainJSON.task3["isShow"] = false
-                        this.nextTask('taskVolunteers')
+                        this.nextTask('task3')
                     }
                 }
 
                 if (status === 'end'){
                     this.mainJSON.task3["isShow"] = false
-                    this.mainJSON.task2["isShow"] = false
+                    this.mainJSON.taskChatFestival["isShow"] = false
                     this.mainJSON.task1["isShow"] = false
                     this.mainJSON.forms["isShow"] = false
                     this.mainJSON['feedbackShow'] = true
@@ -185,7 +185,7 @@
                 this.mainJSON["instructionShow"] = true
                 this.mainJSON["mainPageShow"] = false
             },
-            addAnswersTaskChatWalk(){
+            addAnswersTaskChatFestival(){
 
             }
         }
