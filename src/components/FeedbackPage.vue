@@ -162,68 +162,70 @@ export default {
             this.localLiteracy++
         }
 
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS2_1 === 1){
+            this.applicationOfDigitalTechnologies++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS3_1 === 1){
+            this.applicationOfDigitalTechnologies++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS1_2 === 1){
+            this.applicationOfDigitalTechnologies++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS3_2 === 1){
+            this.applicationOfDigitalTechnologies++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLS3_1 === 1){
+            this.healthyLifestyle++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLS5_1 === 1){
+            this.healthyLifestyle++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK3_1 === 1){
+            this.healthyLifestyle++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK1_1 === 2){
+            this.healthyLifestyle+=2
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK1_1 === 1){
+            this.healthyLifestyle++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK2_1 === 2){
+            this.healthyLifestyle+=2
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK2_1 === 1){
+            this.healthyLifestyle++
+        }
 
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS1_1 === 1){
-            this.healthyLifestyle++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS4_1 === 1){
-            this.healthyLifestyle++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS2_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS1_1 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS3_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLS4_2 === 1){
+            this.healthyLifestyle++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLS2_1 === 1){
+            this.healthyLifestyle++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK2_2 === 1){
+            this.healthyLifestyle++
+        }
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS2_2 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS5_1 === 1){
-            this.healthyLifestyle++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK1_1 === 1){
-            this.healthyLifestyle++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK1_1 === 2){
+
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK4_1 === 2){
             this.healthyLifestyle+=2
         }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK2_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK4_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK2_1 === 2){
-            this.healthyLifestyle+=2
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS1_1 === 1){
+
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTK1_1 === 1){
             this.applicationOfDigitalTechnologies++
         }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK4_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLS1_1 === 1){
             this.healthyLifestyle++
         }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK4_1 === 2){
-            this.healthyLifestyle+=2
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTK1_1 === 1){
-            this.applicationOfDigitalTechnologies++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK3_1 === 1){
-            this.healthyLifestyle++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS4_2 === 1){
-            this.healthyLifestyle++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS2_1 === 1){
-            this.healthyLifestyle++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLK2_2 === 1){
-            this.healthyLifestyle++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS2_2 === 1){
-            this.applicationOfDigitalTechnologies++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS1_2 === 1){
-            this.applicationOfDigitalTechnologies++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_DTS3_2 === 1){
-            this.applicationOfDigitalTechnologies++
-        }
-        if(this.mainJSON.taskChatFestival.results.ULHLDT1_Score_HLS3_1 === 1){
+        if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLS4_1 === 1){
             this.healthyLifestyle++
         }
 
@@ -307,7 +309,7 @@ export default {
         this.prosocialEngagement = Math.round(this.prosocialEngagement/23*100)
         this.securityInTheCity = Math.round(this.securityInTheCity/12*100)
         this.localLiteracy = Math.round(this.localLiteracy/11*100)
-        this.healthyLifestyle = Math.round(this.healthyLifestyle/14*100)
+        this.healthyLifestyle = Math.round(this.healthyLifestyle/11*100)
         this.applicationOfDigitalTechnologies = Math.round(this.applicationOfDigitalTechnologies/7*100)
     }
 }
