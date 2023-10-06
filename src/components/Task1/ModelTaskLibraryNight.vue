@@ -1,20 +1,30 @@
 <template>
-Задание 1
+    <TextScreen v-if="screen.isShow && !screen.haveTask" :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskMovingThingsFromBag v-if="screen.isShow && screen.haveTask && screen.taskName === 'MovingThingsFromBag'"
+                             :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskChooseShoes v-if="screen.isShow && screen.haveTask && screen.taskName === 'ChooseShoes'"
+                             :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
 </template>
 
 <script>
     import {mapGetters} from "vuex";
+    import TextScreen from "@/components/Task1/TextScreen.vue";
+    import TaskMovingThingsFromBag from "@/components/Task1/TaskMovingThingsFromBag.vue";
+    import TaskChooseShoes from "@/components/Task1/TaskChooseShoes.vue";
     export default {
-        name: "ModelTaskNightInTheMuseum",
+        name: "ModelTaskLibraryNight",
         components: {
+            TaskChooseShoes,
+            TaskMovingThingsFromBag,
+            TextScreen
         },
         computed: {
-            ...mapGetters(['mainJSON', 'constTask1']),
+            ...mapGetters(['mainJSON', 'constTaskLibraryNight']),
           screenID(){
-            return this.mainJSON.task1.shownScreenID
+            return this.mainJSON.taskLibraryNight.shownScreenID
           },
           screen(){
-            return this.mainJSON.task1.screens[this.screenID]
+            return this.mainJSON.taskLibraryNight.screens[this.screenID]
           }
         },
     }

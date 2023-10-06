@@ -80,7 +80,7 @@
 
               this.mainJSON.task3["isShow"] = false
               this.mainJSON.taskChatFestival["isShow"] = false
-              this.mainJSON.task1["isShow"] = false
+              this.mainJSON.taskLibraryNight["isShow"] = false
 
               this.mainJSON['loginShow'] = true
               this.mainJSON['mainPageShow'] = false
@@ -92,7 +92,7 @@
             }
         },
         mounted(){
-            for (const [key, value] of Object.entries(this.mainJSON.task1.results)) {
+            for (const [key, value] of Object.entries(this.mainJSON.taskLibraryNight.results)) {
                 this.resultsTaskNightInTheMuseum.push({
                     key: `${key}`,
                     value: `${value}`

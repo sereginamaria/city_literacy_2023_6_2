@@ -1,10 +1,10 @@
 <template>
-    <div class="instruction-body" :class="{backgroundTaskNightInTheMuseum: mainJSON.task1.isShow, backgroundTaskChatFestival: mainJSON.taskChatFestival.isShow ||
+    <div class="instruction-body" :class="{backgroundTaskLibraryNight: mainJSON.taskLibraryNight.isShow, backgroundTaskChatFestival: mainJSON.taskChatFestival.isShow ||
     mainJSON.forms.isShow, backgroundTaskVolunteers: mainJSON.task3.isShow}">
         <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
             <div class="instruction-card">
                 <div>
-                    <p v-if="mainJSON.task1.isShow">{{constTask1.instruction}}</p>
+                    <p v-if="mainJSON.taskLibraryNight.isShow">{{constTaskLibraryNight.instruction}}</p>
                     <p v-if="mainJSON.taskChatFestival.isShow">{{constTaskChatFestival.instruction}}</p>
                     <p v-if="mainJSON.task3.isShow">{{constTask3.instruction}}</p>
                     <p v-if="mainJSON.forms.isShow">{{constForm.instruction}}</p>
@@ -15,7 +15,7 @@
                     </p>
                 </div>
                 <div class="d-flex justify-content-end" v-if="!mainJSON.forms.isShow">
-                    <p style="font-style: italic; width: 700px; text-align: right;">
+                    <p style="font-style: italic; text-align: right;" class="mb-4">
                         Все имена и события в тесте вымышлены, любые совпадения с реальными людьми и событиями случайны.
                     </p>
                 </div>
@@ -33,7 +33,7 @@
     export default {
         name: "InstructionPage",
         computed: {
-            ...mapGetters(['mainJSON', 'constTask1', 'constTaskChatFestival', 'constTask3', 'constForm']),
+            ...mapGetters(['mainJSON', 'constTaskLibraryNight', 'constTaskChatFestival', 'constTask3', 'constForm']),
         },
         methods: {
             ...mapMutations(["push_mainJSON"]),
@@ -54,7 +54,7 @@
         height: 100vh;
         background-size: cover !important;
     }
-    .backgroundTaskNightInTheMuseum {
+    .backgroundTaskLibraryNight {
         background: url("../assets/Background.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;
     }
     .backgroundTaskChatFestival {
@@ -74,5 +74,6 @@
         box-shadow: 0 2px 20px rgb(24 24 24 / 50%);
         border-radius: 15px;
         padding: 20px 40px;
+        text-align: justify;
     }
 </style>

@@ -65,9 +65,9 @@
 
                 if(status){
                     this.change = 0
-                    if(this.mainJSON.task1.isShow && this.change === 0){
-                        this.mainJSON.task1["isShow"] = false
-                        this.nextTask('task1')
+                    if(this.mainJSON.taskLibraryNight.isShow && this.change === 0){
+                        this.mainJSON.taskLibraryNight["isShow"] = false
+                        this.nextTask('TaskLibraryNight')
                     }
                     if(this.mainJSON.taskChatFestival.isShow  && this.change === 0){
                         this.addAnswersTaskChatFestival()
@@ -83,7 +83,7 @@
                 if (status === 'end'){
                     this.mainJSON.task3["isShow"] = false
                     this.mainJSON.taskChatFestival["isShow"] = false
-                    this.mainJSON.task1["isShow"] = false
+                    this.mainJSON.taskLibraryNight["isShow"] = false
                     this.mainJSON.forms["isShow"] = false
                     this.mainJSON['feedbackShow'] = true
                     /*this.mainJSON['loginShow'] = true
