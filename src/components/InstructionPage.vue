@@ -55,7 +55,7 @@
         background-size: cover !important;
     }
     .backgroundTaskLibraryNight {
-        background: url("../assets/Background.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;
+        background: url("../assets/TaskLibraryNightBackground.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;
     }
     .backgroundTaskChatFestival {
         background: url("../assets/TaskChatFestivalBackground.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;

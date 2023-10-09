@@ -3,20 +3,76 @@
     <TaskMovingThingsFromBag v-if="screen.isShow && screen.haveTask && screen.taskName === 'MovingThingsFromBag'"
                              :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
     <TaskChooseShoes v-if="screen.isShow && screen.haveTask && screen.taskName === 'ChooseShoes'"
-                             :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+                     :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskBadWeather v-if="screen.isShow && screen.haveTask && screen.taskName === 'BadWeather'"
+                    :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskWarningSigns v-if="screen.isShow && screen.haveTask && screen.taskName === 'WarningSigns'"
+                      :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskMetro v-if="screen.isShow && screen.haveTask && screen.taskName === 'Metro'"
+               :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+<!--    <TaskWorkBook v-if="screen.isShow && screen.haveTask && screen.taskName === 'WorkBook'"-->
+<!--                  :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+<!--    <TaskMuseumPaintings v-if="(screen.taskName === 'MuseumPaintings1' || screen.taskName === 'MuseumPaintings2') &&-->
+<!--                        screen.isShow && screen.haveTask"-->
+<!--                         :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+<!--    <TaskEscape v-if="screen.isShow && screen.haveTask && screen.taskName === 'Escape'"-->
+<!--                :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+<!--    <TaskFire v-if="screen.isShow && screen.haveTask && screen.taskName === 'Fire'"-->
+<!--              :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+<!--    <TaskStatue  v-if="(screen.taskName === 'Statue1' || screen.taskName === 'Statue2') &&-->
+<!--                screen.isShow && screen.haveTask"-->
+<!--                 :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+<!--    <TaskMap v-if="screen.isShow && screen.haveTask && screen.taskName === 'Map'"-->
+<!--             :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+<!--    <TaskAttractions v-if="screen.isShow && screen.haveTask && screen.taskName === 'Attractions'"-->
+<!--                     :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+<!--    <TaskFestival v-if="screen.isShow && screen.haveTask && screen.taskName === 'Festival'"-->
+<!--                  :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+<!--    <TaskSites v-if="screen.isShow && screen.haveTask && screen.taskName === 'Sites'"-->
+<!--               :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+
+
+<!--    <TaskWeatherForecast v-if="screen.isShow && screen.haveTask && screen.taskName === 'WeatherForecast'"-->
+<!--                         :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
 </template>
 
 <script>
     import {mapGetters} from "vuex";
-    import TextScreen from "@/components/Task1/TextScreen.vue";
-    import TaskMovingThingsFromBag from "@/components/Task1/TaskMovingThingsFromBag.vue";
-    import TaskChooseShoes from "@/components/Task1/TaskChooseShoes.vue";
+    import TextScreen from "@/components/Task1/TextScreen";
+    import TaskMovingThingsFromBag from "@/components/Task1/TaskMovingThingsFromBag";
+    import TaskChooseShoes from "@/components/Task1/TaskChooseShoes";
+    import TaskMetro from "@/components/Task1/TaskMetro";
+    // import TaskWorkBook from "@/components/Task1/TaskWorkBook";
+    // import TaskMuseumPaintings from "@/components/Task1/TaskMuseumPaintings";
+    // import TaskEscape from "@/components/Task1/TaskEscape";
+    // import TaskFire from "@/components/Task1/TaskFire";
+    // import TaskStatue from "@/components/Task1/TaskStatue";
+    // import TaskMap from "@/components/Task1/TaskMap";
+    // import TaskAttractions from "@/components/Task1/TaskAttractions";
+    // import TaskFestival from "@/components/Task1/TaskFestival";
+    // import TaskSites from "@/components/Task1/TaskSites";
+    import TaskBadWeather from "@/components/Task1/TaskBadWeather";
+    import TaskWarningSigns from "@/components/Task1/TaskWarningSigns";
+    // import TaskWeatherForecast from "@/components/Task1/TaskWeatherForecast";
     export default {
         name: "ModelTaskLibraryNight",
         components: {
+            // TaskWeatherForecast,
+            TaskWarningSigns,
+            TaskBadWeather,
+            // TaskSites,
+            // TaskFestival,
+            // TaskAttractions,
+            // TaskMap,
+            // TaskStatue,
+            // TaskFire,
+            // TaskEscape,
+            // TaskMuseumPaintings,
+            // TaskWorkBook,
+            TaskMetro,
             TaskChooseShoes,
             TaskMovingThingsFromBag,
-            TextScreen
+            TextScreen,
         },
         computed: {
             ...mapGetters(['mainJSON', 'constTaskLibraryNight']),
