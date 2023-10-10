@@ -1,8 +1,8 @@
 <template>
     <!--Задание 5 пункт 1-->
-    <div class="background" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}"
-         v-if="mainJSON.taskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].id === 17">
-        <div class="instruction-block">
+    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}"
+         v-if="mainJSON.taskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].id === 22">
+        <div class="instruction-block" id="instruction-block">
             <p>Выбери, какие правила дорожного движения нарушаются на этой книжной иллюстрации.
             </p>
         </div>
@@ -21,9 +21,9 @@
         </div>
     </div>
     <!--Задание 5 пункт 2-->
-    <div class="background" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}"
-         v-if="mainJSON.taskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].id === 18">
-        <div class="instruction-block">
+    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}"
+         v-if="mainJSON.taskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].id === 23">
+        <div class="instruction-block" id="instruction-block">
             <p>Выбери, какие правила дорожного движения нарушаются на этой книжной иллюстрации.
             </p>
         </div>

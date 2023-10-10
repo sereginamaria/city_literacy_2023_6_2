@@ -65,7 +65,7 @@ const date = {
             "ULSCLL1_Log_SCK1_4": "NA",
             "ULSCLL1_Score_SCK1_4": "NA",
 
-            //8 Statue
+            //8 Hooligans
             "ULSCLL1_Log_SCS4_2": "NA",
             "ULSCLL1_Log_SCS4_3": "NA",
             "ULSCLL1_Score_SCS4_2": "NA",
@@ -130,170 +130,170 @@ const date = {
             {"id": 8, "isShow": false, "imgURL": "TaskLibraryNightWarningSignsKate", "haveTask": true, "taskName": "WarningSigns",
                 "description": 'Предупреждающие знаки'},
 
-            {"id": 9, "isShow": false, "imgURL": "TaskLibraryNightMetro", "haveTask": false,
+            {"id": 9, "isShow": false, "imgURL": "TaskLibraryNightMetroKate1", "haveTask": false,
                 "description": ''},
-            {"id": 10, "isShow": false, "imgURL": "TaskLibraryNightMetroKate1", "haveTask": false,
+            {"id": 10, "isShow": false, "imgURL": "TaskLibraryNightMetro", "haveTask": false,
                 "description": ''},
             {"id": 11, "isShow": false, "imgURL": "TaskLibraryNightMetroKate2", "haveTask": false,
                 "description": ''},
             {"id": 12, "isShow": false, "imgURL": "TaskLibraryNightMetroKate3", "haveTask": true, "taskName": "Metro",
                 "description": 'Метро'},
 
-            {"id": 13, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 13, "isShow": false, "imgURL": "TaskLibraryNightLibraryKate1", "haveTask": false,
                 "description": ''},
-            {"id": 14, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 14, "isShow": false, "imgURL": "TaskLibraryNightLibrary", "haveTask": false,
                 "description": ''},
-            {"id": 15, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 15, "isShow": false, "imgURL": "TaskLibraryNightLibraryVitya1", "haveTask": false,
                 "description": ''},
-            {"id": 16, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 16, "isShow": false, "imgURL": "TaskLibraryNightLibraryKate2", "haveTask": false,
                 "description": ''},
-            {"id": 17, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 17, "isShow": false, "imgURL": "TaskLibraryNightLibraryVitya2", "haveTask": false,
                 "description": ''},
-            {"id": 18, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 18, "isShow": false, "imgURL": "TaskLibraryNightLibraryKate3", "haveTask": false,
                 "description": ''},
-            {"id": 19, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 19, "isShow": false, "imgURL": "TaskLibraryNightLibraryVitya3", "haveTask": false,
                 "description": ''},
-            {"id": 20, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 20, "isShow": false, "imgURL": "TaskLibraryNightLibraryKate4", "haveTask": false,
                 "description": ''},
-            {"id": 21, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 21, "isShow": false, "imgURL": "TaskLibraryNightLibraryVitya4", "haveTask": false,
                 "description": ''},
-            {"id": 22, "isShow": false, "imgURL": "BackgroundModule20", "haveTask": true, "taskName": "MuseumPaintings1",
+            {"id": 22, "isShow": false, "imgURL": "TaskLibraryNightLibraryPainting1", "haveTask": true, "taskName": "MuseumPaintings1",
                 "description": 'Картины'},
-            {"id": 23, "isShow": false, "imgURL": "BackgroundModule21", "haveTask": true, "taskName": "MuseumPaintings2",
+            {"id": 23, "isShow": false, "imgURL": "TaskLibraryNightLibraryPainting2", "haveTask": true, "taskName": "MuseumPaintings2",
                 "description": 'Картины'},
 
-            {"id": 24, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 24, "isShow": false, "imgURL": "TaskLibraryNightWorkbookBackground", "haveTask": false,
                 "description": ''},
-            {"id": 25, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 25, "isShow": false, "imgURL": "TaskLibraryNightWorkbookVitya", "haveTask": false,
                 "description": ''},
-            {"id": 26, "isShow": false, "imgURL": "BackgroundModule14", "haveTask": true, "taskName": "WorkBook",
+            {"id": 26, "isShow": false, "imgURL": "TaskLibraryNightWorkbook", "haveTask": true, "taskName": "WorkBook",
                 "description": 'Раюочая тетрадь'},
 
-            {"id": 27, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 27, "isShow": false, "imgURL": "TaskLibraryNightHooligans", "haveTask": false,
                 "description": ''},
-            {"id": 28, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 28, "isShow": false, "imgURL": "TaskLibraryNightHooligansVitya1", "haveTask": false,
                 "description": ''},
-            {"id": 29, "isShow": false, "imgURL": "BackgroundModule37", "haveTask": true, "taskName": "Statue1",
+            {"id": 29, "isShow": false, "imgURL": "TaskLibraryNightHooligansVitya2", "haveTask": true, "taskName": "Hooligans1",
                 "description": 'Статуя'},
-            {"id": 30, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 30, "isShow": false, "imgURL": "TaskLibraryNightHooligansKate", "haveTask": false,
                 "description": ''},
-            {"id": 31, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 31, "isShow": false, "imgURL": "TaskLibraryNightHooligansKate", "haveTask": false,
                 "description": ''},
-            {"id": 32, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 32, "isShow": false, "imgURL": "TaskLibraryNightHooligansVitya3", "haveTask": false,
                 "description": ''},
-            {"id": 33, "isShow": false, "imgURL": "BackgroundModule41", "haveTask": true, "taskName": "Statue2",
+            {"id": 33, "isShow": false, "imgURL": "TaskLibraryNightHooligansVitya4", "haveTask": true, "taskName": "Hooligans2",
                 "description": 'Вторая статуя'},
 
-            {"id": 34, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 34, "isShow": false, "imgURL": "TaskLibraryNightEscapeVitya1", "haveTask": false,
                 "description": ''},
-            {"id": 35, "isShow": false, "imgURL": "BackgroundModule25", "haveTask": true, "taskName": "Escape",
+            {"id": 35, "isShow": false, "imgURL": "TaskLibraryNightEscapeVitya2", "haveTask": true, "taskName": "Escape",
                 "description": 'Побег'},
 
-            {"id": 36, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 36, "isShow": false, "imgURL": "TaskLibraryNightEscapeKate1", "haveTask": false,
                 "description": ''},
-            {"id": 37, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 37, "isShow": false, "imgURL": "TaskLibraryNightEscapeVitya3", "haveTask": false,
                 "description": ''},
-            {"id": 38, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 38, "isShow": false, "imgURL": "TaskLibraryNightEscapeKate2", "haveTask": false,
                 "description": ''},
-            {"id": 39, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 39, "isShow": false, "imgURL": "TaskLibraryNightEscapeVitya3", "haveTask": false,
                 "description": ''},
-            {"id": 40, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 40, "isShow": false, "imgURL": "TaskLibraryNightEscapeKate2", "haveTask": false,
                 "description": ''},
-            {"id": 41, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 41, "isShow": false, "imgURL": "TaskLibraryNightEscapeKate2", "haveTask": false,
                 "description": ''},
 
-            {"id": 42, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 42, "isShow": false, "imgURL": "TaskLibraryNightMapVitya", "haveTask": false,
                 "description": ''},
-            {"id": 43, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 43, "isShow": false, "imgURL": "TaskLibraryNightMapKate", "haveTask": false,
                 "description": ''},
-            {"id": 44, "isShow": false, "imgURL": "BackgroundModule44", "haveTask": true, "taskName": "Map",
+            {"id": 44, "isShow": false, "imgURL": "TaskLibraryNightMap", "haveTask": true, "taskName": "Map",
                 "description": 'Карта'},
 
-            {"id": 45, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 45, "isShow": false, "imgURL": "TaskLibraryNightFireVitya1", "haveTask": false,
                 "description": ''},
-            {"id": 46, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 46, "isShow": false, "imgURL": "TaskLibraryNightFireVitya2", "haveTask": false,
                 "description": ''},
-            {"id": 47, "isShow": false, "imgURL": "BackgroundModule34", "haveTask": true, "taskName": "Fire",
+            {"id": 47, "isShow": false, "imgURL": "TaskLibraryNightFireVitya3", "haveTask": true, "taskName": "Fire",
                 "description": 'Пожар'},
 
-            {"id": 48, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 48, "isShow": false, "imgURL": "TaskLibraryNightAttractions", "haveTask": false,
                 "description": ''},
-            {"id": 49, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 49, "isShow": false, "imgURL": "TaskLibraryNightAttractionsVitya", "haveTask": false,
                 "description": ''},
-            {"id": 50, "isShow": false, "imgURL": "BackgroundModule46", "haveTask": true, "taskName": "Attractions",
+            {"id": 50, "isShow": false, "imgURL": "TaskLibraryNightAttractionsVitya", "haveTask": true, "taskName": "Attractions",
                 "description": 'Достопримечательности'},
 
-            {"id": 51, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 51, "isShow": false, "imgURL": "TaskLibraryNightFestivalVitya1", "haveTask": false,
                 "description": ''},
-            {"id": 52, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 52, "isShow": false, "imgURL": "TaskLibraryNightFestivalKate", "haveTask": false,
                 "description": ''},
-            {"id": 53, "isShow": false, "imgURL": "BackgroundModule50", "haveTask": true, "taskName": "Festival",
+            {"id": 53, "isShow": false, "imgURL": "TaskLibraryNightFestivalVitya2", "haveTask": true, "taskName": "Festival",
                 "description": 'Фестиваль'},
 
-            {"id": 54, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 54, "isShow": false, "imgURL": "TaskLibraryNightSitesVitya1", "haveTask": false,
                 "description": ''},
-            {"id": 55, "isShow": false, "imgURL": "BackgroundModule52", "haveTask": true, "taskName": "Sites",
+            {"id": 55, "isShow": false, "imgURL": "TaskLibraryNightSitesVitya2", "haveTask": true, "taskName": "Sites",
                 "description": 'Сайты'},
 
-            {"id": 56, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 56, "isShow": false, "imgURL": "TaskLibraryNightWeatherForecastVitya1", "haveTask": false,
                 "description": ''},
-            {"id": 57, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 57, "isShow": false, "imgURL": "TaskLibraryNightWeatherForecastKate", "haveTask": false,
                 "description": ''},
-            {"id": 58, "isShow": false, "imgURL": "BackgroundModule64", "haveTask": true, "taskName": "WeatherForecast",
+            {"id": 58, "isShow": false, "imgURL": "TaskLibraryNightWeatherForecast", "haveTask": true, "taskName": "WeatherForecast",
                 "description": 'Прогноз погоды'},
 
-            {"id": 59, "isShow": false, "imgURL": "Background", "haveTask": false,
+            {"id": 59, "isShow": false, "imgURL": "TaskLibraryNightWeatherForecastVitya2", "haveTask": false,
                 "description": ''},
         ],
         //Перетаскивание вещей в рюкзаке
         "listOfElementsStart": [  // todo контекстуальные стили? подумать про state machine
             {
-                "src": "Element2.png",
-                "src_dop": "Element2_dop.png",
-                "id": 6,
-                "style": "width: calc(100%/10); position: absolute; bottom: calc(100%/6); left: calc(100%/25)",
-                "style_dop": "rotate: 90deg; width: calc(100%/10); position: absolute; bottom: 0; left: calc(100%/25)",
-                "toolTip": "бумажные платочки"
-            },
-            {
-                "src": "Element3.png",
-                "src_dop": "Element3.png",
+                "src": "TaskLibraryNightMovingThingsFromBagWetWipes.png",
+                "src_dop": "TaskLibraryNightMovingThingsFromBagWetWipes_dop.png",
                 "id": 1,
-                "style": "width: calc(100%/5); position: absolute; bottom: calc(100%/12); left: calc(100%/5)",
-                "style_dop": "width: calc(100%/5); position: absolute; bottom: calc(100%/12); left: calc(100%/1.2)",
-                "toolTip": "упаковка леденцов"
+                "style": "width: 10%; position: absolute; bottom: 10%; left: 3%",
+                "style_dop": "width: 20%; position: absolute; bottom: 5%; left: 0",
+                "toolTip": "влажные салфетки"
             },
             {
-                "src": "Element4.png",
-                "src_dop": "Element4_dop.png",
+                "src": "TaskLibraryNightMovingThingsFromBagUmbrella.png",
+                "src_dop": "TaskLibraryNightMovingThingsFromBagUmbrella.png",
                 "id": 2,
-                "style": "width: calc(100%/3); position: absolute; bottom: calc(100%/30); left: calc(100%/2.5)",
-                "style_dop": "width: calc(100%/3); position: absolute; bottom: calc(100%/30); left: calc(100%/2.5)",
-                "toolTip": "блокнот"
-            },
-            {
-                "src": "Element5.png",
-                "src_dop": "Element5.png",
-                "id": 7,
-                "style": "width: calc(100%/4); position: absolute; bottom: calc(100%/30); left: calc(100%/1.34)",
-                "style_dop": "width: calc(100%/4); position: absolute; bottom: calc(100%/30); left: calc(100%/1.34)",
+                "style": "width: 25%; position: absolute; bottom: 3%; left: 80%",
+                "style_dop": "width: 25%; position: absolute; bottom: 0; left: 80%",
                 "toolTip": "зонт-трость"
             },
             {
-                "src": "Element6.png",
-                "src_dop": "Element6_dop.png",
-                "id": 4,
-                "style": "width: calc(100%/6); position: absolute; bottom: calc(100%/1.7); left: calc(100%/1.83)",
-                "style_dop": "rotate: 90deg; width: calc(100%/6); position: absolute; bottom: 0; left: calc(100%/1.83)",
-                "toolTip": "ножницы"
+                "src": "TaskLibraryNightMovingThingsFromBagCharger.png",
+                "src_dop": "TaskLibraryNightMovingThingsFromBagCharger.png",
+                "id": 3,
+                "style": "width: 23%; position: absolute; bottom: 8%; left: 20%",
+                "style_dop": "20%; position: absolute; bottom: 3%; left: 58%; z-index: 99",
+                "toolTip": "Зарядное устройство"
             },
             {
-                "src": "Element7.png",
-                "src_dop": "Element7_dop.png",
-                "id": 3,
-                "style": "width: 6.5%; position: absolute; bottom: calc(100%/1.64); left: calc(100%/2.1)",
-                "style_dop": "rotate: 90deg; width: 6.5%; position: absolute; bottom: 0; left: calc(100%/2.1)",
-                "toolTip": "ручка"
+                "src": "TaskLibraryNightMovingThingsFromBagNotebook.png",
+                "src_dop": "TaskLibraryNightMovingThingsFromBagNotebook_dop.png",
+                "id": 4,
+                "style": "width: 25%; position: absolute; bottom: 3%; left: 53%",
+                "style_dop": "width: 35%; position: absolute; bottom: 0; left: 50%",
+                "toolTip": "тетрадь"
+            },
+            {
+                "src": "TaskLibraryNightMovingThingsFromBagPencil.png",
+                "src_dop": "TaskLibraryNightMovingThingsFromBagPencil_dop.png",
+                "id": 6,
+                "style": "width: 30%; position: absolute; bottom: 48%; left: 40%",
+                "style_dop": "width: 20%; position: absolute; bottom: 0; left: 25%",
+                "toolTip": "карандаш"
+            },
+            {
+                "src": "TaskLibraryNightMovingThingsFromBagStationeryKnife.png",
+                "src_dop": "TaskLibraryNightMovingThingsFromBagStationeryKnife_dop.png",
+                "id": 7,
+                "style": "width: 15%; position: absolute; bottom: 51%; left: 55%",
+                "style_dop": "width: 12%; position: absolute; bottom: 5%; left: 30%",
+                "toolTip": "канцелярский нож"
             },
         ],
         "listOfElementsEnd": [],
@@ -406,72 +406,71 @@ const date = {
         ],
         "listOfAnswersTask9": [],
 
-        //Задание 10 задание
-        "listOfElementsTask10": [
+
+        "listOfElementsTaskAttractions": [
             {
                 "id": 1,
-                "value": "Московский Кремль"
-            },
-            {
-                "id": 2,
-                "value": "ВДНХ"
-            },
-            {
-                "id": 4,
-                "value": "Большой театр"
-            },
-            {
-                "id": 5,
-                "value": "Московский зоопарк"
-            },
-            {
-                "id": 6,
                 "value": "Государственный исторический музей"
             },
             {
+                "id": 2,
+                "value": "Российская государственная библиотека"
+            },
+            {
+                "id": 4,
+                "value": "Измайловский парк"
+            },
+            {
+                "id": 5,
+                "value": "Александровский сад"
+            },
+            {
+                "id": 6,
+                "value": "Пушкинский музей"
+            },
+            {
                 "id": 7,
-                "value": "Государственная Третьяковская галерея"
+                "value": "Манежная площадь"
             },
             {
                 "id": 8,
-                "value": "Парк Горького"
+                "value": "Большой театрПарк Горького"
             },
         ],
-        "listOfAnswersTask10_1": [],
-        "listOfAnswersTask10_2": [],
-        "listOfAnswersTask10_3": [],
-        "listOfAnswersTask10": [],
+        "listOfAnswersTaskAttractions_1": [],
+        "listOfAnswersTaskAttractions_2": [],
+        "listOfAnswersTaskAttractions_3": [],
+        "listOfAnswersTaskAttractions": [],
 
 
         //Задание 12 задание
-        "listOfAnswersTask12": [
+        "listOfAnswersTaskSites": [
             {
-                "name": "Культура Москвы Онлайн",
-                "link": "https://www.mos.ru/city/projects/kulturaonline",
+                "name": "Московские сезоны",
+                "link": "https://moscowseasons.com/",
                 "id": 1,
                 "choose": false,
             },
             {
-                "name": "Мероприятия и события в Москве",
-                "link": "https://mos-holidays.ru/news/",
+                "name": "Музейная Москва онлайн| Департамент культуры Москвыя",
+                "link": "https://museum-online.moscow/",
                 "id": 2,
                 "choose": false,
             },
             {
-                "name": "Узнай Москву",
-                "link": "https://um.mos.ru",
+                "name": "Мос.ру. Афиша Москвы",
+                "link": "https://www.mos.ru/afisha/",
                 "id": 3,
                 "choose": false,
             }, {
-                "name": "Яндекс.Афиша: Куда сходить в Москве",
-                "link": "https://afisha.yandex.ru/moscow",
+                "name": "Ассоциация парков России/ParkSeason",
+                "link": "https://parkseason.ru/",
                 "id": 4,
                 "choose": false,
             },
         ],
-        "listOfChoosenAnswersTask12": [],
+        "listOfChoosenAnswersTaskSites": [],
 
-        //Задание 13 задание
         "listOfAnswersTaskBadWeather": [
             {
                 "name": "Спрятаться у ларька с мороженым.",
@@ -495,7 +494,6 @@ const date = {
         ],
         "listOfChoosenAnswersTaskBadWeather": [],
 
-        //Задание 14 задание
         "listOfAnswersTaskWarningSigns": [
             {
                 "src": "task14EL1.png",
@@ -535,29 +533,28 @@ const date = {
         "listOfAnswersTaskWarningSigns_3": [],
         "listOfAnswersTaskWarningSigns_4": [],
 
-        //Задание 15 задание
-        "listOfAnswersTask15": [
+        "listOfAnswersTaskWeatherForecast": [
             {
                 "id": 4,
-                "value": "Попасть на экскурсию в Музей космонавтики"
+                "value": "Погулять на улице в Парке Горького"
             },
             {
                 "id": 1,
-                "value": "Погулять на улице в Парке Сокольники"
+                "value": "Попасть на экскурсию в Новую Третьяковскую галерею"
             },
             {
                 "id": 2,
-                "value": "Посетить Планетарий Москвы"
+                "value": "Покататься на самокате в Музеоне"
             },
             {
                 "id": 3,
-                "value": "Покормить птиц в Московском зоопарке"
+                "value": "Попасть на выставку в Музее Москвы"
             },
         ],
-        "listOfAnswersTask15_1": [],
-        "listOfAnswersTask15_2": [],
-        "listOfAnswersTask15_3": [],
-        "listOfAnswersTask15_4": [],
+        "listOfAnswersTaskWeatherForecast_1": [],
+        "listOfAnswersTaskWeatherForecast_2": [],
+        "listOfAnswersTaskWeatherForecast_3": [],
+        "listOfAnswersTaskWeatherForecast_4": [],
     },
     "taskChatFestival": {
         "isShow": false,

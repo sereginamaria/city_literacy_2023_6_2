@@ -1,11 +1,11 @@
 <template>
-    <div class="background" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
-        <div class="instruction-block">
+    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+        <div class="instruction-block" id="instruction-block">
             <p>Выбери ВСЕ подходящие сайты, которыми можно воспользоваться, чтобы посмотреть достопримечательности Москвы онлайн.
             </p>
         </div>
         <div class="option-answers-background">
-            <div v-for="el in mainJSON.taskLibraryNight.listOfAnswersTask12" :key="el.id" :class="{choosenAnswer: el.choose}"
+            <div v-for="el in mainJSON.taskLibraryNight.listOfAnswersTaskSites" :key="el.id" :class="{choosenAnswer: el.choose}"
                  class="option-answers-border"
             >
                 <div @click="chooseAnswer(el)">
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <div class="background-text">
+        <div class="background-text" id="background-text">
                  <div class="d-flex">
 
                 <p>
@@ -44,18 +44,18 @@
             ...mapMutations(["push_mainJSON"]),
             chooseAnswer(el) {
                 let k = 0
-                this.mainJSON.taskLibraryNight.listOfChoosenAnswersTask12.forEach(elMass => {
+                this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.forEach(elMass => {
                     if(elMass === el.id){
-                        this.mainJSON.taskLibraryNight.listOfChoosenAnswersTask12.splice(this.mainJSON.taskLibraryNight.listOfChoosenAnswersTask12.indexOf(elMass), 1)
+                        this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.splice(this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.indexOf(elMass), 1)
                         el.choose = false
                         k++
                     }
                 })
                 if(k === 0){
-                    this.mainJSON.taskLibraryNight.listOfChoosenAnswersTask12.push(el.id)
+                    this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.push(el.id)
                     el.choose = true
                 }
-                this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK5_1 = this.mainJSON.taskLibraryNight.listOfChoosenAnswersTask12.join()
+                this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK5_1 = this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.join()
             },
             checkAnswer() {
                 screen.isShow = false
@@ -66,15 +66,15 @@
                     }
                 })
                 let maxScore = 0
-                this.mainJSON.taskLibraryNight.listOfChoosenAnswersTask12.forEach(el => {
+                this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.forEach(el => {
                     if(el === 1 || el === 3){
                         maxScore++
                     }
                 })
-                if(this.mainJSON.taskLibraryNight.listOfChoosenAnswersTask12.length === 2 && maxScore === 2){
+                if(this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.length === 2 && maxScore === 2){
                     this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK5_1 = 2
                 }
-                else if(this.mainJSON.taskLibraryNight.listOfChoosenAnswersTask12.length === 1 && maxScore === 1){
+                else if(this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.length === 1 && maxScore === 1){
                     this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK5_1 = 1
                 }
                 else {

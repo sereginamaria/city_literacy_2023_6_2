@@ -72,19 +72,6 @@
         border: 2px solid #54BEDF;
         padding: 10px 20px;
     }
-    .instruction-block {
-        margin: 0 auto;
-        background: #FFFFFF;
-        border: 5px solid #54BEDF;
-        width: 70%;
-        padding: 20px;
-        position: relative;
-        z-index: 9;
-    }
-
-    .instruction-block p {
-        font-size: 18px;
-    }
 
     .name-in-dialog {
         font-style: italic;
@@ -92,19 +79,7 @@
         font-size: 18px;
         color: white;
     }
-
-    .list-of-answers {
-        margin: 10px;
-        width: 20%;
-        background: #d2fff7;
-        border-radius: 4px;
-        padding: 10px 20px;
-        height: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+    
     .list-group-el {
         margin: 20px;
         width: 80%;

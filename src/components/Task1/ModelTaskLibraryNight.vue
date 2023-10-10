@@ -10,30 +10,30 @@
                       :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
     <TaskMetro v-if="screen.isShow && screen.haveTask && screen.taskName === 'Metro'"
                :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
-<!--    <TaskWorkBook v-if="screen.isShow && screen.haveTask && screen.taskName === 'WorkBook'"-->
-<!--                  :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
-<!--    <TaskMuseumPaintings v-if="(screen.taskName === 'MuseumPaintings1' || screen.taskName === 'MuseumPaintings2') &&-->
-<!--                        screen.isShow && screen.haveTask"-->
-<!--                         :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
-<!--    <TaskEscape v-if="screen.isShow && screen.haveTask && screen.taskName === 'Escape'"-->
-<!--                :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
-<!--    <TaskFire v-if="screen.isShow && screen.haveTask && screen.taskName === 'Fire'"-->
-<!--              :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
-<!--    <TaskStatue  v-if="(screen.taskName === 'Statue1' || screen.taskName === 'Statue2') &&-->
-<!--                screen.isShow && screen.haveTask"-->
-<!--                 :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
-<!--    <TaskMap v-if="screen.isShow && screen.haveTask && screen.taskName === 'Map'"-->
-<!--             :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
-<!--    <TaskAttractions v-if="screen.isShow && screen.haveTask && screen.taskName === 'Attractions'"-->
-<!--                     :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
-<!--    <TaskFestival v-if="screen.isShow && screen.haveTask && screen.taskName === 'Festival'"-->
-<!--                  :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
-<!--    <TaskSites v-if="screen.isShow && screen.haveTask && screen.taskName === 'Sites'"-->
-<!--               :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+    <TaskWorkBook v-if="screen.isShow && screen.haveTask && screen.taskName === 'WorkBook'"
+                  :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskMuseumPaintings v-if="(screen.taskName === 'MuseumPaintings1' || screen.taskName === 'MuseumPaintings2') &&
+                        screen.isShow && screen.haveTask"
+                         :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskEscape v-if="screen.isShow && screen.haveTask && screen.taskName === 'Escape'"
+                :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskFire v-if="screen.isShow && screen.haveTask && screen.taskName === 'Fire'"
+              :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskHooligans  v-if="(screen.taskName === 'Hooligans1' || screen.taskName === 'Hooligans2') &&
+                screen.isShow && screen.haveTask"
+                 :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskMap v-if="screen.isShow && screen.haveTask && screen.taskName === 'Map'"
+             :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskAttractions v-if="screen.isShow && screen.haveTask && screen.taskName === 'Attractions'"
+                     :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskFestival v-if="screen.isShow && screen.haveTask && screen.taskName === 'Festival'"
+                  :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
+    <TaskSites v-if="screen.isShow && screen.haveTask && screen.taskName === 'Sites'"
+               :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
 
 
-<!--    <TaskWeatherForecast v-if="screen.isShow && screen.haveTask && screen.taskName === 'WeatherForecast'"-->
-<!--                         :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>-->
+    <TaskWeatherForecast v-if="screen.isShow && screen.haveTask && screen.taskName === 'WeatherForecast'"
+                         :screen="screen" :constTaskLibraryNight="constTaskLibraryNight"/>
 </template>
 
 <script>
@@ -42,33 +42,33 @@
     import TaskMovingThingsFromBag from "@/components/Task1/TaskMovingThingsFromBag";
     import TaskChooseShoes from "@/components/Task1/TaskChooseShoes";
     import TaskMetro from "@/components/Task1/TaskMetro";
-    // import TaskWorkBook from "@/components/Task1/TaskWorkBook";
-    // import TaskMuseumPaintings from "@/components/Task1/TaskMuseumPaintings";
-    // import TaskEscape from "@/components/Task1/TaskEscape";
-    // import TaskFire from "@/components/Task1/TaskFire";
-    // import TaskStatue from "@/components/Task1/TaskStatue";
-    // import TaskMap from "@/components/Task1/TaskMap";
-    // import TaskAttractions from "@/components/Task1/TaskAttractions";
-    // import TaskFestival from "@/components/Task1/TaskFestival";
-    // import TaskSites from "@/components/Task1/TaskSites";
+    import TaskWorkBook from "@/components/Task1/TaskWorkBook";
+    import TaskMuseumPaintings from "@/components/Task1/TaskMuseumPaintings";
+    import TaskEscape from "@/components/Task1/TaskEscape";
+    import TaskFire from "@/components/Task1/TaskFire";
+    import TaskHooligans from "@/components/Task1/TaskHooligans";
+    import TaskMap from "@/components/Task1/TaskMap";
+    import TaskAttractions from "@/components/Task1/TaskAttractions";
+    import TaskFestival from "@/components/Task1/TaskFestival";
+    import TaskSites from "@/components/Task1/TaskSites";
     import TaskBadWeather from "@/components/Task1/TaskBadWeather";
     import TaskWarningSigns from "@/components/Task1/TaskWarningSigns";
-    // import TaskWeatherForecast from "@/components/Task1/TaskWeatherForecast";
+    import TaskWeatherForecast from "@/components/Task1/TaskWeatherForecast";
     export default {
         name: "ModelTaskLibraryNight",
         components: {
-            // TaskWeatherForecast,
+            TaskWeatherForecast,
             TaskWarningSigns,
             TaskBadWeather,
-            // TaskSites,
-            // TaskFestival,
-            // TaskAttractions,
-            // TaskMap,
-            // TaskStatue,
-            // TaskFire,
-            // TaskEscape,
-            // TaskMuseumPaintings,
-            // TaskWorkBook,
+            TaskSites,
+            TaskFestival,
+            TaskAttractions,
+            TaskMap,
+            TaskHooligans,
+            TaskFire,
+            TaskEscape,
+            TaskMuseumPaintings,
+            TaskWorkBook,
             TaskMetro,
             TaskChooseShoes,
             TaskMovingThingsFromBag,
@@ -87,11 +87,25 @@
 </script>
 
 <style>
-  .background {
-    height: calc(100vh - 140px);
-    backdrop-filter: blur(5px);
-    background-size: cover !important;
-    background-position: center !important;
+  .backgroundTaskLibraryNight {
+        height: calc(100vh - 140px);
+        backdrop-filter: blur(5px);
+        background-size: cover !important;
+        background-position: center !important;
+  }
+
+  .backgroundTaskBodyLibraryNight {
+      background: #FFFFFF;
+      border: 1px solid #54BEDF;
+      width: 85%;
+      max-height: 85%;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3%;
+      backdrop-filter: blur(5px);
   }
 
   .background-text {
@@ -120,17 +134,6 @@
     color: #333333;
   }
 
-.background-task {
-  background: #FFFFFF;
-  border: 1px solid #54BEDF;
-  width: calc(100%/1.2);
-  height: calc(100%/1.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .background-text p{
   color: white;
   font-size: 18px;
@@ -154,19 +157,6 @@
   padding: 10px 20px;
 }
 
-.instruction-block {
-  margin: auto;
-  background: #FFFFFF;
-  border: 5px solid #54BEDF;
-  width: 70%;
-  padding: 20px;
-  position: relative;
-  z-index: 9;
-}
-
-.instruction-block p {
-  font-size: 18px;
-}
 
 .name-in-dialog {
   font-style: italic;

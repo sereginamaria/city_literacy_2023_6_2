@@ -1,22 +1,25 @@
 <template>
-    <div class="background backimp" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}" :class="{background5: mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 1,
+    <div class="backgroundTaskLibraryNight backimp" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}" :class="{background5: mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 1,
     background6: mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 2, background7: mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 3, background8: mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 4}"
     >
-        <div class="instruction-block">
-            <p>Что ответишь Кате? Выбери все верные варианты ответа, кликнув на картинку.
+        <div class="instruction-block" id="instruction-block">
+            <p>Что ответишь Кате? Где можно спрятаться от непогоды? Выбери один ответ.
             </p>
         </div>
-        <div class="task13">
-            <div v-for="el in mainJSON.taskLibraryNight.listOfAnswersTaskBadWeather" :key="el.id" class="task13El"
-                 :class="{choosenAnswer1: el.id === mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1}"
-                 @click="chooseAnswer(el)">
-                <div>
-                    {{el.name}}
+        <div class="d-flex justify-content-center align-items-center w-100 flex-column"
+             :style="'height: calc(100% - ' + this.height + 'px)'">
+            <div class="task13">
+                <div v-for="el in mainJSON.taskLibraryNight.listOfAnswersTaskBadWeather" :key="el.id" class="task13El"
+                     :class="{choosenAnswer1: el.id === mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1}"
+                     @click="chooseAnswer(el)">
+                    <div>
+                        {{el.name}}
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="background-text">
-            <div class="d-flex">
+        <div class="background-text" id="background-text">
+            <div style="width: 90%">
                 <p>
                     <span class="name-in-dialog">{{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].name}}</span>
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
@@ -33,6 +36,11 @@
 
     export default {
         name: "TaskBadWeather",
+        data() {
+            return {
+                height: 0
+            }
+        },
         props: {
             screen: {},
             constTaskLibraryNight: {}
@@ -75,6 +83,9 @@
                     push: this.mainJSON
                 })
             }
+        },
+        mounted(){
+            this.height = document.getElementById('background-text').offsetHeight + document.getElementById('instruction-block').offsetHeight
         }
     }
 </script>
@@ -101,6 +112,8 @@
         /* height: calc(100%/4); */
         align-items: center;
         justify-content: center;
+        padding: 0 2%;
+        text-align: center;
     }
     .choosenAnswer1 {
         background: rgba(84, 190, 223, 0.8);

@@ -1,37 +1,40 @@
 <template>
     <!--Перетаскивание вещей из сумки-->
-    <div class="background" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
-        <div class="instruction-block">
+    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+        <div class="instruction-block" id="instruction-block">
             <p>
                 Какие вещи в рюкзаке небезопасно проносить в библиотеку? Выложи ДВЕ вещи, перетащив из рюкзака на стол. 
                 Чтобы вернуть вещь в рюкзак, снова перетащи ее.
             </p>
         </div>
-        <draggable
+        <div class="d-flex justify-content-center align-items-center w-100 flex-column position-relative"
+             :style="'height: calc(100% - ' + this.height + 'px)'">
+            <draggable
                 class="list-group draggable-backpack-end"
                 :list="this.mainJSON.taskLibraryNight.listOfElementsEnd"
                 group="draggingThings"
-        >
-            <template #item="{ element }">
-                <img :src=" require('../../assets/' + element.src_dop) "
-                     alt="Avatar"  :style="element.style_dop"  @mouseover="onHover($event, element.toolTip)" @mouseout="this.toolTipVisible = false"/>
-            </template>
-        </draggable>
-        <div>
-            <img src="../../assets/LittleBackpackOpen.png" alt="" class="little-backpack" style="bottom: calc(100%/5);">
-            <draggable
+            >
+                <template #item="{ element }">
+                    <img :src=" require('../../assets/' + element.src_dop) "
+                         alt="Avatar"  :style="element.style_dop"  @mouseover="onHover($event, element.toolTip)" @mouseout="this.toolTipVisible = false"/>
+                </template>
+            </draggable>
+            <div>
+                <img src="../../assets/LittleBackpackOpen.png" alt="" class="little-backpack">
+                <draggable
                     class="list-group draggable-backpack-start"
                     :list="this.mainJSON.taskLibraryNight.listOfElementsStart"
                     group="draggingThings"
-            >
-                <template #item="{ element }">
-                    <img :src=" require('../../assets/' + element.src) "
-                         alt="Avatar" :style="element.style"  @mouseover="onHover($event, element.toolTip)" @mouseout="this.toolTipVisible = false"/>
-                </template>
-            </draggable>
+                >
+                    <template #item="{ element }">
+                        <img :src=" require('../../assets/' + element.src) "
+                             alt="Avatar" :style="element.style"  @mouseover="onHover($event, element.toolTip)" @mouseout="this.toolTipVisible = false"/>
+                    </template>
+                </draggable>
+            </div>
         </div>
-        <div class="background-text">
-             <div class="d-flex">
+        <div class="background-text" id="background-text">
+             <div style="width: 90%">
                 <p>
                     <span class="name-in-dialog">{{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].name}}</span>
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
@@ -70,6 +73,7 @@
                 toolTipMessage: '',
                 clientX: 0,
                 clientY: 0,
+                height: 0
             }
         },
         components: {
@@ -150,6 +154,9 @@
                     })
                 }
             }
+        },
+        mounted(){
+            this.height = document.getElementById('background-text').offsetHeight + document.getElementById('instruction-block').offsetHeight
         }
     }
 </script>
@@ -157,22 +164,22 @@
 <style scoped>
     .little-backpack {
         position: absolute;
-        bottom: calc(100%/20);
-        width: calc(100%/3.6);
-        left: calc(100%/2.3);
+        bottom: 5%;
+        width: 30%;
+        left: 50%;
     }
     .draggable-backpack-end {
-        height: 50%;
-        width: 30%;
-        left: calc(100%/8.192);
-        bottom: calc(100%/5);
+        height: 90%;
+        width: 35%;
+        left: 10%;
+        bottom: 5%;
         position: absolute;
     }
     .draggable-backpack-start {
-        height: calc(100%/3);
-        width: calc(100%/3.3);
-        bottom: calc(100%/5);
-        left: calc(100%/2.3);
         position: absolute;
+        bottom: 5%;
+        width: 30%;
+        left: 50%;
+        height: 50%;
     }
 </style>

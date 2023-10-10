@@ -1,13 +1,13 @@
 <template>
     <!--Задание 15 задание-->
-    <div class="background d-flex align-items-center flex-column"
+    <div class="backgroundTaskLibraryNight d-flex align-items-center flex-column"
          :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}" style="backdrop-filter: blur(5px);">
-        <div class="instruction-block">
+        <div class="instruction-block" id="instruction-block">
             <p>Построй план прогулки по времени. Выбери, когда лучше посетить то или иное место. Перетащи название места в нужный временной промежуток.
             </p>
         </div>
         <div class="d-flex justify-content-center align-items-center w-100 h-100">
-            <div class="background-task" style="height: 85%">
+            <div class="backgroundTaskBodyLibraryNight" style="height: 85%">
                 <div class="d-flex justify-content-between" style="height: 70%; margin-bottom: 3%; width: 100%">
                     <div class="task15El">
                         <div class="d-flex justify-content-center align-items-center flex-column" style="height: 80%">
@@ -17,7 +17,7 @@
                         <draggable
                                 @add="error(1)"
                                 class="list-group list-group-el-weather-forecast"
-                                :list="this.mainJSON.taskLibraryNight.listOfAnswersTask15_1"
+                                :list="this.mainJSON.taskLibraryNight.listOfAnswersTaskWeatherForecast_1"
                                 group="task15"
                         >
                             <template #item="{ element }">
@@ -35,7 +35,7 @@
                         <draggable
                                 @add="error(2)"
                                 class="list-group list-group-el-weather-forecast"
-                                :list="this.mainJSON.taskLibraryNight.listOfAnswersTask15_2"
+                                :list="this.mainJSON.taskLibraryNight.listOfAnswersTaskWeatherForecast_2"
                                 group="task15"
                         >
                             <template #item="{ element }">
@@ -53,7 +53,7 @@
                         <draggable
                                 @add="error(3)"
                                 class="list-group list-group-el-weather-forecast"
-                                :list="this.mainJSON.taskLibraryNight.listOfAnswersTask15_3"
+                                :list="this.mainJSON.taskLibraryNight.listOfAnswersTaskWeatherForecast_3"
                                 group="task15"
                         >
                             <template #item="{ element }">
@@ -71,7 +71,7 @@
                         <draggable
                                 @add="error(4)"
                                 class="list-group list-group-el-weather-forecast"
-                                :list="this.mainJSON.taskLibraryNight.listOfAnswersTask15_4"
+                                :list="this.mainJSON.taskLibraryNight.listOfAnswersTaskWeatherForecast_4"
                                 group="task15"
                         >
                             <template #item="{ element }">
@@ -84,7 +84,7 @@
                 </div>
                 <draggable
                         class="list-group list-of-answers-weather-forecast d-flex flex-row justify-content-between align-items-center"
-                        :list="this.mainJSON.taskLibraryNight.listOfAnswersTask15"
+                        :list="this.mainJSON.taskLibraryNight.listOfAnswersTaskWeatherForecast"
                         group="task15"
                 >
                     <template #item="{ element }">
@@ -95,7 +95,7 @@
                 </draggable>
         </div>
         </div>
-        <div class="background-text">
+        <div class="background-text" id="background-text">
                  <div class="d-flex">
 
                 <p>
@@ -130,11 +130,11 @@
         methods: {
             ...mapMutations(["push_mainJSON"]),
             error(id) {
-                if(this.mainJSON.taskLibraryNight["listOfAnswersTask15_" + id].length > 1){
-                    this.mainJSON.taskLibraryNight.listOfAnswersTask15.push(this.mainJSON.taskLibraryNight["listOfAnswersTask15_" + id][1])
-                    this.mainJSON.taskLibraryNight["listOfAnswersTask15_" + id].splice(1, 1)
+                if(this.mainJSON.taskLibraryNight["listOfAnswersTaskWeatherForecast_" + id].length > 1){
+                    this.mainJSON.taskLibraryNight.listOfAnswersTaskWeatherForecast.push(this.mainJSON.taskLibraryNight["listOfAnswersTaskWeatherForecast_" + id][1])
+                    this.mainJSON.taskLibraryNight["listOfAnswersTaskWeatherForecast_" + id].splice(1, 1)
                 }
-                this.mainJSON.taskLibraryNight.results['ULSCLL1_Log_LLK6_' + id] = this.mainJSON.taskLibraryNight["listOfAnswersTask15_" + id][0].id
+                this.mainJSON.taskLibraryNight.results['ULSCLL1_Log_LLK6_' + id] = this.mainJSON.taskLibraryNight["listOfAnswersTaskWeatherForecast_" + id][0].id
             },
             checkAnswer() {
                 screen.isShow = false

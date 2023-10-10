@@ -1,7 +1,7 @@
 <template>
     <!--Задание 11 задание-->
-    <div class="background" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
-        <div class="instruction-block">
+    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+        <div class="instruction-block" id="instruction-block">
             <p>Выбери из списка фестиваль, который проходит в Москве.
             </p>
         </div>
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <div class="background-text">
+        <div class="background-text" id="background-text">
                  <div class="d-flex">
 
                 <p>

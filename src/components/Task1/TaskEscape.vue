@@ -1,7 +1,7 @@
 <template>
     <!--Задание 6 задание-->
-    <div class="background" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
-        <div class="instruction-block">
+    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+        <div class="instruction-block" id="instruction-block">
             <p>Что ответишь Вите? Выбери один вариант ответа.
             </p>
         </div>
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <div class="background-text">
+        <div class="background-text" id="background-text">
                  <div class="d-flex">
 
                 <p>

@@ -1,21 +1,21 @@
 <template>
-    <div class="background"
+    <div class="backgroundTaskLibraryNight"
          :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}"
     >
-        <div v-if="screen.id === 6 || screen.id === 9 || screen.id === 26 || screen.id === 28 || screen.id === 36 || screen.id === 45">
+        <div v-if="screen.id === 4 || screen.id === 10 || screen.id === 14 || screen.id === 24 || screen.id === 27 || screen.id === 45 || screen.id === 48">
             <div class="background-text-center">
                 <p>
                     <span class="name-in-dialog">{{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].name}}</span>
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
                 </p>
             </div>
-            <div class="background-text" style="background: none; justify-content: end;">
+            <div class="background-text" id="background-text" style="background: none; justify-content: end;">
                 <MyButton class="white-buttons" @click="nextTask(screen)" style="height: 40px">Далее</MyButton>
             </div>
         </div>
 
-        <div class="background-text" v-else>
-            <div class="d-flex">
+        <div class="background-text" id="background-text" v-else>
+            <div style="width: 90%">
                 <p>
                     <span class="name-in-dialog">{{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].name}}</span>
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
@@ -124,7 +124,7 @@
                 })
             },
             nextTask(screen){
-                if(screen.id === 3){
+                if(screen.id === 59){
                     this.modalVisible = true
                     this.modalButtons = [
                         {value: "Хорошо", status: true}
@@ -133,13 +133,10 @@
                 }
                 else {
                     screen.isShow = false
-                    if(screen.id === 22 || screen.id === 24){
-                        this.mainJSON.taskLibraryNight.shownScreenID = 26
-                    }
                     if(screen.id === 30){
                         this.mainJSON.taskLibraryNight.shownScreenID = 32
                     }
-                    if(screen.id !== 22 && screen.id !== 24 && screen.id !== 30) {
+                    if(screen.id !== 30) {
                         this.mainJSON.taskLibraryNight.shownScreenID++
                     }
 

@@ -1,7 +1,7 @@
 <template>
     <!--Задание 9 задание-->
-    <div class="background" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
-        <div class="instruction-block">
+    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+        <div class="instruction-block" id="instruction-block">
             <p>Проверь эту карту. Выбери ДВА объекта, которых на самом деле НЕТ в Москве. Ты можешь вернуть объект на карту, кликнув на него еще раз.
             </p>
         </div>
@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div class="background-text">
+        <div class="background-text" id="background-text">
                  <div class="d-flex">
 
                 <p>

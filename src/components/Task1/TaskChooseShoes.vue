@@ -1,7 +1,7 @@
 <template>
     <!--Выбор обуви-->
-    <div class="background" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
-        <div class="instruction-block">
+    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+        <div class="instruction-block" id="instruction-block">
             <p>
                 Выбери ту полку, на которой находится подходящая обувь для тебя и для Кати.
                 Помни, что обувь должна подходить для места, где будет много людей.
@@ -41,8 +41,8 @@
     position: absolute;"
             >
         </div>
-        <div class="background-text">
-            <div class="d-flex">
+        <div class="background-text" id="background-text">
+            <div style="width: 90%">
                 <p>
                     <span class="name-in-dialog">{{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].name}}</span>
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}

@@ -1,24 +1,24 @@
 <template>
     <!--Задание рабочая тетрадь-->
-    <div class="background" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
-        <div class="instruction-block">
+    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+        <div class="instruction-block" id="instruction-block">
             <p>Заполни пропуски в тексте.
             </p>
         </div>
         <div class="background-task1">
             <div style="line-height: 3; text-align: justify; font-size: 18px" id="collapseModularTask4">
-                Москва была основана в
+                Считается, что Москва появилась в
                 <span data-bs-toggle="collapse" data-bs-target="#collapseWorkBookQ1" aria-expanded="false" aria-controls="collapseWorkBookQ1"
                       @click="openWorkBookQ(14)" style="text-decoration: underline; font-size: 18px" :class="{colorAnswers: this.mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_1 === 'NA'}"
                 >{{this.mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_1 !== "NA" ? mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_1 : "_______"}}</span>
                 <div class="collapse" id="collapseWorkBookQ1" style="position: absolute" data-bs-parent="#collapseModularTask4">
                     <div class="card card-body">
                         <p>
-                            В каком году была основана Москва?
+                            В каком году основана Москва?
                         </p>
                     </div>
                 </div>
-                году
+                году. Город был основан
                 <span data-bs-toggle="collapse" data-bs-target="#collapseWorkBookQ2" aria-expanded="false" aria-controls="collapseWorkBookQ2"
                       @click="openWorkBookQ(15)" style="text-decoration: underline; font-size: 18px; font-size: 18px" :class="{colorAnswers: this.mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_2 === 'NA'}"
                 >{{this.mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_2 !== "NA" ? mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_2 : "_______"}}</span>.
@@ -32,21 +32,21 @@
                         </p>
                     </div>
                 </div>
-                По его указу на берегу Москвы-реки была возведена деревянная крепость. Сейчас на этом месте мы видим
+                Главной торговой площадью средневековой Москвы была
                 <span data-bs-toggle="collapse" data-bs-target="#collapseWorkBookQ3" aria-expanded="false" aria-controls="collapseWorkBookQ3"
                       @click="openWorkBookQ(16)" style="text-decoration: underline; font-size: 18px" :class="{colorAnswers: this.mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_3 === 'NA'}"
                 >{{this.mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_3 !== "NA" ? mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_3 : "_______"}}</span>.
                 <div class="collapse" id="collapseWorkBookQ3" style="position: absolute" data-bs-parent="#collapseModularTask4">
                     <div class="card card-body">
                         <p>
-                            Что сейчас находится на месте деревянной крепости?
+                            Какая площадь была главной в средневековой Москве?
                         </p>
                         <p>
                             Выбери правильный рисунок в правой части тетради.
                         </p>
                     </div>
                 </div>
-                В наше время рядом с этим местом находится памятник
+                В наши дни рядом с этой площадью находится памятник
                 <span data-bs-toggle="collapse" data-bs-target="#collapseWorkBookQ4" aria-expanded="false" aria-controls="collapseWorkBookQ4"
                       @click="openWorkBookQ(17)" style="text-decoration: underline; font-size: 18px" :class="{colorAnswers: this.mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_4 === 'NA'}"
                 >{{this.mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_4 !== "NA" ? mainJSON.taskLibraryNight.ULSCLL1_Log_LLK1_4 : "_______"}}</span>.
@@ -160,17 +160,17 @@
             chooseWorkBookEl(workBookID, id, el){
                 this.mainJSON.taskLibraryNight.results["ULSCLL1_Log_LLK1_" + workBookID] = el.id
                 if(workBookID === 2){
+                    if(el.value === 'Царь Иван Грозный'){
+                        this.mainJSON.taskLibraryNight["ULSCLL1_Log_LLK1_" + workBookID] = 'Царем Иваном Грозным'
+                    }
                     if(el.value === 'Князь Юрий Долгорукий'){
                         this.mainJSON.taskLibraryNight["ULSCLL1_Log_LLK1_" + workBookID] = 'Князем Юрием Долгоруким'
                     }
-                    if(el.value === 'Князь Иван Калита'){
-                        this.mainJSON.taskLibraryNight["ULSCLL1_Log_LLK1_" + workBookID] = 'Князем Иваном Калитой'
+                    if(el.value === 'Боярин Борис Годунов'){
+                        this.mainJSON.taskLibraryNight["ULSCLL1_Log_LLK1_" + workBookID] = 'Боярином Борисом Годуновым'
                     }
-                    if(el.value === 'Князь Даниил Московский'){
-                        this.mainJSON.taskLibraryNight["ULSCLL1_Log_LLK1_" + workBookID] = 'Князем Даниилом Московским'
-                    }
-                    if(el.value === 'Князь Владимир Красное Солнышко'){
-                        this.mainJSON.taskLibraryNight["ULSCLL1_Log_LLK1_" + workBookID] = 'Князем Владимиром Красное Солнышко'
+                    if(el.value === 'Князь Ярослав Мудрый'){
+                        this.mainJSON.taskLibraryNight["ULSCLL1_Log_LLK1_" + workBookID] = 'Князем Ярославом Мудрым'
                     }
                 }
                 if(workBookID === 3){
