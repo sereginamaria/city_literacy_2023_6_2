@@ -140,10 +140,10 @@ export default {
         if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK1_4 === 1){
             this.localLiteracy++
         }
-        if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK3_1 === 1){
+        if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK3_1 === 1){
             this.localLiteracy++
         }
-        if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK3_1 === 2){
+        if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK3_1 === 2){
             this.localLiteracy+=2
         }
         if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK2_1 === 1){

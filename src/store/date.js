@@ -79,8 +79,8 @@ const date = {
             "ULSCLL2_Score_SCS4_1": "NA",
 
             //Map
-            "ULSCLL1_Log_LLK3_1": "NA",
-            "ULSCLL1_Score_LLK3_1": "NA",
+            "ULSCLL2_Log_LLK3_1": "NA",
+            "ULSCLL2_Score_LLK3_1": "NA",
 
             //Fire
             "ULSCLL2_Log_SCK1_4": "NA",
@@ -314,95 +314,95 @@ const date = {
         //Задание 9 задание
         "listOfElementsTask9": [  // todo контекстуальные стили? подумать про state machine
             {
-                "src": "TaskLibraryNightMapParkTaganay.png",
-                "name": "Парк Таганай",
-                "id": 1,
+                "src": "TaskLibraryNightMapParkPriokskiy.png",
+                "name": "Парк 'Приокский'",
+                "id": 8,
                 "choose": false,
-                "style": "width: 6.5%; position: absolute; bottom: calc(100%/6.8); left: calc(100%/4)"
+                "style": "width: 6.5%; position: absolute; bottom: 50%; left: calc(100%/4)"
             },
             {
-                "src": "Stiker3.png",
+                "src": "TaskLibraryNightMapRedSquare.png",
                 "name": "Красная Площадь",
-                "id": 3,
-                "choose": false,
+                "id": 9,
+                "choose": null,
                 "style": "width: 6.5%; position: absolute; bottom: calc(100%/1.95); left: calc(100%/2.1)"
             },
             {
-                "src": "Stiker4.png",
+                "src": "TaskLibraryNightMapKremlin.png",
                 "name": "Кремль",
-                "id": 4,
-                "choose": false,
+                "id": 10,
+                "choose": null,
                 "style": "width: 6.5%; position: absolute; bottom: calc(100%/2.4); left: calc(100%/2.25)"
             },
             {
-                "src": "Stiker5.png",
+                "src": "TaskLibraryNightMapPatriarchieLakes.png",
                 "name": "Патриаршие пруды",
-                "id": 5,
+                "id": 6,
                 "choose": false,
                 "style": "width: 6.5%; position: absolute; bottom: calc(100%/1.65); left: calc(100%/3)"
             },
             {
-                "src": "Stiker6.png",
+                "src": "TaskLibraryNightMapTverskayaStreet.png",
                 "name": "Тверская улица",
-                "id": 6,
-                "choose": false,
-                "style": "width: 6.5%; position: absolute; bottom: calc(100%/1.65); left: calc(100%/2.4)"
+                "id": 11,
+                "choose": null,
+                "style": "width: 6.5%; position: absolute; bottom: 50%; left: calc(100%/2.4)"
             },
             {
-                "src": "Stiker7.png",
+                "src": "TaskLibraryNightMapSadovoeRing.png",
                 "name": "Садовое кольцо",
-                "id": 7,
-                "choose": false,
-                "style": "width: 6.5%; position: absolute; bottom: calc(100%/1.3); left: calc(100%/2.4)"
+                "id": 12,
+                "choose": null,
+                "style": "width: 6.5%; position: absolute; bottom: 60%; left: calc(100%/2.4)"
             },
             {
-                "src": "Stiker8.png",
+                "src": "TaskLibraryNightMapBulvarRing.png",
                 "name": "Бульварное кольцо",
-                "id": 8,
-                "choose": false,
+                "id": 13,
+                "choose": null,
                 "style": "width: 6.5%; position: absolute; bottom: calc(100%/1.5); left: calc(100%/2)"
             },
             {
-                "src": "Stiker9.png",
-                "name": "Река Ока",
-                "id": 9,
+                "src": "TaskLibraryNightMapDonRiver.png",
+                "name": "Река Дон",
+                "id": 7,
                 "choose": false,
-                "style": "width: 6.5%; position: absolute; bottom: calc(100%/7); left: calc(100%/1.32)"
+                "style": "width: 6.5%; position: absolute; bottom: calc(100%/7); left: 20%"
             },
             {
-                "src": "Stiker10.png",
+                "src": "TaskLibraryNightMapYauzaRiver.png",
                 "name": "Река Яуза",
-                "id": 10,
+                "id": 2,
                 "choose": false,
-                "style": "width: 6.5%; position: absolute; bottom: calc(100%/1.8); left: calc(100%/1.4)"
+                "style": "width: 6.5%; position: absolute; bottom: 42%; left: calc(100%/1.4)"
             },
             {
-                "src": "Stiker11.png",
+                "src": "TaskLibraryNightMapParkChistieLakes.png",
                 "name": "Чистые пруды",
-                "id": 11,
+                "id": 5,
                 "choose": false,
                 "style": "width: 6.5%; position: absolute; bottom: calc(100%/1.8); left: calc(100%/1.7)"
             },
             {
-                "src": "Stiker12.png",
+                "src": "TaskLibraryNightMapParkZariadie.png",
                 "name": "Парк Зарядье",
-                "id": 12,
+                "id": 4,
                 "choose": false,
                 "style": "width: 6.5%; position: absolute; bottom: calc(100%/2.4); left: calc(100%/2)"
             },
             {
-                "src": "Stiker13.png",
+                "src": "TaskLibraryNightMapParkGorkiy.png",
                 "name": "Парк Горького",
-                "id": 13,
+                "id": 3,
                 "choose": false,
                 "style": "width: 6.5%; position: absolute; bottom: calc(100%/4.7); left: calc(100%/2.4)"
             },
             {
-                "src": "Stiker14.png",
+                "src": "TaskLibraryNightMapMoscowRiver.png",
                 "name": "Москва Река",
-                "id": 14,
+                "id": 1,
                 "choose": false,
-                "style": "width: 6.5%; position: absolute; bottom: 35%; left: 60%"
+                "style": "width: 6.5%; position: absolute; bottom: 25%; left: 60%"
             },
         ],
         "listOfAnswersTask9": [],

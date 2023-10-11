@@ -20,7 +20,7 @@
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
                 </p>
             </div>
-            <MyButton class="white-buttons" @click="showModal" v-if="mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK3_1 !== 'NA'">Готово</MyButton>
+            <MyButton class="white-buttons" @click="showModal" v-if="mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK3_1 !== 'NA'">Готово</MyButton>
             <MyButton class="white-buttons" disabled v-else>Готово</MyButton>
         </div>
     </div>
@@ -62,8 +62,11 @@
                 this.modalMessage = 'Ты действительно хочешь закончить выполнение этого задания? После этого уже нельзя будет изменить ответы.'
             },
             addAnswer(el){
-                el.choose = !el.choose
-                this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK3_1 = this.mainJSON.taskLibraryNight.listOfAnswersTask9.join()
+                if (el.choose !== null) {
+                    el.choose = !el.choose
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK3_1 = this.mainJSON.taskLibraryNight.listOfAnswersTask9.join()
+                }
+
             },
             checkAnswer(status) {
                 this.modalVisible = false
@@ -74,7 +77,7 @@
                             this.mainJSON.taskLibraryNight.listOfAnswersTask9.push(el.name)
                         }
                     })
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK3_1 = this.mainJSON.taskLibraryNight.listOfAnswersTask9.join()
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK3_1 = this.mainJSON.taskLibraryNight.listOfAnswersTask9.join()
 
                     screen.isShow = false
                     this.mainJSON.taskLibraryNight.shownScreenID++
@@ -87,18 +90,18 @@
 
                 let maxScore = 0
                 this.mainJSON.taskLibraryNight.listOfAnswersTask9.forEach( el => {
-                    if(el === "Река Ока" || el === "Парк Таганай"){
+                    if(el === "Река Дон" || el === "Парк 'Приокский'"){
                         maxScore++
                     }
                 })
                 if(this.mainJSON.taskLibraryNight.listOfAnswersTask9.length === 2 && maxScore === 2){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK3_1 = 2
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK3_1 = 2
                 }
                 else if(this.mainJSON.taskLibraryNight.listOfAnswersTask9.length === 2 && maxScore === 1){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK3_1 = 1
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK3_1 = 1
                 }
                 else{
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK3_1 = 0
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK3_1 = 0
                 }
                 let t = new Date()
                 this.mainJSON.results.dataTimeLastUpdate =
