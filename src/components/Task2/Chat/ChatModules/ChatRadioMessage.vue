@@ -1,9 +1,9 @@
 <template>
 
-    <div v-if="(currentScreenConst.id === 5 && this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLS3_1 !== 2) ||
-                ((currentScreenConst.id === 9 && this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLK2_1 !== '1,3') &&
-                (currentScreenConst.id === 9 && this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLK2_1 !== '3,1')) ||
-                (currentScreenConst.id === 11 && this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLS4_2 !== 2) ">
+    <div v-if="(currentScreenConst.id === 7 && this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLK3_1 !== 2) ||
+                ((currentScreenConst.id === 15 && this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLK4_1 !== '1,3') &&
+                (currentScreenConst.id === 15 && this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLK4_1 !== '3,1')) ||
+                (currentScreenConst.id === 14 && this.mainJSON.taskChatFestival.results.ULHLDT2_Log_DTS2_2 !== 3) ">
         <div class="d-flex chat-message-body" v-for="message_dop in currentScreenConst.message_dop" :key="message_dop.text">
             <img src="../../../../assets/TaskChatFestivalNastya.png" alt="Аватар Настя" style="margin-right: 20px; width: 50px; height: 50px; border-radius: 50%"
                  v-if="message_dop.name === 'Настя'">
