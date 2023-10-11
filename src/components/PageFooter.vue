@@ -354,7 +354,7 @@
 
 
                 if  (this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLS4_1 !== "NA"){
-                    if(this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLS4_1 === 3){
+                    if(this.mainJSON.taskChatFestival.results.ULHLDT2_Log_HLS4_1 === 1){
                         this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLS4_1 = 1
                     }
                     else this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLS4_1 = 0

@@ -1,5 +1,4 @@
 <template>
-    <!--Задание 14 задание-->
     <div class="backgroundTaskLibraryNight d-flex align-items-center flex-column"
          :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}" style="backdrop-filter: blur(5px);">
         <div class="instruction-block" id="instruction-block">
@@ -82,7 +81,7 @@
                     >
                         <template #item="{ element }">
                             <img :src=" require('../../assets/' + element.src) "
-                                 alt="Avatar" style="height: 48%"/>
+                                 alt="Avatar" style="height: 40%"/>
                         </template>
                     </draggable>
                 </div>
@@ -95,9 +94,12 @@
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
                 </p>
             </div>
-            <MyButton class="white-buttons" @click="checkAnswer"
+            <MyButton class="white-buttons" @click="checkAnswer" v-if="this.mainJSON.taskLibraryNight.listOfAnswersTaskWarningSigns_1.length !== 0 ||
+                        this.mainJSON.taskLibraryNight.listOfAnswersTaskWarningSigns_2.length !== 0 ||
+                        this.mainJSON.taskLibraryNight.listOfAnswersTaskWarningSigns_3.length !== 0||
+                        this.mainJSON.taskLibraryNight.listOfAnswersTaskWarningSigns_4.length !== 0"
             >Готово</MyButton>
-<!--            <MyButton class="white-buttons" disabled>Готово</MyButton>-->
+            <MyButton class="white-buttons" disabled v-else>Готово</MyButton>
         </div>
     </div>
 </template>
@@ -131,7 +133,7 @@
                     this.mainJSON.taskLibraryNight["listOfAnswersTaskWarningSigns_" + id].splice(1, 1)
                 }
                 let idNew = id + 1
-                this.mainJSON.taskLibraryNight.results['ULSCLL1_Log_SCK3_' + idNew] = this.mainJSON.taskLibraryNight["listOfAnswersTaskWarningSigns_" + id][0].id
+                this.mainJSON.taskLibraryNight.results['ULSCLL2_Log_SCK3_' + idNew] = this.mainJSON.taskLibraryNight["listOfAnswersTaskWarningSigns_" + id][0].id
             },
             checkAnswer() {
                 screen.isShow = false
@@ -142,23 +144,23 @@
                     }
                 })
                 let k = 0
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_2 === 5){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_2 === 6){
                     k++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_3 === 7){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_3 === 4){
                     k++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_4 === 3){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_4 === 2){
                     k++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_5 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_5 === 7){
                     k++
                 }
                 if(k === 4){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK3_2 = 1
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK3_2 = 1
                 }
                 else {
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK3_2 = 0
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK3_2 = 0
                 }
                 let t = new Date()
                 this.mainJSON.results.dataTimeLastUpdate =
@@ -196,15 +198,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 20px;
+        margin: 0 20px;
         width: 25%;
         height: 100%;
     }
     .task14El1 {
-        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        padding: 10px 20px;
         background: #d2fff7;
         border-radius: 4px;
         height: 30%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .list-of-answers {

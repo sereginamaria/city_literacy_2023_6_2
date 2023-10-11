@@ -6,67 +6,68 @@
                 Добавь подписи к объектам на картинках: перенеси название выбранного объекта в нужное поле.
             </p>
         </div>
-        <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <div class="d-flex justify-content-center align-items-center w-100 flex-column"
+             :style="'height: calc(100% - ' + this.height + 'px)'">
             <div class="backgroundTaskBodyLibraryNight">
-                <div class="d-flex">
-                    <div style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
-                        <img src="../../assets/Task10Element1.webp" alt="" style="width: calc(100%/1.2);">
-                        <draggable
+                    <div class="d-flex">
+                        <div style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
+                            <img src="../../assets/Task10Element1.webp" alt="" style="width: calc(100%/1.2);">
+                            <draggable
                                 @add="error(1)"
                                 class="list-group task10"
                                 :list="this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_1"
                                 group="task10"
-                        >
-                            <template #item="{ element }">
-                                <div class="answers2">
-                                    <p>{{element.value}}</p>
-                                </div>
-                            </template>
-                        </draggable>
-                    </div>
-                    <div style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
-                        <img src="../../assets/Task10Element2.webp" alt="" style="width: calc(100%/1.2);">
-                        <draggable
+                            >
+                                <template #item="{ element }">
+                                    <div class="answers2">
+                                        <p>{{element.value}}</p>
+                                    </div>
+                                </template>
+                            </draggable>
+                        </div>
+                        <div style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
+                            <img src="../../assets/Task10Element2.webp" alt="" style="width: calc(100%/1.2);">
+                            <draggable
                                 @add="error(2)"
                                 class="list-group task10"
                                 :list="this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_2"
                                 group="task10"
-                        >
-                            <template #item="{ element }">
-                                <div class="answers2">
-                                    <p>{{element.value}}</p>
-                                </div>
-                            </template>
-                        </draggable>
-                    </div>
-                    <div style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
-                        <img src="../../assets/Task10Element3.webp" alt="" style="width: calc(100%/1.2);">
-                        <draggable
+                            >
+                                <template #item="{ element }">
+                                    <div class="answers2">
+                                        <p>{{element.value}}</p>
+                                    </div>
+                                </template>
+                            </draggable>
+                        </div>
+                        <div style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
+                            <img src="../../assets/Task10Element3.webp" alt="" style="width: calc(100%/1.2);">
+                            <draggable
                                 @add="error(3)"
                                 class="list-group task10"
                                 :list="this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_3"
                                 group="task10"
-                        >
-                            <template #item="{ element }">
-                                <div class="answers2">
-                                    <p>{{element.value}}</p>
-                                </div>
-                            </template>
-                        </draggable>
+                            >
+                                <template #item="{ element }">
+                                    <div class="answers2">
+                                        <p>{{element.value}}</p>
+                                    </div>
+                                </template>
+                            </draggable>
+                        </div>
                     </div>
-                </div>
-                <draggable
+                    <draggable
                         class="list-group d-flex list-of-answers-attractions"
                         :list="this.mainJSON.taskLibraryNight.listOfElementsTaskAttractions"
                         group="task10"
-                >
-                    <template #item="{ element }">
-                        <div class="answers">
-                            <p>{{element.value}}</p>
-                        </div>
-                    </template>
-                </draggable>
-            </div>
+                    >
+                        <template #item="{ element }">
+                            <div class="answers">
+                                <p>{{element.value}}</p>
+                            </div>
+                        </template>
+                    </draggable>
+                </div>
         </div>
         <div class="background-text" id="background-text">
             <div style="width: 90%">
@@ -75,7 +76,7 @@
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
                 </p>
             </div>
-            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK2_1 !== 'NA'">Готово</MyButton>
+            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK2_1 !== 'NA'">Готово</MyButton>
             <MyButton class="white-buttons" disabled v-else>Готово</MyButton>
         </div>
     </div>
@@ -90,6 +91,11 @@
         props: {
             screen: {},
             constTaskLibraryNight: {}
+        },
+        data() {
+            return {
+                height: 0
+            }
         },
         computed: {
             ...mapGetters(['mainJSON']),
@@ -106,7 +112,7 @@
                 }
                 if(this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_1.length !== 0 && this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_2.length !== 0 &&
                     this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_3.length !== 0){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK2_1 =  "Слот 1: " + this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_1[0].value + ", Слот 2: " +
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK2_1 =  "Слот 1: " + this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_1[0].value + ", Слот 2: " +
                         this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_2[0].value + ", Слот 3: " + this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_3[0].value
                 }
             },
@@ -118,12 +124,12 @@
                         el.isShow = true
                     }
                 })
-                if(this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_1[0].id === 6 && this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_2[0].id === 7 &&
-                    this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_3[0].id === 8){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK2_1 = 1
+                if(this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_1[0].id === 6 && this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_2[0].id === 5 &&
+                    this.mainJSON.taskLibraryNight.listOfAnswersTaskAttractions_3[0].id === 2){
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK2_1 = 1
                 }
                 else {
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK2_1 = 0
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK2_1 = 0
                 }
                 let t = new Date()
                 this.mainJSON.results.dataTimeLastUpdate =
@@ -141,6 +147,9 @@
                     push: this.mainJSON
                 })
             }
+        },
+        mounted(){
+            this.height = document.getElementById('background-text').offsetHeight + document.getElementById('instruction-block').offsetHeight
         }
     }
 </script>
@@ -171,6 +180,7 @@
         /* height: inherit; */
         background: #D2FFF7;
         border-radius: 4px;
+        text-align: center;
     }
     .list-of-answers-attractions {
         flex-wrap: wrap;

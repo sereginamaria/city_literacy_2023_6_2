@@ -1,6 +1,6 @@
 <template>
-    <div class="backgroundTaskLibraryNight backimp" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}" :class="{background5: mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 1,
-    background6: mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 2, background7: mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 3, background8: mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 4}"
+    <div class="backgroundTaskLibraryNight backimp" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}" :class="{background5: mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 === 1,
+    background6: mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 === 2, background7: mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 === 3, background8: mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 === 4}"
     >
         <div class="instruction-block" id="instruction-block">
             <p>Что ответишь Кате? Где можно спрятаться от непогоды? Выбери один ответ.
@@ -10,7 +10,7 @@
              :style="'height: calc(100% - ' + this.height + 'px)'">
             <div class="task13">
                 <div v-for="el in mainJSON.taskLibraryNight.listOfAnswersTaskBadWeather" :key="el.id" class="task13El"
-                     :class="{choosenAnswer1: el.id === mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1}"
+                     :class="{choosenAnswer1: el.id === mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1}"
                      @click="chooseAnswer(el)">
                     <div>
                         {{el.name}}
@@ -25,7 +25,7 @@
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
                 </p>
             </div>
-            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 !== 'NA'">Готово</MyButton>
+            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 !== 'NA'">Готово</MyButton>
             <MyButton class="white-buttons" disabled v-else>Готово</MyButton>
         </div>
     </div>
@@ -51,7 +51,7 @@
         methods: {
             ...mapMutations(["push_mainJSON"]),
             chooseAnswer(el) {
-                this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 = el.id
+                this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 = el.id
             },
             checkAnswer() {
                 screen.isShow = false
@@ -61,11 +61,11 @@
                         el.isShow = true
                     }
                 })
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK3_1 === 3){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK3_1 = 1
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 === 4){
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK3_1 = 1
                 }
                 else {
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK3_1 = 0
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK3_1 = 0
                 }
                 let t = new Date()
                 this.mainJSON.results.dataTimeLastUpdate =

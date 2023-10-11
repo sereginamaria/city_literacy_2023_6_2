@@ -43,25 +43,25 @@
                         {{result.key}}: {{result.value}}
                     </div>
                 </div>-->
-                <div class="m-3">
+                <div class="m-3 w-25">
                     <p>Ночь в музее</p>
                     <div v-for="result in this.resultsTaskNightInTheMuseum" :key="result">
                         {{result.key}}: {{result.value}}
                     </div>
                 </div>
-                <div class="m-3">
+                <div class="m-3 w-25">
                     <p>Чат прогулка</p>
                     <div v-for="result in this.resultsTaskChatFestival" :key="result">
                         {{result.key}}: {{result.value}}
                     </div>
                 </div>
-                <div class="m-3">
+                <div class="m-3 w-25">
                     <p>Волонтеры</p>
                     <div v-for="result in this.resultsTaskVolunteers" :key="result">
                         {{result.key}}: {{result.value}}
                     </div>
                 </div>
-                <div class="m-3">
+                <div class="m-3 w-25">
                     <p>Анкета</p>
                     <div v-for="result in this.resultsForms" :key="result">
                         {{result.key}}: {{result.value}}
@@ -142,45 +142,45 @@
                 if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK1_3 === 1){
                     this.securityInTheCity++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK2_1 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK2_1 === 1){
                     this.securityInTheCity++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK2_2 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK2_2 === 1){
                     this.securityInTheCity++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK2_3 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK2_3 === 1){
                     this.securityInTheCity++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCS4_1 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCS4_1 === 1){
                     this.securityInTheCity++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK1_4 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK1_4 === 1){
                     this.securityInTheCity++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCS4_2 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCS4_2 === 1){
                     this.securityInTheCity++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCS4_3 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCS4_3 === 1){
                     this.securityInTheCity++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK3_1 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK3_1 === 1){
                     this.securityInTheCity++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK3_2 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK3_2 === 1){
                     this.securityInTheCity++
                 }
 
 
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK1_1 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK1_1 === 1){
                     this.localLiteracy++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK1_2 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK1_2 === 1){
                     this.localLiteracy++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK1_3 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK1_3 === 1){
                     this.localLiteracy++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK1_4 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK1_4 === 1){
                     this.localLiteracy++
                 }
                 if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK3_1 === 1){
@@ -189,19 +189,19 @@
                 if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK3_1 === 2){
                     this.localLiteracy+=2
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK2_1 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK2_1 === 1){
                     this.localLiteracy++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK4_1 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK4 === 1){
                     this.localLiteracy++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK5_1 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK5 === 1){
                     this.localLiteracy++
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK5_1 === 2){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK5 === 2){
                     this.localLiteracy+=2
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK6_1 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK6_1 === 1){
                     this.localLiteracy++
                 }
 

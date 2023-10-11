@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div class="background-text" id="background-text">
+        <div class="background-text" id="background-text" style="background: none; justify-content: end;">
                  <div class="d-flex">
 
                 <p>

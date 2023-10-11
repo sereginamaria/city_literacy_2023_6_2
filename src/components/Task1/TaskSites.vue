@@ -22,7 +22,7 @@
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
                 </p>
             </div>
-            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK5_1 !== 'NA' && mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK5_1 !== ''">Готово</MyButton>
+            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK5 !== 'NA' && mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK5 !== ''">Готово</MyButton>
             <MyButton class="white-buttons" disabled v-else>Готово</MyButton>
         </div>
     </div>
@@ -55,7 +55,7 @@
                     this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.push(el.id)
                     el.choose = true
                 }
-                this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_LLK5_1 = this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.join()
+                this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK5 = this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.join()
             },
             checkAnswer() {
                 screen.isShow = false
@@ -72,13 +72,13 @@
                     }
                 })
                 if(this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.length === 2 && maxScore === 2){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK5_1 = 2
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK5 = 2
                 }
                 else if(this.mainJSON.taskLibraryNight.listOfChoosenAnswersTaskSites.length === 1 && maxScore === 1){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK5_1 = 1
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK5 = 1
                 }
                 else {
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_LLK5_1 = 0
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK5 = 0
                 }
                 
                 let t = new Date()

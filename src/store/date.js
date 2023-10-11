@@ -29,81 +29,82 @@ const date = {
     ],
     "taskLibraryNight": {
         "results": {
-            //1 ChooseBag and Moving things from bag
+            //ChooseBag and Moving things from bag
             "ULSCLL2_Log_SCK1_2": "NA",// todo поразмислыть в контексте state machine
             "ULSCLL2_Score_SCK1_2": "NA",
 
-            //2 Choose shoes
+            //Choose shoes
             "ULSCLL2_Log_SCK1_3": "NA",
             "ULSCLL2_Score_SCK1_3": "NA",
 
-            //3 Metro
-            "ULSCLL1_Log_SCK2_1": "NA",
-            "ULSCLL1_Score_SCK2_1": "NA",
+            //Bag Weather
+            "ULSCLL2_Log_SCK3_1": "NA",
+            "ULSCLL2_Score_SCK3_1": "NA",
 
-            //4 Workbook
-            "ULSCLL1_Log_LLK1_1": "NA",
-            "ULSCLL1_Log_LLK1_2": "NA",
-            "ULSCLL1_Log_LLK1_3": "NA",
-            "ULSCLL1_Log_LLK1_4": "NA",
-            "ULSCLL1_Score_LLK1_1": "NA",
-            "ULSCLL1_Score_LLK1_2": "NA",
-            "ULSCLL1_Score_LLK1_3": "NA",
-            "ULSCLL1_Score_LLK1_4": "NA",
+            //Warning Signs
+            "ULSCLL2_Log_SCK3_2": "NA",
+            "ULSCLL2_Log_SCK3_3": "NA",
+            "ULSCLL2_Log_SCK3_4": "NA",
+            "ULSCLL2_Log_SCK3_5": "NA",
+            "ULSCLL2_Score_SCK3_2": "NA",
 
-            //5 Museum Paintings
-            "ULSCLL1_Log_SCK2_2": "NA",
-            "ULSCLL1_Log_SCK2_3": "NA",
-            "ULSCLL1_Score_SCK2_2": "NA",
-            "ULSCLL1_Score_SCK2_3": "NA",
+            //Metro
+            "ULSCLL2_Log_SCK2_1": "NA",
+            "ULSCLL2_Score_SCK2_1": "NA",
 
-            //6 Escape
-            "ULSCLL1_Log_SCS4_1": "NA",
-            "ULSCLL1_Score_SCS4_1": "NA",
+            //Museum Paintings
+            "ULSCLL2_Log_SCK2_2": "NA",
+            "ULSCLL2_Log_SCK2_3": "NA",
+            "ULSCLL2_Score_SCK2_2": "NA",
+            "ULSCLL2_Score_SCK2_3": "NA",
 
-            //7 Fire
-            "ULSCLL1_Log_SCK1_4": "NA",
-            "ULSCLL1_Score_SCK1_4": "NA",
+            //Workbook
+            "ULSCLL2_Log_LLK1_1": "NA",
+            "ULSCLL2_Log_LLK1_2": "NA",
+            "ULSCLL2_Log_LLK1_3": "NA",
+            "ULSCLL2_Log_LLK1_4": "NA",
+            "ULSCLL2_Score_LLK1_1": "NA",
+            "ULSCLL2_Score_LLK1_2": "NA",
+            "ULSCLL2_Score_LLK1_3": "NA",
+            "ULSCLL2_Score_LLK1_4": "NA",
 
-            //8 Hooligans
-            "ULSCLL1_Log_SCS4_2": "NA",
-            "ULSCLL1_Log_SCS4_3": "NA",
-            "ULSCLL1_Score_SCS4_2": "NA",
-            "ULSCLL1_Score_SCS4_3": "NA",
+            //Hooligans
+            "ULSCLL2_Log_SCS4_2": "NA",
+            "ULSCLL2_Log_SCS4_3": "NA",
+            "ULSCLL2_Score_SCS4_2": "NA",
+            "ULSCLL2_Score_SCS4_3": "NA",
 
-            //9 Map
+            //Escape
+            "ULSCLL2_Log_SCS4_1": "NA",
+            "ULSCLL2_Score_SCS4_1": "NA",
+
+            //Map
             "ULSCLL1_Log_LLK3_1": "NA",
             "ULSCLL1_Score_LLK3_1": "NA",
 
-            //10 Attractions
-            "ULSCLL1_Log_LLK2_1": "NA",
-            "ULSCLL1_Score_LLK2_1": "NA",
+            //Fire
+            "ULSCLL2_Log_SCK1_4": "NA",
+            "ULSCLL2_Score_SCK1_4": "NA",
 
-            //11 Festival
-            "ULSCLL1_Log_LLK4_1": "NA",
-            "ULSCLL1_Score_LLK4_1": "NA",
+
+            //Attractions
+            "ULSCLL2_Log_LLK2_1": "NA",
+            "ULSCLL2_Score_LLK2_1": "NA",
+
+            //Festival
+            "ULSCLL2_Log_LLK4": "NA",
+            "ULSCLL2_Score_LLK4": "NA",
 
             //12 Sites
-            "ULSCLL1_Log_LLK5_1": "NA",
-            "ULSCLL1_Score_LLK5_1": "NA",
-
-            //13 Bag Weather
-            "ULSCLL1_Log_SCK3_1": "NA",
-            "ULSCLL1_Score_SCK3_1": "NA",
-
-            //14 Warning Signs
-            "ULSCLL1_Log_SCK3_2": "NA",
-            "ULSCLL1_Log_SCK3_3": "NA",
-            "ULSCLL1_Log_SCK3_4": "NA",
-            "ULSCLL1_Log_SCK3_5": "NA",
-            "ULSCLL1_Score_SCK3_2": "NA",
+            "ULSCLL2_Log_LLK5": "NA",
+            "ULSCLL2_Score_LLK5": "NA",
 
             //15 Weather Forecast
-            "ULSCLL1_Log_LLK6_1": "NA",
-            "ULSCLL1_Log_LLK6_2": "NA",
-            "ULSCLL1_Log_LLK6_3": "NA",
-            "ULSCLL1_Log_LLK6_4": "NA",
-            "ULSCLL1_Score_LLK6_1": "NA",
+            "ULSCLL2_Log_LLK6_1": "NA",
+            "ULSCLL2_Log_LLK6_2": "NA",
+            "ULSCLL2_Log_LLK6_3": "NA",
+            "ULSCLL2_Log_LLK6_4": "NA",
+            "ULSCLL2_Score_LLK6_1": "NA",
         },
         "isShow": false,
         "shownScreenID": 0,
@@ -269,7 +270,7 @@ const date = {
                 "id": 3,
                 "style": "width: 23%; position: absolute; bottom: 8%; left: 20%",
                 "style_dop": "20%; position: absolute; bottom: 3%; left: 58%; z-index: 99",
-                "toolTip": "Зарядное устройство"
+                "toolTip": "зарядное устройство"
             },
             {
                 "src": "TaskLibraryNightMovingThingsFromBagNotebook.png",
@@ -284,7 +285,7 @@ const date = {
                 "src_dop": "TaskLibraryNightMovingThingsFromBagPencil_dop.png",
                 "id": 6,
                 "style": "width: 30%; position: absolute; bottom: 48%; left: 40%",
-                "style_dop": "width: 20%; position: absolute; bottom: 0; left: 25%",
+                "style_dop": "width: 30%; position: absolute; bottom: 0; left: 25%",
                 "toolTip": "карандаш"
             },
             {
@@ -292,7 +293,7 @@ const date = {
                 "src_dop": "TaskLibraryNightMovingThingsFromBagStationeryKnife_dop.png",
                 "id": 7,
                 "style": "width: 15%; position: absolute; bottom: 51%; left: 55%",
-                "style_dop": "width: 12%; position: absolute; bottom: 5%; left: 30%",
+                "style_dop": "width: 22%; position: absolute; bottom: 5%; left: 30%",
                 "toolTip": "канцелярский нож"
             },
         ],
@@ -305,15 +306,15 @@ const date = {
         "modularTask1_16Show": false,
         //Картинки к четвертому вопросу
         "modularTask1_17Show": false,
-        "ULSCLL1_Log_LLK1_1": "NA",
-        "ULSCLL1_Log_LLK1_2": "NA",
-        "ULSCLL1_Log_LLK1_3": "NA",
-        "ULSCLL1_Log_LLK1_4": "NA",
+        "ULSCLL2_Log_LLK1_1": "NA",
+        "ULSCLL2_Log_LLK1_2": "NA",
+        "ULSCLL2_Log_LLK1_3": "NA",
+        "ULSCLL2_Log_LLK1_4": "NA",
 
         //Задание 9 задание
         "listOfElementsTask9": [  // todo контекстуальные стили? подумать про state machine
             {
-                "src": "Stiker1.png",
+                "src": "TaskLibraryNightMapParkTaganay.png",
                 "name": "Парк Таганай",
                 "id": 1,
                 "choose": false,
@@ -434,7 +435,7 @@ const date = {
             },
             {
                 "id": 8,
-                "value": "Большой театрПарк Горького"
+                "value": "Большой театр"
             },
         ],
         "listOfAnswersTaskAttractions_1": [],
@@ -452,7 +453,7 @@ const date = {
                 "choose": false,
             },
             {
-                "name": "Музейная Москва онлайн| Департамент культуры Москвыя",
+                "name": "Музейная Москва онлайн. Департамент культуры Москвыя",
                 "link": "https://museum-online.moscow/",
                 "id": 2,
                 "choose": false,

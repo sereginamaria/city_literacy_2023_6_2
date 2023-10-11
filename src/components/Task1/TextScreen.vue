@@ -136,7 +136,10 @@
                     if(screen.id === 30){
                         this.mainJSON.taskLibraryNight.shownScreenID = 32
                     }
-                    if(screen.id !== 30) {
+                    if(screen.id === 38 || screen.id === 40){
+                        this.mainJSON.taskLibraryNight.shownScreenID = 42
+                    }
+                    if(screen.id !== 30 || screen.id !== 38 || screen.id !== 40) {
                         this.mainJSON.taskLibraryNight.shownScreenID++
                     }
 

@@ -7,7 +7,7 @@
             </p>
         </div>
         <div class="option-answers-background">
-            <div v-for="el in constTaskLibraryNight.listOfAnswersTaskMuseumPaintings1" :key="el.id" :class="{choosenAnswer: el.id === mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_2}"
+            <div v-for="el in constTaskLibraryNight.listOfAnswersTaskMuseumPaintings1" :key="el.id" :class="{choosenAnswer: el.id === mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_2}"
                  class="option-answers-border"
             >
                 <div @click="chooseAnswer(1, el)">
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="background-text justify-content-end">
-            <MyButton class="white-buttons" @click="nextTask(screen)" v-if="mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_2 !== 'NA'">Готово</MyButton>
+            <MyButton class="white-buttons" @click="nextTask(screen)" v-if="mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_2 !== 'NA'">Готово</MyButton>
             <MyButton class="white-buttons" disabled v-else>Готово</MyButton>
         </div>
     </div>
@@ -28,7 +28,7 @@
             </p>
         </div>
         <div class="option-answers-background">
-            <div v-for="el in constTaskLibraryNight.listOfAnswersTaskMuseumPaintings2" :key="el.id" :class="{choosenAnswer: el.id === mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_3}"
+            <div v-for="el in constTaskLibraryNight.listOfAnswersTaskMuseumPaintings2" :key="el.id" :class="{choosenAnswer: el.id === mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_3}"
                  class="option-answers-border"
             >
                 <div @click="chooseAnswer(2, el)">
@@ -36,8 +36,8 @@
                 </div>
             </div>
         </div>
-        <div class="background-text justify-content-end">
-            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_3 !== 'NA'">Готово</MyButton>
+        <div class="background-text justify-content-end" style="background: none; justify-content: end;">
+            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_3 !== 'NA'">Готово</MyButton>
             <MyButton class="white-buttons" disabled v-else>Готово</MyButton>
         </div>
     </div>
@@ -68,7 +68,7 @@
             },
             chooseAnswer(id, el){
                 id++
-                this.mainJSON.taskLibraryNight.results["ULSCLL1_Log_SCK2_" + id] = el.id
+                this.mainJSON.taskLibraryNight.results["ULSCLL2_Log_SCK2_" + id] = el.id
             },
             checkAnswer(){
                 screen.isShow = false
@@ -78,17 +78,17 @@
                         el.isShow = true
                     }
                 })
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_2 === 1){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK2_2 = 1
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_2 === 2){
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK2_2 = 1
                 }
                 else {
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK2_2 = 0
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK2_2 = 0
                 }
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_3 === 3){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK2_3 = 1
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_3 === 4){
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK2_3 = 1
                 }
                 else {
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK2_3 = 0
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK2_3 = 0
                 }
                 let t = new Date()
                 this.mainJSON.results.dataTimeLastUpdate =

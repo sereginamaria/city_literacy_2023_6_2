@@ -6,7 +6,7 @@
             </p>
         </div>
         <div class="option-answers-background">
-            <div v-for="el in constTaskLibraryNight.listOfAnswersTaskMetro" :key="el.id" :class="{choosenAnswer: el.id === mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_1}"
+            <div v-for="el in constTaskLibraryNight.listOfAnswersTaskMetro" :key="el.id" :class="{choosenAnswer: el.id === mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_1}"
                  class="option-answers-border"
             >
                 <div @click="chooseAnswer(el)">
@@ -23,7 +23,7 @@
                     {{constTaskLibraryNight.screens[this.mainJSON.taskLibraryNight.shownScreenID].text}}
                 </p>
             </div>
-            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_1 !== 'NA'">Готово</MyButton>
+            <MyButton class="white-buttons" @click="checkAnswer" v-if="mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_1 !== 'NA'">Готово</MyButton>
             <MyButton class="white-buttons" disabled v-else>Готово</MyButton>
         </div>
     </div>
@@ -44,7 +44,7 @@
         methods: {
             ...mapMutations(["push_mainJSON"]),
             chooseAnswer(el){
-                this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_1 = el.id
+                this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_1 = el.id
             },
             checkAnswer(){
                 screen.isShow = false
@@ -54,11 +54,11 @@
                         el.isShow = true
                     }
                 })
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL1_Log_SCK2_1 === 3){
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK2_1 = 1
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK2_1 === 3){
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK2_1 = 1
                 }
                 else {
-                    this.mainJSON.taskLibraryNight.results.ULSCLL1_Score_SCK2_1 = 0
+                    this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK2_1 = 0
                 }
                 let t = new Date()
                 this.mainJSON.results.dataTimeLastUpdate =
