@@ -90,9 +90,6 @@
                     <img :src=" require('../../assets/' + el.src) " alt="" style="width: 30%;" class="me-2">
                     <div>
                         <p>
-                            Рисунок №{{el.id}}
-                        </p>
-                        <p>
                             {{el.value}}
                         </p>
                     </div>
