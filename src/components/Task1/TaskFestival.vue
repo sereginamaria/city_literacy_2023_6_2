@@ -54,7 +54,7 @@
                     }
                 })
 
-                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK4 === 1){
+                if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Log_LLK4 === 2){
                     this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_LLK4 = 1
                 }
                 else {

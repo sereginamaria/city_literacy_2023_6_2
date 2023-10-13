@@ -44,19 +44,19 @@
                     </div>
                 </div>-->
                 <div class="m-3 w-25">
-                    <p>Ночь в музее</p>
+                    <p>Библионочь</p>
                     <div v-for="result in this.resultsTaskNightInTheMuseum" :key="result">
                         {{result.key}}: {{result.value}}
                     </div>
                 </div>
                 <div class="m-3 w-25">
-                    <p>Чат прогулка</p>
+                    <p>Чат Фестиваль</p>
                     <div v-for="result in this.resultsTaskChatFestival" :key="result">
                         {{result.key}}: {{result.value}}
                     </div>
                 </div>
                 <div class="m-3 w-25">
-                    <p>Волонтеры</p>
+                    <p>Новенькая</p>
                     <div v-for="result in this.resultsTaskVolunteers" :key="result">
                         {{result.key}}: {{result.value}}
                     </div>
