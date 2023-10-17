@@ -57,7 +57,7 @@
                 </div>
                 <div class="m-3 w-25">
                     <p>Новенькая</p>
-                    <div v-for="result in this.resultsTaskVolunteers" :key="result">
+                    <div v-for="result in this.resultsTaskNewGirl" :key="result">
                         {{result.key}}: {{result.value}}
                     </div>
                 </div>
@@ -87,7 +87,7 @@
             return {
                 resultsTaskNightInTheMuseum: [],
                 resultsTaskChatFestival: [],
-                resultsTaskVolunteers: [],
+                resultsTaskNewGirl: [],
                 resultsTime: [],
                 resultsForms: [],
                 securityInTheCity: 0,
@@ -118,7 +118,7 @@
                   ('0' + d.getSeconds()).slice(-2)
               ].join(':');
 
-              this.mainJSON.task3["isShow"] = false
+              this.mainJSON.taskNewGirl["isShow"] = false
               this.mainJSON.taskChatFestival["isShow"] = false
               this.mainJSON.taskLibraryNight["isShow"] = false
 
@@ -273,73 +273,73 @@
                 }
 
 
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK4_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK4_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK4_2 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK4_2 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK3 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK3 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK3_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK3_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK3_1 === 2){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK3_1 === 2){
                     this.prosocialEngagement+=2
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score1_SEK2_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score1_SEK2_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK2_2 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK2_2 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score1_SEK1_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score1_SEK1_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score2_SEK1_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score2_SEK1_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score3_SEK1_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score3_SEK1_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score1_SEK5_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score1_SEK5_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score2_SEK5_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score2_SEK5_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK6_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK6_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK6_1 === 2){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK6_1 === 2){
                     this.prosocialEngagement+=2
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SES1_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES1_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SES2 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES2 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SES3 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES3 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SES4 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES4 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SES5 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES5 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK3_3 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK3_3 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SEK3_3 === 2){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK3_3 === 2){
                     this.prosocialEngagement+=2
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SES5_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES5_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.task3.results.ULSE1_Score_SES1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES1 === 1){
                     this.prosocialEngagement++
                 }
 
@@ -368,8 +368,8 @@
                     value: `${value}`
                 })
             }
-            for (const [key, value] of Object.entries(this.mainJSON.task3.results)) {
-                this.resultsTaskVolunteers.push({
+            for (const [key, value] of Object.entries(this.mainJSON.taskNewGirl.results)) {
+                this.resultsTaskNewGirl.push({
                     key: `${key}`,
                     value: `${value}`
                 })

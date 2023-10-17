@@ -1,12 +1,12 @@
 <template>
     <div class="instruction-body" :class="{backgroundTaskLibraryNight: mainJSON.taskLibraryNight.isShow, backgroundTaskChatFestival: mainJSON.taskChatFestival.isShow ||
-    mainJSON.forms.isShow, backgroundTaskVolunteers: mainJSON.task3.isShow}">
+    mainJSON.forms.isShow, backgroundTaskNewGirl: mainJSON.taskNewGirl.isShow}">
         <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
             <div class="instruction-card">
                 <div>
                     <p v-if="mainJSON.taskLibraryNight.isShow">{{constTaskLibraryNight.instruction}}</p>
                     <p v-if="mainJSON.taskChatFestival.isShow">{{constTaskChatFestival.instruction}}</p>
-                    <p v-if="mainJSON.task3.isShow">{{constTask3.instruction}}</p>
+                    <p v-if="mainJSON.taskNewGirl.isShow">{{constTaskNewGirl.instruction}}</p>
                     <p v-if="mainJSON.forms.isShow">{{constForm.instruction}}</p>
                 </div>
                 <div class="mt-3">
@@ -33,7 +33,7 @@
     export default {
         name: "InstructionPage",
         computed: {
-            ...mapGetters(['mainJSON', 'constTaskLibraryNight', 'constTaskChatFestival', 'constTask3', 'constForm']),
+            ...mapGetters(['mainJSON', 'constTaskLibraryNight', 'constTaskChatFestival', 'constTaskNewGirl', 'constForm']),
         },
         methods: {
             ...mapMutations(["push_mainJSON"]),
@@ -60,8 +60,8 @@
     .backgroundTaskChatFestival {
         background: url("../assets/TaskChatFestivalBackground.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;
     }
-    .backgroundTaskVolunteers {
-        background: url("../assets/TaskVolunteersBackground.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;
+    .backgroundTaskNewGirl {
+        background: url("../assets/TaskNewGirlBackground.webp") rgba(255, 255, 255, 0.01) no-repeat center center fixed;
     }
     .instruction-card {
         display: flex;

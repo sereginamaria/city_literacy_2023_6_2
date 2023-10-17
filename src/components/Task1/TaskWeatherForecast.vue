@@ -167,7 +167,6 @@
                         ('0' + (t.getMinutes())).slice(-2),
                         ('0' + t.getSeconds()).slice(-2)
                     ].join(':');
-
                 this.push_mainJSON({
                     push: this.mainJSON
                 })

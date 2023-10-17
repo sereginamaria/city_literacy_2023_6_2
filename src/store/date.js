@@ -17,15 +17,15 @@ const date = {
         "login": null,
         "dataTimeStart": null,
         "dataTimeEndTaskLibraryNight": null,
-        "dataTimeEndTask2": null,
-        "dataTimeEndTask3": null,
+        "dataTimeEndTaskChatFestival": null,
+        "dataTimeEndTaskNewGirl": null,
         "dataTimeEnd": null,
         "dataTimeLastUpdate": null
     },
     "listOfTasks": [
         {'name': 'taskLibraryNight', 'done': false},
         {'name': 'taskChatFestival', 'done': false},
-        {'name': 'task3', 'done': false}
+        {'name': 'taskNewGirl', 'done': false}
     ],
     "taskLibraryNight": {
         "results": {
@@ -733,12 +733,420 @@ const date = {
         "left": 100,
         "top": 0
     },
-    "task3": {
+    "taskNewGirl": {
         "isShow": false,
         "results": {
+            //Who is a volunteer
+            "ULSE2_Log_SEK4_1": "NA",
+            "ULSE2_Log_SEK4_2": "NA",
+            "ULSE2_Log_SEK4_3": "NA",
+            "ULSE2_Score_SEK4_1": "NA",
+
+            //Card about volunteering
+            "ULSE2_Log_SEK4_4": "NA",
+            "ULSE2_Score_SEK4_2": "NA",
+
+            //Rights and Obligations part 1
+            "ULSE2_Log_SEK3": "NA",
+            "ULSE2_Score_SEK3": "NA",
+
+            //Rights and Obligations part 2
+            "ULSE2_Log_SEK3_1": "NA",
+            "ULSE2_Log_SEK3_2": "NA",
+            "ULSE2_Score_SEK3_1": "NA",
+
+            //Social institutions
+            "ULSE2_Log1_SEK2_1": "NA",
+            "ULSE2_Log2_SEK2_1": "NA",
+            "ULSE2_Log3_SEK2_1": "NA",
+            "ULSE2_Log4_SEK2_1": "NA",
+            "ULSE2_Score1_SEK2_1": "NA",
+
+            //Who planted the tree
+            "ULSE2_Log_SEK2_2": "NA",
+            "ULSE2_Score_SEK2_2": "NA",
+
+            //Urban problems
+            "ULSE2_Log1_SEK1_1": "NA",
+            "ULSE2_Log2_SEK1_1": "NA",
+            "ULSE2_Log3_SEK1_1": "NA",
+            "ULSE2_Score1_SEK1_1": "NA",
+            "ULSE2_Score2_SEK1_1": "NA",
+            "ULSE2_Score3_SEK1_1": "NA",
+
+            //Electronic Services 1_1
+            "ULSE2_Log1_SEK5_1": "NA",
+            "ULSE2_Score1_SEK5_1": "NA",
+
+            //Electronic Services 1_2
+            "ULSE2_Log2_SEK5_1": "NA",
+            "ULSE2_Score2_SEK5_1": "NA",
+
+            //Electronic Services 2
+            "ULSE2_Log_SEK6_1": "NA",
+            "ULSE2_Score_SEK6_1": "NA",
+
+            //Cristmas Tree
+            "ULSE1_Log_SES1_1": "NA",
+            "ULSE1_Score_SES1_1": "NA",
+
+            //Sorting Garbage
+            "ULSE1_Log_SES2_1": "NA",
+            "ULSE1_Log_SES2_2": "NA",
+            "ULSE1_Log_SES2_3": "NA",
+            "ULSE1_Log_SES2_4": "NA",
+            "ULSE1_Log_SES2_5": "NA",
+            "ULSE1_Log_SES3": "NA",
+            "ULSE1_Score_SES2": "NA",
+            "ULSE1_Score_SES3": "NA",
+
+            //OverternedTrashBin
+            "ULSE1_Log_SES4": "NA",
+            "ULSE1_Score_SES4": "NA",
+
+            //Woman with stroller
+            "ULSE1_Log_SES5": "NA",
+            "ULSE1_Score_SES5": "NA",
+
+            //Taske off the backpack
+            "ULSE2_Log_SEK3_3": "NA",
+            "ULSE2_Score_SEK3_3": "NA",
+
+            //Annn feels bad
+            "ULSE1_Log_SES5_1": "NA",
+            "ULSE1_Score_SES5_1": "NA",
+
+            //Waxwing
+            "ULSE1_Log_SES1": "NA",
+            "ULSE1_Score_SES1": "NA",
+
         },
         "shownScreenID": 0,
-        "screens": [],
+        "screens": [
+            {"id": 0, "isShow": true, "imgURL": "TaskNewGirlWhoIsAVolunteerKate1", "haveTask": false,
+                "description": ''},
+            {"id": 1, "isShow": false, "imgURL": "TaskNewGirlWhoIsAVolunteerPavel1", "haveTask": false,
+                "description": ''},
+            {"id": 2, "isShow": false, "imgURL": "TaskNewGirlWhoIsAVolunteerKate2", "haveTask": false,
+                "description": ''},
+            {"id": 3, "isShow": false, "imgURL": "TaskNewGirlWhoIsAVolunteerPavel2", "haveTask": false,
+                "description": ''},
+            {"id": 4, "isShow": false, "imgURL": "TaskNewGirlTasksBackground", "haveTask": true, "taskName": "WhoIsAVolunteer",
+                "description": 'Кто такой волонтер?'},
+
+            {"id": 5, "isShow": false, "imgURL": "TaskNewGirlTaskCulturalVolunteersKate1", "haveTask": false,
+                "description": ''},
+            {"id": 6, "isShow": false, "imgURL": "TaskNewGirlTaskCulturalVolunteersKate2", "haveTask": true, "taskName": "CulturalVolunteers",
+                "description": 'CulturalVolunteers'},
+            {"id": 7, "isShow": false, "imgURL": "TaskNewGirlTaskCulturalVolunteersKate3", "haveTask": false,
+                "description": ''},
+            {"id": 8, "isShow": false, "imgURL": "TaskNewGirlTaskCulturalVolunteersPavel", "haveTask": false,
+                "description": ''},
+
+            {"id": 9, "isShow": false, "imgURL": "TaskNewGirlTaskRightsAndObligationsPart1Kate", "haveTask": false,
+                "description": ''},
+            {"id": 10, "isShow": false, "imgURL": "TaskNewGirlTaskRightsAndObligationsPart1Pavel1", "haveTask": false,
+                "description": ''},
+            {"id": 11, "isShow": false, "imgURL": "TaskNewGirlTaskRightsAndObligationsPart1", "haveTask": false,
+                "description": ''},
+            {"id": 12, "isShow": false, "imgURL": "TaskNewGirlTaskRightsAndObligationsPart1Pavel2", "haveTask": false,
+                "description": ''},
+            {"id": 13, "isShow": false, "imgURL": "TaskNewGirlTasksBackground", "haveTask": true, "taskName": "RightsAndObligationsPart1",
+                "description": 'Права и обязанности'},
+
+
+            {"id": 14, "isShow": false, "imgURL": "TaskNewGirlTaskRightsAndObligationsPart2Kate", "haveTask": false,
+                "description": ''},
+            {"id": 15, "isShow": false, "imgURL": "TaskNewGirlTaskRightsAndObligationsPart2Pavel1", "haveTask": false,
+                "description": ''},
+            {"id": 16, "isShow": false, "imgURL": "TaskNewGirlTaskRightsAndObligationsPart2Pavel2", "haveTask": true, "taskName": "RightsAndObligationsPart2",
+                "description": ''},
+            {"id": 17, "isShow": false, "imgURL": "TaskNewGirlTaskRightsAndObligationsPart2Pavel3", "haveTask": false,
+                "description": ''},
+            {"id": 18, "isShow": false, "imgURL": "TaskNewGirlTaskRightsAndObligationsPart2Pavel4", "haveTask": false,
+                "description": ''},
+
+            {"id": 19, "isShow": false, "imgURL": "TaskNewGirlTaskCardAboutVolunteeringKate", "haveTask": false,
+                "description": ''},
+            {"id": 20, "isShow": false, "imgURL": "TaskNewGirlTaskCardAboutVolunteering", "haveTask": true, "taskName": "CardAboutVolunteering",
+                "description": ''},
+
+            {"id": 21, "isShow": false, "imgURL": "TaskNewGirlTaskUrbanProblemsKate", "haveTask": false,
+                "description": ''},
+            {"id": 22, "isShow": false, "imgURL": "TaskNewGirlTaskUrbanProblemsPavel", "haveTask": false,
+                "description": ''},
+            {"id": 23, "isShow": false, "imgURL": "TaskNewGirlTasksBackground", "haveTask": true, "taskName": "UrbanProblems",
+                "description": ''},
+
+            {"id": 24, "isShow": false, "imgURL": "TaskNewGirlTaskElectronicServicesPart1Kate", "haveTask": false,
+                "description": ''},
+            {"id": 25, "isShow": false, "imgURL": "TaskNewGirlTaskElectronicServicesPart1Pavel", "haveTask": false,
+                "description": ''},
+            {"id": 26, "isShow": false, "imgURL": "TaskNewGirlTasksBackground", "haveTask": true, "taskName": "ElectronicServicesPart1",
+                "description": ''},
+
+            {"id": 27, "isShow": false, "imgURL": "TaskNewGirlTaskElectronicServicesPart2_1Kate", "haveTask": false,
+                "description": ''},
+            {"id": 28, "isShow": false, "imgURL": "TaskNewGirlTaskElectronicServicesPart2_1Pavel", "haveTask": false,
+                "description": ''},
+            {"id": 29, "isShow": false, "imgURL": "TaskNewGirlTasksBackground", "haveTask": true, "taskName": "ElectronicServicesPart2_1",
+                "description": ''},
+            {"id": 30, "isShow": false, "imgURL": "TaskNewGirlTaskElectronicServicesPart2_2Kate", "haveTask": false,
+                "description": ''},
+            {"id": 31, "isShow": false, "imgURL": "TaskNewGirlTaskElectronicServicesPart2_2Pavel", "haveTask": false,
+                "description": ''},
+            {"id": 32, "isShow": false, "imgURL": "TaskNewGirlTasksBackground", "haveTask": true, "taskName": "ElectronicServicesPart2_2",
+                "description": ''},
+
+            {"id": 33, "isShow": false, "imgURL": "TaskNewGirlTaskSocialInstitutionsKate", "haveTask": false,
+                "description": ''},
+            {"id": 34, "isShow": false, "imgURL": "TaskNewGirlTaskSocialInstitutionsPavel", "haveTask": false,
+                "description": 'Елочка'},
+            {"id": 35, "isShow": false, "imgURL": "TaskNewGirlTasksBackground", "haveTask": true, "taskName": "SocialInstitutions",
+                "description": ''},
+
+
+            {"id": 36, "isShow": false, "imgURL": "TaskVolunteersSortingGarbageMax1", "haveTask": false,
+                "description": 'Карта'},
+            {"id": 37, "isShow": false, "imgURL": "TaskVolunteersSortingGarbageAnn", "haveTask": false,
+                "description": ''},
+            {"id": 38, "isShow": false, "imgURL": "TaskVolunteersSortingGarbageMax2", "haveTask": false,
+                "description": ''},
+            {"id": 39, "isShow": false, "imgURL": "TaskVolunteersSortingGarbage", "haveTask": true, "taskName": "SortingGarbage",
+                "description": 'Сортировка мусора'},
+            {"id": 40, "isShow": false, "imgURL": "TaskVolunteersSortingGarbageMax2", "haveTask": false,
+                "description": ''},
+            {"id": 41, "isShow": false, "imgURL": "TaskVolunteersSortingGarbage", "haveTask": true, "taskName": "TaskSortingGarbageBattery",
+                "description": 'Сортировка мусора батарейка'},
+            {"id": 42, "isShow": false, "imgURL": "TaskVolunteersOverturnedTrashBinMax", "haveTask": false,
+                "description": ''},
+            {"id": 43, "isShow": false, "imgURL": "TaskVolunteersOverturnedTrashBinBackground", "haveTask": false,
+                "description": ''},
+            {"id": 44, "isShow": false, "imgURL": "TaskVolunteersOverturnedTrashBinSchoolgirl", "haveTask": false,
+                "description": ''},
+            {"id": 45, "isShow": false, "imgURL": "TaskVolunteersOverturnedTrashBin", "haveTask": true, "taskName": "OverturnedTrashBin",
+                "description": 'Перевернутая урна с мусором'},
+            {"id": 46, "isShow": false, "imgURL": "TaskVolunteersOverturnedTrashBinAnn", "haveTask": false,
+                "description": ''},
+            {"id": 47, "isShow": false, "imgURL": "TaskVolunteersWomanWithStrollerAnn", "haveTask": false,
+                "description": ''},
+            {"id": 48, "isShow": false, "imgURL": "TaskVolunteersWomanWithStrollerSchoolboy", "haveTask": false,
+                "description": ''},
+            {"id": 49, "isShow": false, "imgURL": "TaskVolunteersWomanWithStrollerBackground", "haveTask": false,
+                "description": ''},
+            {"id": 50, "isShow": false, "imgURL": "TaskVolunteersWomanWithStrollerMax", "haveTask": false,
+                "description": ''},
+            {"id": 51, "isShow": false, "imgURL": "TaskVolunteersWomanWithStroller", "haveTask": true, "taskName": "WomanWithStroller",
+                "description": 'Дама с коляской'},
+            {"id": 52, "isShow": false, "imgURL": "TaskVolunteersTakeOffTheBackpackAnn", "haveTask": false,
+                "description": ''},
+            {"id": 53, "isShow": false, "imgURL": "TaskVolunteersTakeOffTheBackpackMax", "haveTask": false,
+                "description": ''},
+            {"id": 54, "isShow": false, "imgURL": "TaskVolunteersTakeOffTheBackpack", "haveTask": true, "taskName": "TakeOffTheBackpack",
+                "description": 'Нужно ли снимать рюкзак'},
+            {"id": 55, "isShow": false, "imgURL": "TaskVolunteersAnnFeelsBadAnn1", "haveTask": false,
+                "description": ''},
+            {"id": 56, "isShow": false, "imgURL": "TaskVolunteersAnnFeelsBadMax", "haveTask": false,
+                "description": ''},
+            {"id": 57, "isShow": false, "imgURL": "TaskVolunteersAnnFeelsBad",  "haveTask": true, "taskName": "AnnFeelsBad",
+                "description": 'Анне плохо'},
+            {"id": 58, "isShow": false, "imgURL": "TaskVolunteersAnnFeelsBadBackground", "haveTask": false,
+                "description": ''},
+            {"id": 59, "isShow": false, "imgURL": "TaskVolunteersAnnFeelsBadBackground", "haveTask": false,
+                "description": ''},
+            {"id": 60, "isShow": false, "imgURL": "TaskVolunteersAnnFeelsBadAnn2", "haveTask": false,
+                "description": ''},
+            {"id": 61, "isShow": false, "imgURL": "TaskVolunteersWaxwingMax1", "haveTask": false,
+                "description": ''},
+            {"id": 62, "isShow": false, "imgURL": "TaskVolunteersWaxwingAnn1", "haveTask": false,
+                "description": ''},
+            {"id": 63, "isShow": false, "imgURL": "TaskVolunteersWaxwingMax2", "haveTask": false,
+                "description": ''},
+            {"id": 64, "isShow": false, "imgURL": "TaskVolunteersWaxwing", "haveTask": true, "taskName": "Waxwing",
+                "description": 'Свиристель'},
+            {"id": 65, "isShow": false, "imgURL": "TaskVolunteersWaxwingAnn2", "haveTask": false,
+                "description": ''},
+            {"id": 66, "isShow": false, "imgURL": "TaskVolunteersEndMax", "haveTask": false,
+                "description": ''},
+            {"id": 67, "isShow": false, "imgURL": "TaskVolunteersEndAnn", "haveTask": false,
+                "description": ''},
+
+        ],
+
+        "ULSE2_Log_SEK4_1": "Какую?",
+        "ULSE2_Log_SEK4_2": "Для чего?",
+        "ULSE2_Log_SEK4_3": "Какого рода?",
+
+        "listOfAnswersRightsAndObligationsPart1": [
+            {
+                "value": "Получать образование",
+                "id": 2,
+            },
+            {
+                "value": "Защищать Отечество",
+                "id": 4,
+            },
+            {
+                "value": "Посещать учреждения культуры",
+                "id": 5,
+            },
+            {
+                "value": "Беречь памятники истории и культуры",
+                "id": 1,
+            },
+            {
+                "value": "Сохранять окружающую среду",
+                "id": 3,
+            },
+            {
+                "value": "Получать медицинскую помощь",
+                "id": 6,
+            }
+        ],
+        "listOfAnswersRightsAndObligationsPart1_list1": [],
+        "listOfAnswersRightsAndObligationsPart1_list2": [],
+        "listOfAnswersRightsAndObligationsPart1_list3": [],
+        "listOfAnswersRightsAndObligationsPart1_list4": [],
+        "listOfAnswersRightsAndObligationsPart1_list5": [],
+        "listOfAnswersRightsAndObligationsPart1_list6": [],
+
+        "listOfAnswersSocialInstitutions": [
+            {
+                "value": "изучает экологические проблемы и ищет пути их решения",
+                "id": 4,
+            },
+            {
+                "value": "учит детей бережному отношению к окружающей среде",
+                "id": 3,
+            },
+            {
+                "value": "помогает защищать природу на безвозмездной основе",
+                "id": 1,
+            },
+            {
+                "value": "принимает законы, направленные на охрану окружающей среды",
+                "id": 2,
+            },
+        ],
+        "listOfAnswersSocialInstitutions_list1": [],
+        "listOfAnswersSocialInstitutions_list2": [],
+        "listOfAnswersSocialInstitutions_list3": [],
+        "listOfAnswersSocialInstitutions_list4": [],
+        "listOfAnswersUrbanProblems": [
+            {
+                "value": "Утрачивается исторический облик города",
+                "id": 1,
+            },
+            {
+                "value": "Выделяются вредные испарения и газы из почвы",
+                "id": 3,
+            },
+            {
+                "value": "Увеличивается число людей с заболеваниями легких и сердца",
+                "id": 7,
+            },
+            {
+                "value": "Происходит масштабная вырубка лесов",
+                "id": 2,
+            },
+            {
+                "value": "Городской воздух насыщается кислородом",
+                "id": 3,
+            },
+            {
+                "value": "На месте сноса памятников строят новые заводы",
+                "id": 5,
+            },
+            {
+                "value": "Улучшается климат города",
+                "id": 6,
+            },
+            {
+                "value": "Появляются новые экскурсии по историческим местам",
+                "id": 8,
+            },
+            {
+                "value": "Ученые меньше говорят о проблеме мусора",
+                "id": 9,
+            }
+        ],
+        "listOfAnswersUrbanProblems_list1": [],
+        "listOfAnswersUrbanProblems_list2": [],
+        "listOfAnswersUrbanProblems_list3": [],
+
+        "listOfAnswersSortingGarbage": [
+            {
+                "src": "TaskVolunteersSortingGarbageGlassBottle",
+                "id": 3,
+                "style": "width: calc(100%/5); position: absolute; bottom: calc(100%/1.8); left: calc(100%/6)",
+                "toolTip": "Стеклянный флакон от духов",
+                "isShown": true
+            },
+            {
+                "src": "TaskVolunteersSortingGarbageCanCan",
+                "id": 4,
+                "style": "width: calc(100%/10); position: absolute; bottom: calc(100%/6); left: calc(100%/25)",
+                "toolTip": "Консервная банка",
+                "isShown": true
+            },
+            {
+                "src": "TaskVolunteersSortingGarbagePlasticBottle",
+                "id": 1,
+                "style": "width: calc(100%/5); position: absolute; bottom: calc(100%/12); left: calc(100%/5)",
+                "toolTip": "Пластиковая бутылка",
+                "isShown": true
+            },
+            {
+                "src": "TaskVolunteersSortingGarbageAppleCore",
+                "id": 5,
+                "style": "width: calc(100%/3); position: absolute; bottom: calc(100%/30); left: calc(100%/2.5)",
+                "toolTip": "Огрызок яблока",
+                "isShown": true
+            },
+            {
+                "src": "TaskVolunteersSortingGarbageNewspaper",
+                "id": 2,
+                "style": "width: calc(100%/4); position: absolute; bottom: calc(100%/30); left: calc(100%/1.34)",
+                "toolTip": "Скомканная газета",
+                "isShown": true
+            },
+            {
+                "src": "TaskVolunteersSortingGarbageBattery",
+                "id": 6,
+                "style": "width: calc(100%/4); position: absolute; bottom: calc(100%/30); left: calc(100%/1.34)",
+                "toolTip": "Батарейка",
+                "isShown": false
+            }
+        ],
+        "listOfAnswersSortingGarbage_list1": [],
+        "listOfAnswersSortingGarbage_list2": [],
+        "listOfAnswersSortingGarbage_list3": [],
+        "listOfAnswersSortingGarbage_list4": [],
+        "listOfAnswersSortingGarbage_list5": [],
+        "listOfAnswersSortingGarbage_list6": [],
+
+        "listOfAnswersTakeOffTheBackpack": [
+            {
+                "name": "Нужно проходить в салон спокойно, не толкая других людей.",
+                "id": 1,
+                "choose": false,
+            },
+            {
+                "name": "Нужно слушать музыку или смотреть видео только в наушниках.",
+                "id": 2,
+                "choose": false,
+            },
+            {
+                "name": "Нужно сесть и положить рюкзак на свободное сидение рядом с собой.",
+                "id": 3,
+                "choose": false,
+            }, {
+                "name": "Нужно садиться на свободные места у прохода, а не у окна. ",
+                "id": 4,
+                "choose": false,
+            },
+        ],
+        "listOfChoosenAnswersTakeOffTheBackpack": [],
     },
     "forms": {
         "results": {
