@@ -20,23 +20,22 @@
                                    :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
     <TaskSocialInstitutions v-if="screen.isShow && screen.haveTask && screen.taskName === 'SocialInstitutions'"
                             :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
-
-<!--    <TaskChristmasTree v-if="screen.isShow && screen.haveTask && screen.taskName === 'ChristmasTree'"-->
-<!--                       :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>-->
-<!--    <TaskSortingGarbage v-if="screen.isShow && screen.haveTask && screen.taskName === 'SortingGarbage'"-->
-<!--                        :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>-->
-<!--    <TaskSortingGarbageBattery v-if="screen.isShow && screen.haveTask && screen.taskName === 'TaskSortingGarbageBattery'"-->
-<!--                               :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>-->
-<!--    <TaskOverturnedTrashBin v-if="screen.isShow && screen.haveTask && screen.taskName === 'OverturnedTrashBin'"-->
-<!--                            :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>-->
-<!--    <TaskWomanWithStroller v-if="screen.isShow && screen.haveTask && screen.taskName === 'WomanWithStroller'"-->
-<!--                           :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>-->
-<!--    <TaskTakeOffTheBackpack v-if="screen.isShow && screen.haveTask && screen.taskName === 'TakeOffTheBackpack'"-->
-<!--                            :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>-->
-<!--    <TaskAnnFeelsBad v-if="screen.isShow && screen.haveTask && screen.taskName === 'AnnFeelsBad'"-->
-<!--                     :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>-->
-<!--    <TaskWaxwing v-if="screen.isShow && screen.haveTask && screen.taskName === 'Waxwing'"-->
-<!--                 :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>-->
+    <TaskFlowerbed v-if="screen.isShow && screen.haveTask && screen.taskName === 'Flowerbed'"
+                                :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
+    <TaskDuck v-if="screen.isShow && screen.haveTask && screen.taskName === 'Duck'"
+                       :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
+    <TaskReusableTableware v-if="screen.isShow && screen.haveTask && screen.taskName === 'ReusableTableware'"
+                 :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
+    <TaskSortingGarbage v-if="screen.isShow && screen.haveTask && screen.taskName === 'SortingGarbage'"
+                        :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
+    <TaskSortingGarbageLightBulb v-if="screen.isShow && screen.haveTask && screen.taskName === 'TaskSortingGarbageLightBulb'"
+                               :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
+    <TaskBusStop v-if="screen.isShow && screen.haveTask && screen.taskName === 'BusStop'"
+                           :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
+    <TaskKateFeelsBad v-if="screen.isShow && screen.haveTask && screen.taskName === 'KateFeelsBad'"
+                     :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
+    <TaskBehaviorOnTheBus v-if="screen.isShow && screen.haveTask && screen.taskName === 'BehaviorOnTheBus'"
+                            :screen="screen" :constTaskNewGirl="constTaskNewGirl"/>
 </template>
 
 <script>
@@ -52,25 +51,25 @@
     import TaskElectronicServicesPart2_1 from "@/components/Task3/TaskElectronicServicesPart2_1";
     import TaskElectronicServicesPart2_2 from "@/components/Task3/TaskElectronicServicesPart2_2";
     import TaskElectronicServicesPart1 from "@/components/Task3/TaskElectronicServicesPart1";
-    // import TaskChristmasTree from "@/components/Task3/TaskChristmasTree";
-    // import TaskSortingGarbage from "@/components/Task3/TaskSortingGarbage";
-    // import TaskOverturnedTrashBin from "@/components/Task3/TaskOverturnedTrashBin";
-    // import TaskWomanWithStroller from "@/components/Task3/TaskWomanWithStroller";
-    // import TaskTakeOffTheBackpack from "@/components/Task3/TaskTakeOffTheBackpack";
-    // import TaskAnnFeelsBad from "@/components/Task3/TaskAnnFeelsBad";
-    // import TaskWaxwing from "@/components/Task3/TaskWaxwing";
-    // import TaskSortingGarbageBattery from "@/components/Task3/TaskSortingGarbageBattery";
+    import TaskDuck from "@/components/Task3/TaskDuck";
+    import TaskSortingGarbage from "@/components/Task3/TaskSortingGarbage";
+    import TaskFlowerbed from "@/components/Task3/TaskFlowerbed";
+    import TaskBusStop from "@/components/Task3/TaskBusStop";
+    import TaskBehaviorOnTheBus from "@/components/Task3/TaskBehaviorOnTheBus";
+    import TaskKateFeelsBad from "@/components/Task3/TaskKateFeelsBad";
+    import TaskReusableTableware from "@/components/Task3/TaskReusableTableware";
+    import TaskSortingGarbageLightBulb from "@/components/Task3/TaskSortingGarbageLightBulb";
     export default {
         name: "ModelTaskNewGirl",
         components: {
-            // TaskSortingGarbageBattery,
-            // TaskWaxwing,
-            // TaskAnnFeelsBad,
-            // TaskTakeOffTheBackpack,
-            // TaskWomanWithStroller,
-            // TaskOverturnedTrashBin,
-            // TaskSortingGarbage,
-            // TaskChristmasTree,
+            TaskSortingGarbageLightBulb,
+            TaskReusableTableware,
+            TaskKateFeelsBad,
+            TaskBehaviorOnTheBus,
+            TaskBusStop,
+            TaskFlowerbed,
+            TaskSortingGarbage,
+            TaskDuck,
             TaskElectronicServicesPart1,
             TaskElectronicServicesPart2_2,
             TaskElectronicServicesPart2_1,

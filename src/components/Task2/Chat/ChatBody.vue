@@ -265,7 +265,7 @@
                     if(el.name === 'taskChatFestival'){
                         el.done = true
                         let t = new Date()
-                        this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results.dataTimeEndtaskChatFestival =
+                        this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results.dataTimeEndTaskChatFestival =
                             [
                                 t.getFullYear(),
                                 ('0' + (t.getMonth() + 1)).slice(-2),

@@ -238,7 +238,6 @@
                 if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK2_1 === 1){
                     this.healthyLifestyle++
                 }
-
                 if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS1_1 === 1){
                     this.applicationOfDigitalTechnologies++
                 }
@@ -254,14 +253,12 @@
                 if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS2_2 === 1){
                     this.applicationOfDigitalTechnologies++
                 }
-
                 if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK4_1 === 2){
                     this.healthyLifestyle+=2
                 }
                 if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK4_1 === 1){
                     this.healthyLifestyle++
                 }
-
                 if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTK1_1 === 1){
                     this.applicationOfDigitalTechnologies++
                 }
@@ -315,19 +312,19 @@
                 if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK6_1 === 2){
                     this.prosocialEngagement+=2
                 }
-                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES1_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SES1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES2 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SES2 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES3 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SES3 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES4 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SES4 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES5 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SES5 === 1){
                     this.prosocialEngagement++
                 }
                 if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK3_3 === 1){
@@ -336,10 +333,10 @@
                 if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SEK3_3 === 2){
                     this.prosocialEngagement+=2
                 }
-                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES5_1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SES5_1 === 1){
                     this.prosocialEngagement++
                 }
-                if(this.mainJSON.taskNewGirl.results.ULSE1_Score_SES1 === 1){
+                if(this.mainJSON.taskNewGirl.results.ULSE2_Score_SES1_1 === 1){
                     this.prosocialEngagement++
                 }
 
@@ -352,7 +349,7 @@
                 this.prosocialEngagement = Math.round(this.prosocialEngagement/23*100)
                 this.securityInTheCity = Math.round(this.securityInTheCity/12*100)
                 this.localLiteracy = Math.round(this.localLiteracy/11*100)
-                this.healthyLifestyle = Math.round(this.healthyLifestyle/11*100)
+                this.healthyLifestyle = Math.round(this.healthyLifestyle/14*100)
                 this.applicationOfDigitalTechnologies = Math.round(this.applicationOfDigitalTechnologies/7*100)
 
 
