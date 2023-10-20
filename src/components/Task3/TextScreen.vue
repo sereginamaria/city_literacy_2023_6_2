@@ -59,7 +59,7 @@
 
                 if (status) {
                     this.mainJSON.listOfTasks.forEach( el => {
-                        if(el.name === 'TaskNewGirl'){
+                        if(el.name === 'taskNewGirl'){
                             el.done = true
                             let t = new Date()
                             this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results.dataTimeEndTaskNewGirl =
@@ -133,11 +133,14 @@
                 }
                 else {
                     screen.isShow = false
-                    if(screen.id !== 7 || screen.id !== 17 || screen.id !== 53) {
+                    if(screen.id !== 7 || screen.id !== 10 || screen.id !== 17 || screen.id !== 53) {
                         this.mainJSON.taskNewGirl.shownScreenID++
                     }
                     if(screen.id === 7){
                         this.mainJSON.taskNewGirl.shownScreenID = 9
+                    }
+                    if(screen.id === 10){
+                        this.mainJSON.taskNewGirl.shownScreenID = 12
                     }
                     if(screen.id === 17){
                         this.mainJSON.taskNewGirl.shownScreenID = 19

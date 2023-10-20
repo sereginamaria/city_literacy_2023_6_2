@@ -13,8 +13,8 @@
                     <table class="table">
                         <thead>
                             <tr style="background: #EDFFF6;">
-                                <th scope="col" class="w-50">Проблемы</th>
-                                <th scope="col" class="w-50">Последствия</th>
+                                <th scope="col" class="w-50" style="background: #EDFFF6;">Проблемы</th>
+                                <th scope="col" class="w-50" style="background: #EDFFF6;">Последствия</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,8 +36,8 @@
                             </td>
                         </tr>
                         <tr style="background: #EDFFF6;">
-                            <td>Снос исторических зданий</td>
-                            <td>
+                            <td style="background: #EDFFF6;">Снос исторических зданий</td>
+                            <td style="background: #EDFFF6;">
                                 <draggable
                                         @add="error(2)"
                                         class="list-group list-group-el"
@@ -180,6 +180,27 @@
 </script>
 
 <style scoped>
+.list-of-answers {
+    margin: 10px;
+    width: 20%;
+    background: #d2fff7;
+    border-radius: 4px;
+    padding: 10px 20px;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.list-group-el {
+    margin: 20px;
+    width: 80%;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px dashed #333333;
+    border-radius: 4px;
+}
+
     .list-group-el {
         margin: 0;
         width: unset;
@@ -188,24 +209,5 @@
         background: #FAFEFF;
         border: 1px dashed #333333;
     }
-    .list-of-answers {
-        margin: 10px;
-        width: 20%;
-        background: #d2fff7;
-        border-radius: 4px;
-        padding: 10px 20px;
-        height: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .list-group-el {
-        margin: 20px;
-        width: 80%;
-        padding: 20px;
-        background: #FFFFFF;
-        border: 1px dashed #333333;
-        border-radius: 4px;
-    }
+
 </style>

@@ -16,9 +16,9 @@ const date = {
     "results": {
         "login": null,
         "dataTimeStart": null,
-        "dataTimeEndTaskLibraryNight": null,
-        "dataTimeEndTaskChatFestival": null,
-        "dataTimeEndTaskNewGirl": null,
+        "dataTimeEndtaskLibraryNight": null,
+        "dataTimeEndtaskChatFestival": null,
+        "dataTimeEndtaskNewGirl": null,
         "dataTimeEnd": null,
         "dataTimeLastUpdate": null
     },
@@ -1150,21 +1150,21 @@ const date = {
 
         "listOfAnswersBehaviorOnTheBus": [
             {
-                "name": "Нужно проходить в салон спокойно, не толкая других людей.",
+                "name": "Нужно слушать музыку или смотреть видео только в наушниках.",
                 "id": 1,
                 "choose": false,
             },
             {
-                "name": "Нужно слушать музыку или смотреть видео только в наушниках.",
+                "name": "Нужно снимать рюкзаки и аккуратно ставить их в проходе.",
                 "id": 2,
                 "choose": false,
             },
             {
-                "name": "Нужно сесть и положить рюкзак на свободное сидение рядом с собой.",
+                "name": "Нужно пройти в салон и не стоять у входа в автобус.",
                 "id": 3,
                 "choose": false,
             }, {
-                "name": "Нужно садиться на свободные места у прохода, а не у окна. ",
+                "name": "Нужно садиться на свободные места у прохода, а не у окна.",
                 "id": 4,
                 "choose": false,
             },

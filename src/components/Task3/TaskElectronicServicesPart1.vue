@@ -9,24 +9,26 @@
         </div>
         <div class="d-flex justify-content-center w-100"
              :style="'height: calc(100% - ' + this.height + 'px)'">
-            <div class="backgroundTaskBodyNewGirl" style="position: relative">
-                <img src="../../assets/TaskNewGirlElectronicServicesMap.webp" alt="" style="width: 80%">
-                <img src="../../assets/TaskNewGirlElectronicServicesIconNoise.png" alt="" @click="openModalDialog('Noise')" style="width: 12%;
+            <div class="backgroundTaskBodyNewGirl taskElectronicServicesPart1" style="position: relative">
+
+                    <!--                <img src="../../assets/TaskNewGirlElectronicServicesMap.webp" alt="" style="width: 80%">-->
+                    <img src="../../assets/TaskNewGirlElectronicServicesIconNoise.png" alt="" @click="openModalDialog('Noise')" style="width: 10%;
     position: absolute;
     top: 52%;
     left: 18%;">
-                <img src="../../assets/TaskNewGirlElectronicServicesIconHomelessPerson.png" alt="" @click="openModalDialog('HomelessPerson')" style="    width: 12%;
+                    <img src="../../assets/TaskNewGirlElectronicServicesIconHomelessPerson.png" alt="" @click="openModalDialog('HomelessPerson')" style="    width: 10%;
     position: absolute;
     top: 42%;
     left: 33%;">
-                <img src="../../assets/TaskNewGirlElectronicServicesIconPollution.png" alt="" @click="openModalDialog('Pollution')" style="width: 12%;
+                    <img src="../../assets/TaskNewGirlElectronicServicesIconPollution.png" alt="" @click="openModalDialog('Pollution')" style="width: 10%;
     position: absolute;
     top: 70%;
     left: 55%;">
-                <img src="../../assets/TaskNewGirlElectronicServicesIconCat.png" alt="" @click="openModalDialog('Cat')" style="    width: 12%;
+                    <img src="../../assets/TaskNewGirlElectronicServicesIconCat.png" alt="" @click="openModalDialog('Cat')" style="    width: 10%;
     position: absolute;
     top: 5%;
     left: 70%;">
+
             </div>
         </div>
 
@@ -44,7 +46,7 @@
         <div style="margin: auto">
             <div class="dialog-content mb-3" style="margin: unset">
                 <div class="mb-3">
-                    Укажи, можно ли решить эту проблему, отправив заявку в электронный сервис?
+                    Перед тобой карта важных проблем нашего города. Кликнув на объект на карте, ты увидишь описание проблемы. Укажи, можно ли решить эту проблему, отправив заявку в электронный сервис?
                 </div>
             </div>
             <div class="dialog-content" style="margin: unset">
@@ -110,7 +112,7 @@
                 ]
                 if (type === 'Noise'){
                     this.imgSrc = 'TaskNewGirlElectronicServicesIconModalNoise'
-                    this.message = 'В 7 вечера, когда я делаю домашнюю работу, мой сосед слушает музыку и мешает'
+                    this.message = 'В 20:00, когда я готовлю домашнюю работу, мой сосед делает ремонт и громко сверлит'
                     for(const [key, value] of Object.entries(this.answers)){
                         if(key === 'answerNoise' && value === true){
                             this.yesButtonTrue = true
@@ -124,7 +126,7 @@
                 }
                 if (type === 'HomelessPerson'){
                     this.imgSrc = 'TaskNewGirlElectronicServicesIconModalHomelessPerson'
-                    this.message = 'В городских парках и у метро живут бездомные люди'
+                    this.message = 'Пожилые горожане не умеют пользоваться компьютером и интернетом'
                     for(const [key, value] of Object.entries(this.answers)){
                         if(key === 'answerHomelessPerson' && value === true){
                             this.yesButtonTrue = true
@@ -138,7 +140,7 @@
                 }
                 if (type === 'Pollution'){
                     this.imgSrc = 'TaskNewGirlElectronicServicesIconModalPollution'
-                    this.message = 'В водоем на окраине города регулярно выливают какую-то жидкость из цистерн'
+                    this.message = 'В пруд на окраине города регулярно выливают жидкость с резким химическим запахом'
                     for(const [key, value] of Object.entries(this.answers)){
                         if(key === 'answerPollution' && value === true){
                             this.yesButtonTrue = true
@@ -152,7 +154,7 @@
                 }
                 if (type === 'Cat'){
                     this.imgSrc = 'TaskNewGirlElectronicServicesIconModalCat'
-                    this.message = 'Во дворе сидит и мяукает потерявшийся котенок с ошейником'
+                    this.message = 'Найден маленький щенок с ошейником'
                     for(const [key, value] of Object.entries(this.answers)){
                         if(key === 'answerCat' && value === true){
                             this.yesButtonTrue = true
@@ -281,5 +283,13 @@
     .noButtonTrue {
         background: green;
         border-color: green;
+    }
+    .taskElectronicServicesPart1 {
+        background: url("../../assets/TaskNewGirlElectronicServicesMap.webp") no-repeat;
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        max-height: none;
     }
 </style>
