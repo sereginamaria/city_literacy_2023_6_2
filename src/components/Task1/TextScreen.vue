@@ -62,7 +62,7 @@
                         if(el.name === 'taskLibraryNight'){
                             el.done = true
                             let t = new Date()
-                            this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results.dataTimeEndTaskLibraryNight =
+                            this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results.dataTimeEndtaskLibraryNight =
                                 [
                                     t.getFullYear(),
                                     ('0' + (t.getMonth() + 1)).slice(-2),

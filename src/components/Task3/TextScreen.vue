@@ -62,7 +62,7 @@
                         if(el.name === 'taskNewGirl'){
                             el.done = true
                             let t = new Date()
-                            this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results.dataTimeEndTaskNewGirl =
+                            this.mainJSON.results.dataTimeLastUpdate = this.mainJSON.results.dataTimeEndtaskNewGirl =
                                 [
                                     t.getFullYear(),
                                     ('0' + (t.getMonth() + 1)).slice(-2),
