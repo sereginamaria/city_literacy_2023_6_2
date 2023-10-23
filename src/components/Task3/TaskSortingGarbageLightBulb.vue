@@ -2,7 +2,7 @@
     <div class="background backgroundTaskNewGirl d-flex align-items-center flex-column" style="backdrop-filter: blur(5px);"
          :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
         <div class="instruction-block" id="instruction-block">
-            <p>Выбери контейнер, куда выбросить пауэрбанк.
+            <p>Выбери контейнер, куда выбросить энергосберегающую лампочку.
             </p>
         </div>
         <div class="d-flex justify-content-center align-items-center w-100"

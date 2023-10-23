@@ -1,6 +1,6 @@
 <template>
     <!--Задание рабочая тетрадь-->
-    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+    <div class="background backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
         <div class="instruction-block" id="instruction-block">
             <p>Заполни пропуски в тексте.
             </p>
@@ -259,6 +259,9 @@
 </script>
 
 <style scoped>
+.background{
+    background-position: center !important;
+}
     .background-task1 {
         width: calc(100%/3.5);
         position: absolute;

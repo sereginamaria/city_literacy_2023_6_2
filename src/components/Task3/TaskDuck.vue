@@ -56,16 +56,20 @@
             },
             checkAnswer() {
                 screen.isShow = false
-                this.mainJSON.taskNewGirl.shownScreenID++
+                if (this.mainJSON.taskNewGirl.results.ULSE2_Log_SES1 === 1){
+                    this.mainJSON.taskNewGirl.results.ULSE2_Score_SES1 = 1
+                    this.mainJSON.taskNewGirl.shownScreenID+=2
+                }
+                else {
+                    this.mainJSON.taskNewGirl.results.ULSE2_Score_SES1 = 0
+
+                    this.mainJSON.taskNewGirl.shownScreenID++
+                }
                 this.mainJSON.taskNewGirl.screens.forEach(el => {
                     if (el.id === this.mainJSON.taskNewGirl.shownScreenID) {
                         el.isShow = true
                     }
                 })
-                if (this.mainJSON.taskNewGirl.results.ULSE2_Log_SES1 === 1){
-                    this.mainJSON.taskNewGirl.results.ULSE2_Score_SES1 = 1
-                }
-                else this.mainJSON.taskNewGirl.results.ULSE2_Score_SES1 = 0
                 let t = new Date()
                 this.mainJSON.results.dataTimeLastUpdate =
                     [

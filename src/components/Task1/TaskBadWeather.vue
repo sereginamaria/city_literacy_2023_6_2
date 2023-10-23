@@ -3,7 +3,7 @@
     background6: mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 === 2, background7: mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 === 3, background8: mainJSON.taskLibraryNight.results.ULSCLL2_Log_SCK3_1 === 4}"
     >
         <div class="instruction-block" id="instruction-block">
-            <p>Что ответишь Кате? Где можно спрятаться от непогоды? Выбери один ответ.
+            <p>Что ответишь Ксюше? Где можно спрятаться от непогоды? Выбери один ответ.
             </p>
         </div>
         <div class="d-flex justify-content-center align-items-center w-100 flex-column"

@@ -1,6 +1,6 @@
 <template>
     <!--Перетаскивание вещей из сумки-->
-    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+    <div class="background backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
         <div class="instruction-block" id="instruction-block">
             <p>
                 Какие вещи в рюкзаке небезопасно проносить в библиотеку? Выложи ДВЕ вещи, перетащив из рюкзака на стол. 
@@ -162,6 +162,9 @@
 </script>
 
 <style scoped>
+.background{
+    background-position: center !important;
+}
     .little-backpack {
         position: absolute;
         bottom: 5%;

@@ -1,13 +1,13 @@
 <template>
     <div class="backgroundTaskNewGirl" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
         <div class="instruction-block" id="instruction-block">
-            <p>Что ответить Максу? Выбери один вариант ответа.
+            <p>Выбери один вариант ответа.
             </p>
         </div>
         <div class="d-flex justify-content-center align-items-center w-100"
              :style="'height: calc(100% - ' + this.height + 'px)'">
             <div class="option-answers-background">
-                <div v-for="el in constTaskNewGirl.listOfAnswersRightsAndObligationsPart1" :key="el.id" :class="{choosenAnswer: el.id === mainJSON.taskNewGirl.results.ULSE2_Log_SEK3}"
+                <div v-for="el in constTaskNewGirl.listOfAnswersRightsAndObligationsPart2" :key="el.id" :class="{choosenAnswer: el.id === mainJSON.taskNewGirl.results.ULSE2_Log_SEK3}"
                      class="option-answers-border"
                 >
                     <div @click="chooseAnswer(el)">

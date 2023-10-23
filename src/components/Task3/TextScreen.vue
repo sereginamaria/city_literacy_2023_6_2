@@ -5,7 +5,7 @@
         <div v-if="screen.id === 38 || screen.id === 41 || screen.id === 48 || screen.id === 61 || screen.id === 67">
             <div class="background-text-center">
                 <p>
-                    <span class="name-in-dialog">{{constTaskNewGirl.screens[this.mainJSON.taskLibraryNight.shownScreenID].name}}</span>
+                    <span class="name-in-dialog">{{constTaskNewGirl.screens[this.mainJSON.taskNewGirl.shownScreenID].name}}</span>
                     {{constTaskNewGirl.screens[this.mainJSON.taskNewGirl.shownScreenID].text}}
                 </p>
             </div>
@@ -17,7 +17,7 @@
         <div class="background-text" id="background-text" v-else>
             <div style="width: 90%">
                 <p>
-                    <span class="name-in-dialog">{{constTaskNewGirl.screens[this.mainJSON.taskLibraryNight.shownScreenID].name}}</span>
+                    <span class="name-in-dialog">{{constTaskNewGirl.screens[this.mainJSON.taskNewGirl.shownScreenID].name}}</span>
                     {{constTaskNewGirl.screens[this.mainJSON.taskNewGirl.shownScreenID].text}}
                 </p>
             </div>

@@ -9,10 +9,10 @@
              :style="'height: calc(100% - ' + this.height + 'px)'">
             <div class="backgroundTaskBodyNewGirl flex-row flex-wrap" style="height: 85%; padding: 0">
                 <div class="electronic_services_part1_img_block">
-                    <img @click="choose(1)" src="../../assets/TaskNewGirlElectronicServices1.webp" alt="" :class="{choose: mainJSON.taskNewGirl.results.ULSE2_Log1_SEK5_1 === 1}">
+                    <img @click="choose(1)" src="../../assets/TaskNewGirlElectronicServices2.webp" alt="" :class="{choose: mainJSON.taskNewGirl.results.ULSE2_Log1_SEK5_1 === 1}">
                 </div>
                 <div class="electronic_services_part1_img_block">
-                    <img @click="choose(2)" src="../../assets/TaskNewGirlElectronicServices2.webp" alt="" :class="{choose: mainJSON.taskNewGirl.results.ULSE2_Log1_SEK5_1 === 2}">
+                    <img @click="choose(2)" src="../../assets/TaskNewGirlElectronicServices1.webp" alt="" :class="{choose: mainJSON.taskNewGirl.results.ULSE2_Log1_SEK5_1 === 2}">
                 </div>
                 <div class="electronic_services_part1_img_block">
                     <img @click="choose(3)" src="../../assets/TaskNewGirlElectronicServices3.webp" alt="" :class="{choose: mainJSON.taskNewGirl.results.ULSE2_Log1_SEK5_1 === 3}">

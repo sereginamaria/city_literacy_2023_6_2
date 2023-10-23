@@ -1,9 +1,9 @@
 <template>
     <!--Выбор обуви-->
-    <div class="backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
+    <div class="background backgroundTaskLibraryNight" :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
         <div class="instruction-block" id="instruction-block">
             <p>
-                Выбери ту полку, на которой находится подходящая обувь для тебя и для Кати.
+                Выбери ту полку, на которой находится подходящая обувь для тебя и для Ксюши.
                 Помни, что обувь должна подходить для места, где будет много людей.
             </p>
         </div>
@@ -107,6 +107,9 @@
 </script>
 
 <style scoped>
+.background{
+    background-position: center !important;
+}
     .colorBoots {
         filter: drop-shadow(0px 0px 35px #FFFFFF) drop-shadow(12.7928px 8.52851px 8.52851px rgba(0, 0, 0, 0.0));
     }
