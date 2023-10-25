@@ -85,11 +85,11 @@ export default {
             this.mainJSON['allDone'] = true
 
             localStorage.clear()
-
+            window.location.reload();
         }
     },
     mounted(){
-        console.log('feedback')
+        // console.log('feedback')
         if(this.mainJSON.taskLibraryNight.results.ULSCLL2_Score_SCK1_2 === 1){
             this.securityInTheCity++
         }
@@ -195,7 +195,6 @@ export default {
         if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK2_1 === 1){
             this.healthyLifestyle++
         }
-
         if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS1_1 === 1){
             this.applicationOfDigitalTechnologies++
         }
@@ -211,14 +210,12 @@ export default {
         if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTS2_2 === 1){
             this.applicationOfDigitalTechnologies++
         }
-
         if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK4_1 === 2){
             this.healthyLifestyle+=2
         }
         if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_HLK4_1 === 1){
             this.healthyLifestyle++
         }
-
         if(this.mainJSON.taskChatFestival.results.ULHLDT2_Score_DTK1_1 === 1){
             this.applicationOfDigitalTechnologies++
         }
@@ -311,13 +308,45 @@ export default {
         this.localLiteracy = Math.round(this.localLiteracy/11*100)
         this.healthyLifestyle = Math.round(this.healthyLifestyle/14*100)
         this.applicationOfDigitalTechnologies = Math.round(this.applicationOfDigitalTechnologies/7*100)
+
+
+        for (const [key, value] of Object.entries(this.mainJSON.taskLibraryNight.results)) {
+            this.resultsTaskNightInTheMuseum.push({
+                key: `${key}`,
+                value: `${value}`
+            })
+        }
+        for (const [key, value] of Object.entries(this.mainJSON.taskChatFestival.results)) {
+            this.resultsTaskChatFestival.push({
+                key: `${key}`,
+                value: `${value}`
+            })
+        }
+        for (const [key, value] of Object.entries(this.mainJSON.taskNewGirl.results)) {
+            this.resultsTaskNewGirl.push({
+                key: `${key}`,
+                value: `${value}`
+            })
+        }
+        for (const [key, value] of Object.entries(this.mainJSON.results)) {
+            this.resultsTime.push({
+                key: `${key}`,
+                value: `${value}`
+            })
+        }
+        for (const [key, value] of Object.entries(this.mainJSON.forms.results)) {
+            this.resultsForms.push({
+                key: `${key}`,
+                value: `${value}`
+            })
+        }
     }
 }
 </script>
 
 <style scoped>
 .dialog-content {
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
     max-height: 80vh;
     max-width: 80vw;
 }

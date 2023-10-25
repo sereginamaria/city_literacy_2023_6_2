@@ -1,5 +1,6 @@
 <template>
-    <div class="container-fluid d-flex justify-content-end align-items-center footer" :class="{'justify-content-between': this.mainJSON.taskChatFestival.isShow}">
+    <div class="container-fluid d-flex justify-content-end align-items-center footer" :class="{'justify-content-between': this.mainJSON.taskChatFestival.isShow}"
+         v-if="this.mainJSON.taskChatFestival.isShow || this.mainJSON.forms.isShow">
         <div v-if="this.mainJSON.taskChatFestival.isShow">
             <MyButton class="ml-3 transparent-buttons"
                       data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Чат"
@@ -85,8 +86,8 @@
                     this.mainJSON.taskChatFestival["isShow"] = false
                     this.mainJSON.taskLibraryNight["isShow"] = false
                     this.mainJSON.forms["isShow"] = false
-                    // this.mainJSON['feedbackShow'] = true
-                    this.mainJSON['resultsShow'] = true
+                    this.mainJSON['feedbackShow'] = true
+                    // this.mainJSON['resultsShow'] = true
                     /*this.mainJSON['loginShow'] = true
                     this.mainJSON['mainPageShow'] = false
                     this.mainJSON['allDone'] = true*/

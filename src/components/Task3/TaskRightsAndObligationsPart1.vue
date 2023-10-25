@@ -2,7 +2,7 @@
     <div class="backgroundTaskNewGirl"
          :style="{ background: 'url(' + require('../../assets/' + screen.imgURL + '.webp') + ')'}">
         <div class="instruction-block" id="instruction-block">
-            <p>Сопоставь в презентации проявления проблем с их последствиями. Перетащи фразы внизу в нужные ячейки на схеме.
+            <p>Дополни схему, перетащив фразы снизу в соответствующий пустой блок.
             </p>
         </div>
         <div class="d-flex justify-content-center align-items-center w-100"
