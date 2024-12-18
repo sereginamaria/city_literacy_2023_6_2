@@ -166,9 +166,9 @@
         this.stopPauseTimer()
         this.stopPushTimer()
 
-        this.mainJSON.taskVolunteers["isShow"] = false
-        this.mainJSON.taskChatWalk["isShow"] = false
-        this.mainJSON.taskNightInTheMuseum["isShow"] = false
+         this.mainJSON.taskNewGirl["isShow"] = false
+            this.mainJSON.taskChatFestival["isShow"] = false
+            this.mainJSON.taskLibraryNight["isShow"] = false
         this.mainJSON['endTimeShow'] = false
         this.mainJSON['feedbackShow'] = true
         this.mainJSON["mainPageShow"] = false
