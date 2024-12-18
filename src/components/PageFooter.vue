@@ -183,9 +183,13 @@
                         ('0' + (t.getMinutes())).slice(-2),
                         ('0' + t.getSeconds()).slice(-2)
                     ].join(':');
-                this.mainJSON.forms['isShow'] = true
-                this.mainJSON["instructionShow"] = true
-                this.mainJSON["mainPageShow"] = false
+                this.mainJSON.taskNewGirl["isShow"] = false
+            this.mainJSON.taskChatFestival["isShow"] = false
+            this.mainJSON.taskLibraryNight["isShow"] = false
+            this.mainJSON['feedbackShow'] = true
+                // this.mainJSON.forms['isShow'] = true
+                // this.mainJSON["instructionShow"] = true
+                // this.mainJSON["mainPageShow"] = false
             },
             addAnswersTaskChatFestival(){
 
