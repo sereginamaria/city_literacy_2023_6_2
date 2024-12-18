@@ -158,6 +158,8 @@
       ...mapActions(['get_mainJSON']),
             showResults(){
          this.mainJSON['feedbackShow'] = true
+
+              this.mainJSON["mainPageShow"] = false
       },
       endTime(){
         this.stopTimer()
@@ -169,6 +171,7 @@
         this.mainJSON.taskNightInTheMuseum["isShow"] = false
         this.mainJSON['endTimeShow'] = false
         this.mainJSON['feedbackShow'] = true
+        this.mainJSON["mainPageShow"] = false
 
         this.push_mainJSON()
 
